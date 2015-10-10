@@ -1,0 +1,10 @@
+extends ../layout
+block body
+
+  each category in categories
+    .list-group
+      a.list-group-item.active(href="#")
+        | #{category.category_id}. #{category.name}
+      each style in category.styles
+        a.list-group-item(href="/style/show/#{style.style_id}")
+          | #{style.style_id}. #{style.name}

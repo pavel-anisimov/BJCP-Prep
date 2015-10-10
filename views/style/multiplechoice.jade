@@ -1,0 +1,43 @@
+extends ../layout
+block body
+
+  mixin og(data, field)
+    .ansPara
+      .row
+        .col-xs-2.col-xs-offset-2  OG:
+        .col-xs-8 #{data.OG.from} - #{data.OG.to}
+      .row
+        .col-xs-2.col-xs-offset-2  FG:
+        .col-xs-8 #{data.FG.from} - #{data.FG.to}
+      .row
+        .col-xs-2.col-xs-offset-2  SRM:
+        .col-xs-8 #{data.SRM.from} - #{data.SRM.to}
+      .row
+        .col-xs-2.col-xs-offset-2  IBU:
+        .col-xs-8 #{data.IBU.from} - #{data.IBU.to}
+      .row
+        .col-xs-2.col-xs-offset-2  ABV%
+        .col-xs-8 #{data.ABV.from} - #{data.ABV.to}
+
+  mixin attr(data, field)
+    .ansPara
+      ul
+        each line in data[field]
+          li= line
+
+  .row
+    .col-sm-12
+      h3#question.text-center(data-style="#{question.style_id}") Which #{fields[0] == 'OG' ? 'vital statistics ' : fields[0] + ' characteristics '} are better assosiated with (#{question.style_id}) #{question.name} style?
+  .row
+    - var letter = ['A', 'B', 'C', 'D']
+    each style, index in styles
+      .col-lg-3.col-sm-6.col-xs-12.mcAnswers(data-style="#{style.style_id}")
+        if ['aroma', 'appearance', 'mouthfeel', 'flavor'].indexOf(fields[0]) > -1
+          +attr(style, fields[0])
+        else
+          +og(style, fields[0])
+  .row
+    .col-sm-12
+      #nextQ.btn.btn-default.btn-lg.hidden Next
+
+

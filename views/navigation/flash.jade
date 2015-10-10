@@ -1,0 +1,15 @@
+.row
+  .col-sm-8.col-sm-offset-2
+    if flash
+      if flash.err
+        ul.alert.alert-danger.flash.alert-dismissible(role="alert")
+          button.close(type="button", data-dismiss="alert", aria-label="Close")
+            span(aria-hidden="true") &times;
+          each err in flash.err
+            li= err.message
+      if flash.info
+        button.close(type="button", data-dismiss="alert", aria-label="Close")
+          span(aria-hidden="true") &times;
+        ul.alert.alert-success.flash.alert-dismissible(role="alert")
+          each info in flash.info
+            li= info.message

@@ -1,0 +1,210 @@
+extends ../layout
+block body
+  .well
+    form(enctype="multipart/form-data", action="/style/update", method="POST").form-horizontal.ticket-form#new-client-form
+      input(type="hidden", name="_csrf", value="#{_csrf}")
+      include ../navigation/flash
+      .row
+        .col-md-offset-4.col-md-6.col-sm-offset-4.col-sm-7
+          h3.form-signin-heading Edit Style
+
+      .form-group
+        label.col-sm-3.control-label(for="styleID") Style ID
+        .col-sm-9
+          input#styleID.form-control(type="text", placeholder="3C", name="id", value="#{style.style_id}", readonly)
+
+      .form-group
+        label.col-sm-3.control-label(for="SignUpEmployer") Category
+        .col-md-9
+          select.form-control(name='category')
+            option - not assigned -
+            each category in categories
+              if category.category_id === style.category.category_id
+                option(value='#{category.category_id}', selected) #{category.category_id}. #{category.name}
+              else
+                option(value='#{category.category_id}') #{category.category_id}. #{category.name}
+
+
+
+      //.form-group#styleSimilar
+      //  each beer, index in style.similars
+      //    div
+      //      label.col-sm-3.control-label(for="styleSimilar_#{index}") Similar Styles
+      //      .col-sm-8
+      //        select.form-control(name='category')
+      //          option - not assigned -
+      //          each beerStyle in allStyles
+      //            if beerStyle.style_id === beer.style_id
+      //              option(value='#{beerStyle.style_id}', selected) #{beerStyle.style_id}. #{beerStyle.name}
+      //            else
+      //              option(value='#{beerStyle.style_id}') #{beerStyle.style_id}. #{beerStyle.name}
+      //      .col-sm-1.fa-icon
+      //        i.fa.fa-minus-circle
+      //  div
+      //    label.col-sm-3.control-label(for="styleSimilar_x") Similar Styles
+      //    .col-sm-8
+      //      select.form-control(name='category')
+      //        option(selected) - not assigned -
+      //        each beerStyle in allStyles
+      //          option(value='#{beerStyle.style_id}') #{beerStyle.style_id}. #{beerStyle.name}
+
+      .form-group
+        label.col-sm-3.control-label(for="styleName") Style Name
+        .col-md-9
+          input#styleName.form-control(type="text", placeholder="Czech Amber Lager", name="name", value="#{style.name}")
+
+      .form-group
+        label.col-sm-3.control-label(for="styleOG") Original Gravity
+        label.col-sm-offset-1.col-sm-1.control-label(for="styleOG_from") From:
+        .col-sm-3
+          input#styleOG_from.form-control(type="number", placeholder="1.050", min="0.990", max="1.200", step="0.001", name="og_from", value="#{style.OG.from}")
+        label.col-sm-1.control-label(for="styleOG_to") To:
+        .col-sm-3
+          input#styleOG_to.form-control(type="number", placeholder="1.060", min="0.990", max="1.200", step="0.001", name="og_to", value="#{style.OG.to}")
+
+      .form-group
+        label.col-sm-3.control-label(for="styleOG") Final Gravity
+        label.col-sm-offset-1.col-sm-1.control-label(for="styleFG_from") From:
+        .col-sm-3
+          input#styleFG_from.form-control(type="number", placeholder="1.007", min="0.990", max="1.200", step="0.001",name="fg_from", value="#{style.FG.from}")
+        label.col-sm-1.control-label(for="styleFG_to") To:
+        .col-sm-3
+          input#styleFG_to.form-control(type="number", placeholder="1.013", min="0.990", max="1.200", step="0.001", name="fg_to", value="#{style.FG.to}")
+
+      .form-group
+        label.col-sm-3.control-label(for="styleOG") SRM
+        label.col-sm-offset-1.col-sm-1.control-label(for="styleSRM_from") From:
+        .col-sm-3
+          input#styleSRM_from.form-control(type="number", placeholder="6", name="srm_from", min="1", max="40", value="#{style.SRM.from}")
+        label.col-sm-1.control-label(for="styleSRM_to") To:
+        .col-sm-3
+          input#styleSRM_to.form-control(type="number", placeholder="8", name="srm_to", min="1", max="40", value="#{style.SRM.to}")
+
+      .form-group
+        label.col-sm-3.control-label(for="styleOG") IBU
+        label.col-sm-offset-1.col-sm-1.control-label(for="styleIBU_from") From:
+        .col-sm-3
+          input#styleIBU_from.form-control(type="number", placeholder="34", min="0", max="120", name="ibu_from", value="#{style.IBU.from}")
+        label.col-sm-1.control-label(for="styleIBU_to") To:
+        .col-sm-3
+          input#styleIBU_to.form-control(type="number", placeholder="42", min="0", max="120", name="ibu_to", value="#{style.IBU.to}")
+
+      .form-group
+        label.col-sm-3.control-label(for="styleABV") ABV%
+        label.col-sm-offset-1.col-sm-1.control-label(for="styleABV_from") From:
+        .col-sm-3
+          input#styleABV_from.form-control(type="number", placeholder="5.5", min="0", max="20", step="0.1", name="abv_from", value="#{style.ABV.from}")
+        label.col-sm-1.control-label(for="styleABV_to") To:
+        .col-sm-3
+          input#styleABV_to.form-control(type="number", placeholder="6", min="0", max="20", step="0.1", name="abv_to", value="#{style.ABV.to}")
+
+      .form-group#styleAroma
+        each aroma, index in style.aroma
+          div
+            label.col-sm-3.control-label(for="styleAroma_#{index}") Aroma
+            .col-sm-8
+              input.form-control.characteristics(data-index="#{index}", type="text", placeholder="Low to moderate malt...", name="aroma", id="styleAroma_#{index}", value="#{aroma}")
+            .col-sm-1.fa-icon
+              i.fa.fa-minus-circle
+        div
+          label.col-sm-3.control-label(for="styleAroma_x") Aroma
+          .col-sm-8
+            input.form-control.characteristics(data-index="#{style.aroma.length}", type="text", placeholder="Low to moderate malt...", name="aroma", id='styleAroma_x')
+
+      .form-group#styleAppearance
+        each appearance, index in style.appearance
+          div
+            label.col-sm-3.control-label(for="styleAroma_#{index}") Appearance
+            .col-sm-8
+              input.form-control.characteristics(data-index="#{index}", type="text", placeholder="Medium to very dark brown in color...", name="appearance", id="styleAppearance_#{index}", value="#{appearance}")
+            .col-sm-1.fa-icon
+              i.fa.fa-minus-circle
+        div
+          label.col-sm-3.control-label(for="styleAppearance_x") Appearance
+          .col-sm-8
+            input.form-control.characteristics(data-index="#{style.appearance.length}", type="text", placeholder="Medium to very dark brown in color...", name="appearance", id='styleAppearance_x')
+
+      .form-group#styleFlavor
+        each flavor, index in style.flavor
+          div
+            label.col-sm-3.control-label(for="styleFlavor_#{index}") Flavor
+            .col-sm-8
+              input.form-control.characteristics(data-index="#{index}", type="text", placeholder="Medium-low to medium bitterness...", name="flavor", id="styleFlavor_#{index}", value="#{flavor}")
+            .col-sm-1.fa-icon
+              i.fa.fa-minus-circle
+        div
+          label.col-sm-3.control-label(for="styleFlavor_x") Flavor
+          .col-sm-8
+            input.form-control.characteristics(data-index="#{style.flavor.length}", type="text", placeholder="Medium-low to medium bitterness...", name="flavor", id='styleFlavor_x')
+
+      .form-group#styleMouthfeel
+        each mouthfeel, index in style.mouthfeel
+          div
+            label.col-sm-3.control-label(for="styleMouthfeel_#{index}") Mouthfeel
+            .col-sm-8
+              input.form-control.characteristics(data-index="#{index}", type="text", placeholder="Medium-light to medium body...", name="mouthfeel", id="styleMouthfeel_#{index}", value="#{mouthfeel}")
+            .col-sm-1.fa-icon
+              i.fa.fa-minus-circle
+        div
+          label.col-sm-3.control-label(for="styleMouthfeel_x") Mouthfeel
+          .col-sm-8
+            input.form-control.characteristics(data-index="#{style.mouthfeel.length}", type="text", placeholder="Medium-light to medium body...", name="mouthfeel", id='styleMouthfeel_x')
+
+      .form-group
+        label.col-sm-3.control-label(for="styleAbout") About
+        .col-sm-9
+          textarea#styleAbout.form-control(placeholder="Some information About Style", name="about", rows='5')= style.about
+
+      .form-group
+        label.col-sm-3.control-label(for="styleOverall") Overall Impression
+        .col-sm-9
+          textarea#styleOverall.form-control(placeholder="Some Style Overall Impression", name="overall", rows='5')= style.overall
+
+      .form-group
+        label.col-sm-3.control-label(for="styleIngredients") Characteristic Ingredients
+        .col-sm-9
+          textarea#styleIngredients.form-control(placeholder="Some Style Characteristic Ingredients", name="ingredients", rows='5')= style.ingredients
+
+      .form-group
+        label.col-sm-3.control-label(for="styleComparison") Style Comparison
+        .col-sm-9
+          textarea#styleComparison.form-control(placeholder="Some Style Comparison", name="comparison", rows='5')= style.comparison
+
+      .form-group
+        label.col-sm-3.control-label(for="styleHistory") History
+        .col-sm-9
+          textarea#styleHistory.form-control(placeholder="Some Style History", name="history", rows='5')= style.history
+
+      .form-group
+        label.col-sm-3.control-label(for="styleComments") Comments
+        .col-sm-9
+          textarea#styleComments.form-control(placeholder="Any Style Comments", name="comments", rows='5')= style.comments
+
+      .form-group
+        label.col-sm-3.control-label(for="styleInstructions") Entry Instructions
+        .col-sm-9
+          textarea#styleInstructions.form-control(placeholder="Style Entry Instructions (Meads, Ciders)", name="instructions", rows='5')= style.instructions
+
+      .form-group
+        label.col-sm-3.control-label(for="styleSimilars") Similar Styles
+        .col-sm-9
+          input#styleSimilars.form-control(type="text", placeholder="24A, 19F, 1C...", name="similars", value="#{style.similars ? style.similars.join(', ') : ''}")
+
+      .form-group
+        label.col-sm-3.control-label(for="styleVarieties") Varieties
+        .col-sm-9
+          input#styleVarieties.form-control(type="text", placeholder="Roxbury Russet, Butt, Mcintosh...", name="varieties", value="#{style.varieties ? style.varieties.join(', '): ''}")
+
+      .form-group
+        label.col-sm-3.control-label(for="styleExamples") Examples
+        .col-sm-9
+          input#styleExamples.form-control(type="text", placeholder="Baltika 3, Bud Light, Coors...", name="examples", value="#{style.examples ? style.examples.join(', ') : ''}")
+
+      .form-group
+        label.col-sm-3.control-label(for="styleTags") Tags
+        .col-sm-9
+          input#styleTags.form-control(type="text", placeholder="Standard-strength, pale-color...", name="tags", value="#{style.tags ? style.tags.join(', '):''}")
+
+      .form-group
+        .col-sm-offset-3.col-sm-9
+          input.btn.btn-lg.btn-primary(type="submit", value="Update Style")

@@ -1,0 +1,46 @@
+extends ../layout
+block body
+
+  mixin og(data, field)
+    .ansPara.reverseMChoice.col-md-10.col-md-offset-1
+      .row
+        .col-xs-2.col-xs-offset-2  OG:
+        .col-xs-8 #{data.OG.from} - #{data.OG.to}
+      .row
+        .col-xs-2.col-xs-offset-2  FG:
+        .col-xs-8 #{data.FG.from} - #{data.FG.to}
+      .row
+        .col-xs-2.col-xs-offset-2  SRM:
+        .col-xs-8 #{data.SRM.from} - #{data.SRM.to}
+      .row
+        .col-xs-2.col-xs-offset-2  IBU:
+        .col-xs-8 #{data.IBU.from} - #{data.IBU.to}
+      .row
+        .col-xs-2.col-xs-offset-2  ABV%
+        .col-xs-8 #{data.ABV.from} - #{data.ABV.to}
+  mixin attr(data, field)
+    .ansPara.reverseMChoice.col-md-10.col-md-offset-1
+      ul
+        each line in data[field]
+          li= line
+
+
+  .row
+    .col-sm-12
+      h3#question.text-center(data-style="#{question.style_id}") What style is better assosiated with following #{fields[0] == 'OG' ? 'vital statistics ' : fields[0] + ' characteristics '} :
+        if ['aroma', 'appearance', 'mouthfeel', 'flavor'].indexOf(fields[0]) > -1
+          +attr(question, fields[0])
+        else
+          +og(question, fields[0])
+
+  .row
+    - var letter = ['A', 'B', 'C', 'D']
+    each style, index in styles
+      .col-lg-3.col-sm-6.col-xs-12.mcAnswers(data-style="#{style.style_id}")
+        .ansPara.reverseMChoice
+          |  #{style.style_id}
+          br
+          |  #{style.name}
+  .row
+    .col-sm-12
+      #nextQ.btn.btn-default.btn-lg.hidden Next

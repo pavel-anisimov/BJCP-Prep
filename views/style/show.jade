@@ -1,0 +1,125 @@
+extends ../layout
+block body
+
+  h3.text-center= style.style_id + '. ' + style.name
+  h4.text-center (#{style.category.name})
+
+  if style.OG && style.FG
+    .row.beerBlock
+      .col-sm-3.beerLabel Original Gravity
+      .col-sm-3= style.OG.from + ' - ' + style.OG.to
+      .col-sm-3.beerLabel Final Gravity
+      .col-sm-3= style.FG.from + ' - ' + style.FG.to
+  if style.SRM
+    .row.beerBlock
+      .col-sm-3.beerLabel SRM
+      .col-sm-3= style.SRM.from + ' - ' + style.SRM.to
+      .col-sm-5
+        .colorRange(data-srm="#{JSON.stringify(style.SRM)}" )
+
+  if style.IBU || style.ABV
+    .row.beerBlock
+      if style.IBU
+        .col-sm-3.beerLabel IBU
+        .col-sm-3= style.IBU.from + ' - ' + style.IBU.to
+      if style.ABV
+        .col-sm-3.beerLabel ABV%
+        .col-sm-3= style.ABV.from + ' - ' + style.ABV.to
+
+  if style.about
+    .row.beerBlock
+      .col-sm-3.beerLabel
+      .col-sm-9= style.about
+
+  if style.overall
+    .row.beerBlock
+      .col-sm-3.beerLabel Overall Impression
+      .col-sm-9= style.overall
+
+  if style.aroma
+    .row.beerBlock
+      .col-sm-3.beerLabel Aroma
+      .col-sm-9
+        ul
+          each aroma in style.aroma
+            li= aroma
+
+  if style.appearance
+    .row.beerBlock
+      .col-sm-3.beerLabel Appearance
+      .col-sm-9
+        ul
+          each appearance in style.appearance
+            li= appearance
+
+  if style.flavor
+    .row.beerBlock
+      .col-sm-3.beerLabel Flavor
+      .col-sm-9
+        ul
+          each flavor in style.flavor
+            li= flavor
+
+  if style.mouthfeel
+    .row.beerBlock
+      .col-sm-3.beerLabel Mouthfeel
+      .col-sm-9
+        ul
+          each mouthfeel in style.mouthfeel
+            li= mouthfeel
+
+  if style.comments
+    .row.beerBlock
+      .col-sm-3.beerLabel Comments
+      .col-sm-9= style.comments
+
+  if style.history
+    .row.beerBlock
+      .col-sm-3.beerLabel History
+      .col-sm-9= style.history
+
+  if style.ingredients
+    .row.beerBlock
+      .col-sm-3.beerLabel Characteristic Ingredients
+      .col-sm-9= style.ingredients
+
+  if style.comparison
+    .row.beerBlock
+      .col-sm-3.beerLabel Style Comparison
+      .col-sm-9= style.comparison
+
+  if style.similars
+    .row.beerBlock
+      .col-sm-3.beerLabel Similar Styles
+      .col-sm-9
+        each tag in style.similars
+          a(href='/style/show/' + tag).tagLink
+            span.label.label-info= tag
+
+  if style.instructions
+    .row.beerBlock
+      .col-sm-3.beerLabel Entry Instructions
+      .col-sm-9= style.instructions
+
+  if style.varieties
+    .row.beerBlock
+      .col-sm-3.beerLabel Variates
+      .col-sm-9= style.varieties.join(', ')
+
+  if style.examples
+    .row.beerBlock
+      .col-sm-3.beerLabel Commercial Examples
+      .col-sm-9= style.examples.join(', ')
+
+  if style.tags
+    .row.beerBlock
+      .col-sm-3.beerLabel Tags
+      .col-sm-9
+        each tag in style.tags
+          a(href='#').tagLink
+            span.label.label-info= tag
+
+  .row.beerBlock
+    .col-sm-offset-3.col-sm-9
+      a.btn.btn-lg.btn-primary(href='/style/edit/#{style.style_id}' ) Edit Style
+

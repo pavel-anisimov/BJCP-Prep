@@ -1,0 +1,137 @@
+
+.error
+  color redClr
+
+
+.error.valid
+  color greenClr
+
+.vote-dropdown
+  margin -5px -5px 0
+
+.yourAnswer:hover
+  background-color rgb(228, 249, 249)
+
+
+body
+  text-shadow 1px 1px 2px rgba(150, 150, 150, 1)
+  margin-top 65px
+  background url("/images/BeerBackground__1444189157_73.202.95.238.jpg") no-repeat center center fixed
+  -webkit-background-size cover
+  -moz-background-size cover
+  -o-background-size cover
+  background-size cover
+
+#container.container-fluid > .row > .col-md-10
+  min-height 400px
+  padding-top 20px
+  padding-bottom 20px
+  background-color rgba(255, 255, 255, 0.7)
+  border 1px rgba(255, 255, 255, 0.9) solid
+  border-radius 5px
+
+.fa-icon > .fa-minus-circle
+  font-size 17px
+  color rgb(215, 41, 41)
+  line-height 30px
+
+.tagLink
+  > span
+    font-weight normal !important
+  font-size 16px
+  display inline-block
+  margin 2px 5px 2px 5px
+
+.beerBlock
+  // border-radius 3px
+  border-bottom  1px solid greyClr
+  // background-color lightgreyClr
+  //margin-top 5px
+  //margin-bottom 5px
+  padding-top 5px
+  padding-bottom 10px
+  > .beerLabel
+    font-weight bold
+    text-align right
+
+.colorRange
+  background-color #F8A600
+  height 25px
+  margin-bottom 5px
+  width 100%
+  border 1px darkgreyClr solid
+
+.passScore, failScore
+  font-weight bold
+
+.passScore
+  color greenClr
+
+.failScore
+  color maroonClr
+
+
+.pass, .fail
+  color white
+  border solid 2px #000000
+
+.pass
+  border-color #040
+  background-color darkGreenClr
+
+.fail
+  border-color  #800
+  background-color rubyRedClr
+
+
+.mcAnswers
+  min-height 40%
+
+  cursor pointer
+  &:hover > .ansPara
+    background-color lightgreyClr
+  &.correct > .ansPara
+    background-color darkGreenClr
+    border 1px solid #040
+    text-shadow 1px 1px 2px #040
+    color #ffffff
+  &.wrong > .ansPara
+    background-color rubyRedClr
+    text-shadow 1px 1px 2px #400
+    color #ffffff
+    border 1px solid #400
+
+  > .ansPara
+    padding 20px
+    line-height 50px
+    min-height 50px
+    background-color #dedede
+    border 1px solid darkgreyClr
+    border-radius 10px
+    margin 5px 0 5px 0
+    10px 10px 10px 0
+
+  > .reverseMChoice, >.trueFalse
+    text-align center
+    font-size 150%
+
+
+.col-sm-6 > .ansPara
+  text-align center
+.col-lg-3 > .ansPara
+  text-align left
+  line-height 20px
+
+#question
+  margin-bottom 20px
+  .reverseMChoice
+    text-align left
+    font-weight normal
+
+@media (max-width: 768px)
+  .mcAnswers > .ansPara
+    height auto !important
+  .beerBlock > .beerLabel
+    text-align left
+
+

@@ -1,0 +1,65 @@
+extends ../layout
+block body
+  .well
+    form(enctype="multipart/form-data", action="/style/styleanswer", method="POST").form-horizontal.ticket-form#checkStyleForm
+      input(type="hidden", name="_csrf", value="#{_csrf}")
+      input(type="hidden", name="style_id", value="#{style.style_id}")
+
+      include ../navigation/flash
+      .row
+        .col-sm-12
+          h3.text-center= style.style_id + '. ' + style.name
+
+      .form-group
+        label.col-sm-3.control-label(for="styleOG") Original Gravity
+        .col-sm-2
+          input#OG_FROM.form-control(value='*.***', disabled)
+        .col-sm-2
+          input#styleOG.form-control(type="number", min="0.990", max="1.200", step="0.001", name="og")
+        .col-sm-2
+          input#OG_TO.form-control(value='*.***', disabled)
+
+      .form-group
+        label.col-sm-3.control-label(for="styleFG") Final Gravity
+        .col-sm-2
+          input#FG_FROM.form-control(value='*.***', disabled)
+        .col-sm-2
+          input#styleFG.form-control(type="number", min="0.990", max="1.200", step="0.001",name="fg")
+        .col-sm-2
+          input#FG_TO.form-control(value='*.***', disabled)
+
+      .form-group
+        label.col-sm-3.control-label(for="styleSRM") SRM
+        .col-sm-2
+          input#SRM_FROM.form-control(value='*', disabled)
+        .col-sm-2
+          input#styleSRM.form-control(type="number", name="srm", min="1", max="40")
+        .col-sm-2
+          input#SRM_TO.form-control(value='*', disabled)
+
+      .form-group
+        label.col-sm-3.control-label(for="styleIBU") IBU
+        .col-sm-2
+          input#IBU_FROM.form-control(value='*', disabled)
+        .col-sm-2
+          input#styleIBU.form-control(type="number", min="0", max="120", name="ibu")
+        .col-sm-2
+          input#IBU_TO.form-control(value='*', disabled)
+
+      .form-group
+        label.col-sm-3.control-label(for="styleABV") ABV%
+        .col-sm-2
+          input#ABV_FROM.form-control(value='*.*', disabled)
+        .col-sm-2
+          input#styleABV.form-control(type="number", min="0", max="20", step="0.1", name="abv")
+        .col-sm-2
+          input#ABV_TO.form-control(value='*.*', disabled)
+
+      .form-group
+        .col-sm-offset-3.col-sm-3
+          input#checkBtn.btn.btn-lg.btn-primary(type="submit", value="Check Style")
+          #nextBtn.btn.btn-lg.btn-primary.hidden Next
+        .col-sm-3
+          #answer
+        .col-sm-3
+          #nextQ.btn.btn-default.btn-lg.hidden Next

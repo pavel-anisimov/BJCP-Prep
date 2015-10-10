@@ -1,0 +1,58 @@
+[
+  {
+    "style_id": "26C",
+    "name": "Belgium Tripel",
+    "recipe": {}
+  },
+  {
+    "style_id": "6A",
+    "name": "Maärzer",
+    "recipe": {}
+  },
+  {
+    "style_id": "2A",
+    "name": "International Pale Lager",
+    "recipe": {}
+  },
+  {
+    "style_id": "9A",
+    "name": "Doppelbock",
+    "recipe": {}
+  },
+  {
+    "style_id": "21A",
+    "name": "American IPA",
+    "recipe": {}
+  },
+  {
+    "style_id": "3B",
+    "name": "Czech Premium Pale Lager",
+    "recipe": {}
+  },
+  {
+    "style_id": "26C",
+    "name": "American Porter",
+    "recipe": {}
+  },
+
+  {
+    "style_id": "10C",
+    "name": "Weizenbock",
+    "recipe": {}
+  },
+  {
+    "style_id": "5D",
+    "name": "German Pils",
+    "recipe": {}
+  },
+  {
+    "style_id": "15B",
+    "name": "Irish Stout",
+    "recipe": {}
+  },
+  {
+    "style_id": "11B",
+    "name": "Best Bitter",
+    "recipe": {}
+  }
+]

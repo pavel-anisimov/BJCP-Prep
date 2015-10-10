@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+  head
+    title BJCP Exam Prep
+    // Viewport mobile tag for sensible mobile support
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+    meta(charset="utf-8")
+    meta(name="description", content="BJCP Test Preparation Website")
+    meta(name="keywords", content="BJCP, Beer Judge, Exam")
+    meta(name="author", content="Pavel Anisimov")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    // STYLES
+    link(rel="stylesheet", href="/styles/dependencies/bootstrap-theme.css")
+    link(rel="stylesheet", href="/styles/dependencies/bootstrap.css")
+    link(rel="stylesheet", href="/styles/dependencies/font-awesome.css")
+    link(rel="stylesheet", href="/styles/importer.css")
+    // STYLES END
+
+  body
+    include navigation/top
+    //Page Content
+    #container.container-fluid
+      .row
+        .col-sm-12.col-md-offset-1.col-md-10
+          block body
+
+    // The linker searches for this tag and adds js.  If there's no linker, we point to sails.io.js
+    // SCRIPTS
+    script(src="/js/dependencies/sails.io.js")
+    script(src="/js/dependencies/jquery.js")
+    script(src="/js/dependencies/bootstrap.js")
+    script(src="/js/dependencies/jquery.form.js")
+    script(src="/js/dependencies/jquery.validate.js")
+    script(src="/js/dependencies/jstorage.js")
+    script(src="/js/custom.js")
+    // SCRIPTS END

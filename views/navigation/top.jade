@@ -1,0 +1,27 @@
+// Navbar starts
+
+nav#nav.navbar.navbar-inverse.navbar-fixed-top
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href="#")
+        i.fa.fa-home
+        |   BJCP Exam Prep
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav
+        li.active
+          a(href='/category/index') Categories
+        li
+          a#testBtn(href='#') Start Test
+        li.hidden
+          a#restartBtn(href='#') Restart Test
+
+      ul.navbar-form.navbar-right
+        .form-group
+          input#results.form-control(type="text", placeholder="Results Here")
+
+        //li
+          a(href='/style/new') Add Style
