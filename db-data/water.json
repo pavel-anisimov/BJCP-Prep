@@ -1,0 +1,8 @@
+{"_id":{"$oid":"560cd9cd237fb466c9082416"},"bicarbonate":150,"calcium":75,"chloride":2,"magnesium":18,"region":"Munich","sodium":2,"sulfate":10,"water_id":"Munich"}
+{"_id":{"$oid":"560cd9cd237fb466c9082417"},"bicarbonate":120,"calcium":200,"chloride":12,"magnesium":60,"region":"Vienna","sodium":8,"sulfate":125,"water_id":"Vienna"}
+{"_id":{"$oid":"560cd9cd237fb466c9082418"},"bicarbonate":260,"calcium":275,"chloride":65,"magnesium":40,"region":"Burton","sodium":25,"sulfate":450,"water_id":"Burton"}
+{"_id":{"$oid":"560cd9cd237fb466c9082419"},"bicarbonate":125,"calcium":120,"chloride":20,"magnesium":5,"region":"Dublin","sodium":12,"sulfate":55,"water_id":"Dublin"}
+{"_id":{"$oid":"560cd9cd237fb466c908241a"},"bicarbonate":180,"calcium":225,"chloride":60,"magnesium":40,"region":"Dortmund","sodium":60,"sulfate":120,"water_id":"Dortmund"}
+{"_id":{"$oid":"560cd9cd237fb466c908241b"},"bicarbonate":15,"calcium":7,"chloride":5,"magnesium":2,"region":"Plzen","sodium":2,"sulfate":2,"water_id":"Plzen"}
+{"_id":{"$oid":"560cd9cd237fb466c908241c"},"bicarbonate":225,"calcium":120,"chloride":65,"magnesium":25,"region":"Edinburgh","sodium":55,"sulfate":140,"water_id":"Edinburgh"}
+{"_id":{"$oid":"560cd9cd237fb466c908241d"},"bicarbonate":125,"calcium":90,"chloride":20,"magnesium":5,"region":"London","sodium":15,"sulfate":40,"water_id":"London"}
