@@ -1,0 +1,79 @@
+// MIXIN FOR STATS TYPE VIEW
+mixin og(data)
+  .row
+    .col-xs-2.col-xs-offset-2  OG:
+    .col-xs-8 #{data.OG.from} - #{data.OG.to}
+  .row
+    .col-xs-2.col-xs-offset-2  FG:
+    .col-xs-8 #{data.FG.from} - #{data.FG.to}
+  .row
+    .col-xs-2.col-xs-offset-2  SRM:
+    .col-xs-8 #{data.SRM.from} - #{data.SRM.to}
+  .row
+    .col-xs-2.col-xs-offset-2  IBU:
+    .col-xs-8 #{data.IBU.from} - #{data.IBU.to}
+  .row
+    .col-xs-2.col-xs-offset-2  ABV%
+    .col-xs-8 #{data.ABV.from} - #{data.ABV.to}
+
+// MIXIN FOR LIST TYPE VIEW
+mixin attr(data, field)
+  ul
+    each line in data[field]
+      li= line
+
+// MIXIN FOR TRUE-FALSE QUESTIONS
+// BASED ON QUESTION DATABASE, MOSTYLY FROM STUDY GUIDE
+mixin true_false(question, options, answer)
+  - var attr;
+  .row
+    .col-sm-12
+      - attr = { "data-style": question.style_id, "data-answer": answer}
+      h3#question.text-center&attributes(attr)= question.body
+  .row
+    each option, index in options
+      .col-lg-6.col-sm-6.mcAnswers(data-style="#{option}")
+        - attr = { "data-answer": index }
+        .ansPara.trueFalse&attributes(attr)= option
+
+// MIXIN FOR REVERSE MULTIPLE CHOICE QUESTION
+// QUESTIONS GENERATED RANDOMLY
+mixin m_choice_reverse(question, options, answer)
+  - var attr;
+  .row
+    .col-sm-12
+      - attr = { "data-style": question.style_id, "data-answer": answer}
+      h3#question.text-center&attributes(attr)= question.body
+      div
+        if question.characteristics.OG
+          +og(question.characteristics)
+        else
+          +attr(question.characteristics, Object.keys(question.characteristics)[0])
+  .row
+    each option, index in options
+      .col-lg-6.col-sm-6.mcAnswers(data-style="#{option}")
+        - attr = { "data-answer": index }
+        .ansPara.trueFalse&attributes(attr)= option
+
+// MIXIN FOR STANDARD MULTIPLE CHOICE QUESTION
+// QUESTIONS GENERATED RANDOMLY
+mixin m_choice_normal(question, options, answer)
+  - var attr;
+  .row
+    .col-sm-12
+      - attr = { "data-style": question.style_id, "data-answer": answer}
+      h3#question.text-center&attributes(attr)= question.body
+    .row
+      each option, index in options
+        - attr = { "data-style": option.style_id, "data-answer": index}
+        .col-lg-6.col-sm-6.mcAnswers&attributes(attr)
+          .ansPara
+            if question.field === "OG"
+              +og(option)
+            else
+              +attr(option, question.field)
+
+// MIXIN FOR FILING THE STYLE STATS (OG, FG, etc)
+// QUESTIONS GENERATED RANDOMLY
+mixin style_stats(question, options, answer)
+  div

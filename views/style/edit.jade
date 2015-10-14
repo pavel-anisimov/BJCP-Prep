@@ -1,4 +1,4 @@
-extends ../layout
+extends ../layouts/layout
 block body
   .well
     form(enctype="multipart/form-data", action="/style/update", method="POST").form-horizontal.ticket-form#new-client-form
@@ -23,30 +23,6 @@ block body
                 option(value='#{category.category_id}', selected) #{category.category_id}. #{category.name}
               else
                 option(value='#{category.category_id}') #{category.category_id}. #{category.name}
-
-
-
-      //.form-group#styleSimilar
-      //  each beer, index in style.similars
-      //    div
-      //      label.col-sm-3.control-label(for="styleSimilar_#{index}") Similar Styles
-      //      .col-sm-8
-      //        select.form-control(name='category')
-      //          option - not assigned -
-      //          each beerStyle in allStyles
-      //            if beerStyle.style_id === beer.style_id
-      //              option(value='#{beerStyle.style_id}', selected) #{beerStyle.style_id}. #{beerStyle.name}
-      //            else
-      //              option(value='#{beerStyle.style_id}') #{beerStyle.style_id}. #{beerStyle.name}
-      //      .col-sm-1.fa-icon
-      //        i.fa.fa-minus-circle
-      //  div
-      //    label.col-sm-3.control-label(for="styleSimilar_x") Similar Styles
-      //    .col-sm-8
-      //      select.form-control(name='category')
-      //        option(selected) - not assigned -
-      //        each beerStyle in allStyles
-      //          option(value='#{beerStyle.style_id}') #{beerStyle.style_id}. #{beerStyle.name}
 
       .form-group
         label.col-sm-3.control-label(for="styleName") Style Name

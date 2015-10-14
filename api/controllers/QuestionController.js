@@ -5,6 +5,7 @@
  * @help        :: See http://links.sailsjs.org/docs/controllers
  */
 
+"use strict";
 var utils = require('../services/utils');
 
 const fields = [
@@ -12,216 +13,186 @@ const fields = [
   ['appearance'], ['flavor'], ['aroma'], ['mouthfeel']
 ];
 
+
+
 module.exports = {
 
-  checkstyle: function(req, res, next){
+  getquestion: function(req, res, next){
 
-    Style.find( {}, {fields: ["style_id", "name"]} ).populate('category', {exam: true}).exec(function stylesFound(err, styles) {
-      if (err) {
-        req.flash('error', err.message);
-        // If error redirect back to sign-up page
-        return next(err);
-      }
+    this.getQuizeQuestions({min: 0, max: 2}, function(err, question){
+      if(err) return next(err);
 
-      res.view({style: utils.randomFromArray(styles)});
+      res.view(question);
 
     });
   },
 
-  // Questions for checking the style
-  styleanswer: function(req, res, next){
-
-    var ans = 0, q = 0, selectors = {};
-
-    Style.findOne( {style_id: req.param('style_id') } ).populate('category', {exam: true}).exec(function stylesFound(err, style) {
-      if (err) {
-        req.flash('error', err.message);
-        // If error redirect back to sign-up page
-        return res.json(err);
-      }
-
-      utils.between(+req.param('og'),  style.OG.from,  style.OG.to  ) && ans++;  q++;
-      selectors.styleOG = utils.between(+req.param('og'),  style.OG.from,  style.OG.to  );
 
 
-      utils.between(+req.param('fg'),  style.FG.from,  style.FG.to  ) && ans++;  q++;
-      selectors.styleFG = utils.between(+req.param('fg'),  style.FG.from,  style.FG.to  );
+
+  getQuizeQuestions: function(opt, cb){
+
+    switch (utils.randomNumber(opt.min, opt.max)){
+      case 0:
+        this.getStraightQuestion((err, question) => cb(err, question));
+            break;
+      case 1:
+        this.getReverseQuestion((err, question) => cb(err, question));
+        break; /*
+      case 2:
+        this.getStyleStatsQuestion((err, question) => cb(err, question));
+        break; */
+      default:
+        this.getTrueFalseQuestion((err, question) => cb(err, question));
+
+    }
+  },
 
 
-      utils.between(+req.param('srm'), style.SRM.from, style.SRM.to ) && ans++;  q++;
-      selectors.styleSRM = utils.between(+req.param('srm'),  style.SRM.from,  style.SRM.to  );
+  getStyleStatsQuestion: function(cb){
+    Question.count().exec((err, max) => {
+      if(err) return cb(err);
 
+      let min = 1
+        , random = utils.randomNumber(min, max);
 
-      utils.between(+req.param('ibu'), style.IBU.from, style.IBU.to ) && ans++;  q++;
-      selectors.styleIBU = utils.between(+req.param('ibu'),  style.IBU.from,  style.IBU.to  );
+      Question.findOne({question_id: random }).exec(function(err, respond){
+        if(err) return cb(err);
 
+        respond.type = "true_false";
+        respond.question = {
+          body: respond.question,
+          topic: respond.topic
+        }
 
-      utils.between(+req.param('abv'), style.ABV.from, style.ABV.to ) && ans++;  q++;
-      selectors.styleABV = utils.between(+req.param('abv'),  style.ABV.from,  style.ABV.to  );
+        delete respond.question_id;
+        delete respond.topic;
+        delete respond.id;
 
+        return cb(null, respond);
 
-      res.json({
-        style: {
-          style_id: style.style_id,
-          name: style.name,
-          OG: style.OG,
-          FG: style.FG,
-          SRM: style.SRM,
-          IBU: style.IBU,
-          ABV: style.ABV
-        },
-        ans: ans,
-        score: ans / q *  100,
-        pass:  ans / q >= 0.8,
-        selectors: selectors
       });
-
     });
   },
 
-  reversemchoice: function(req, res, next){
-    var fields = [
-        ['OG', 'FG', 'SRM', 'IBU', 'ABV'],
-        ['appearance'], ['flavor'], ['aroma'], ['mouthfeel']
-      ]
-      , fieldNumber = Math.floor(Math.random() * fields.length);
 
 
-    var fieldsArray = fields[fieldNumber];
+  getTrueFalseQuestion: function(cb){
+    Question.count().exec((err, max) => {
+      if(err) return cb(err);
+
+      let min = 1
+        , random = utils.randomNumber(min, max);
+
+      Question.findOne({question_id: random }).exec(function(err, respond){
+        if(err) return cb(err);
+
+        respond.type = "true_false";
+        respond.question = {
+          body: respond.question,
+          topic: respond.topic
+        }
+
+        delete respond.question_id;
+        delete respond.topic;
+        delete respond.id;
+
+        return cb(null, respond);
+
+      });
+    });
+  },
+
+  getStraightQuestion: function(cb){
+
+    Style.find( {}, {fields: ["style_id", "name", "similars"]} ).populate('category', {exam: true}).exec((err, styles) => {
+      if (err) return cb(err);
+
+      let targetStyle, randomArray, fieldsArray, fieldNumber, question;
+
+      targetStyle = utils.randomFromArray(styles);
+      randomArray = utils.getRandom(targetStyle.similars, 3);
+      randomArray.push(targetStyle.style_id);
+
+      fieldNumber = utils.randomNumber(0, fields.length - 1)
+      fieldsArray = fields[fieldNumber].slice();
+
+      question =  `Which ${fieldsArray[0] == 'OG' ? 'vital statistics' : fieldsArray[0] + ' characteristics'} are better assosiated with (${targetStyle.style_id}) ${targetStyle.name} style?`
+
+      fieldsArray.push('style_id');
+
+
+      Style.find( {style_id: randomArray }, {fields: fieldsArray} ).exec((err, styles) => {
+        if (err) return cb(err);
+
+        let respond = {}, correct = 0
+
+        styles = styles.map(function(val, index){
+
+          (val.style_id == targetStyle.style_id) && (correct = index);
+          delete val.id;
+          return val;
+
+        });
+
+        respond = {
+          options: styles ,
+          question: {body: question, style_id: targetStyle.style_id, field: fieldsArray[0]},
+          answer: correct,
+          type: "m_choice_normal"
+        };
+
+        return cb(null, respond);
+      });
+    });
+  },
+
+  getReverseQuestion: function(cb){
+
+    let fieldNumber, fieldsArray, question;
+
+    fieldNumber = utils.randomNumber(0, fields.length-1);
+    fieldsArray = fields[fieldNumber].slice();
+
+    question = `Which style is better assosiated with following ${fieldsArray[0] == 'OG' ? 'vital statistics ' : fieldsArray[0] + ' characteristics'}: `
 
     fieldsArray.push('style_id');
     fieldsArray.push('similars');
 
 
-    Style.find( {}, {fields: fieldsArray} ).populate('category', {exam: true}).exec(function stylesFound(err, styles) {
-      if (err) {
-        req.flash('error', err.message);
-        // If error redirect back to sign-up page
-        return next(err);
-      }
+    Style.find( {}, {fields: fieldsArray} ).populate('category', {exam: true}).exec((err, styles) => {
+      if (err)  return cb(err);
 
-      var targetStyle = utils.randomFromArray(styles);
+      let  targetStyle, randomArray;
 
-      //console.log('Style', targetStyle);
+      targetStyle = utils.randomFromArray(styles);
+      randomArray = utils.getRandom(targetStyle.similars, 3);
+      randomArray.splice(utils.randomNumber(0, 3), 0, targetStyle.style_id);
 
-      var randomArray = utils.getRandom(targetStyle.similars, 3);
-      randomArray.push(targetStyle.style_id);
+      Style.find( {style_id: randomArray }, {fields: ['style_id', 'name']} ).exec((err, styles) => {
+        if (err)  return cb(err);
 
+        let correct = 0, respond = {}, style_id;
 
-      Style.find( {style_id: randomArray }, {fields: ['style_id', 'name']} ).exec(function stylesFound(err, styles){
-        if (err) {
-          req.flash('error', err.message);
-          // If error redirect back to sign-up page
-          return next(err);
-        }
-        res.view({styles: styles, question: targetStyle, fields: fieldsArray});
+        styles = styles.map( (val, i) => {
+          (val.style_id == targetStyle.style_id) && (correct = i);
+          return `(${val.style_id}) ${val.name}`;
+        });
 
+        style_id = targetStyle.style_id
+        delete targetStyle.similars;
+        delete targetStyle.id;
+        delete targetStyle.style_id;
 
+        respond = {
+          options: styles ,
+          question: {body: question, characteristics: targetStyle, style: style_id},
+          answer: correct,
+          type: "m_choice_reverse"
+        };
+
+        return cb(null, respond);
       });
     });
-  },
-
-  multiplechoice: function(req, res, next){
-
-    var fieldNumber = Math.floor(Math.random() * fields.length);
-
-
-    Style.find( {}, {fields: ["style_id", "name", "similars"]} ).populate('category', {exam: true}).exec(function stylesFound(err, styles) {
-      if (err) {
-        req.flash('error', err.message);
-        // If error redirect back to sign-up page
-        return next(err);
-      }
-
-      var targetStyle = utils.randomFromArray(styles);
-
-      //console.log('Style', targetStyle);
-
-      var randomArray = utils.getRandom(targetStyle.similars, 3);
-      randomArray.push(targetStyle.style_id);
-      var fieldsArray = fields[fieldNumber];
-
-      fieldsArray.push('style_id');
-
-      //console.log('Similar Styles', randomArray);
-
-      Style.find( {style_id: randomArray }, {fields: fieldsArray} ).exec(function stylesFound(err, styles){
-        if (err) {
-          req.flash('error', err.message);
-          // If error redirect back to sign-up page
-          return next(err);
-        }
-        res.view({styles: styles, question: targetStyle, fields: fieldsArray});
-      });
-    });
-  },
-
-
-
-  getquestion: function(req, res, next){
-
-    Question.count().exec(function countCB(error, max) {
-      if(error)
-        return next(error);
-
-      var random = Math.floor(Math.random() * (max - 1)) + 1;
-
-      Question.findOne({question_id: random }).exec(function(err, question){
-        if(err)
-          return next(err);
-
-        question.options.length === 2 && (question.class = 'text-center');
-
-        res.view({question: question});
-      });
-    });
-  },
-
-
-  truefalse: function(req, res, next){
-    var trueAnswer = !!Math.floor(Math.random() * 2);
-
-    Style.find( {}, {} ).populate('category', {exam: true}).exec(function gotAllStyle(err, styles){
-      if(err)
-        return next(err);
-
-      var stylesLength = styles.length
-        , random = Math.floor(Math.random() * stylesLength)
-        , randomElement = utils.randomFromArray(styles)
-
-        , field = utils.randomFromArray(utils.randomFromArray(fields))
-        , fakeAnswer, textQuestion, attribute;
-
-
-      textQuestion = 'One of the ' + randomElement['name'] + ' (' + randomElement['style_id'] + ') ' + field + ' characteristics: ';
-
-      if(!trueAnswer) {
-        fakeAnswer = utils.randomFromArray(styles);
-        if( ['OG', 'FG', 'SRM', 'IBU', 'ABV'].indexOf(field) >= 0  )
-          textQuestion += JSON.stringify(fakeAnswer[field]);
-        else
-          textQuestion += utils.randomFromArray(fakeAnswer[field]);
-      } else {
-        if( ['OG', 'FG', 'SRM', 'IBU', 'ABV'].indexOf(field) >= 0  )
-          textQuestion += JSON.stringify(randomElement[field]);
-        else
-          textQuestion += utils.randomFromArray(randomElement[field]);
-      }
-
-
-
-      res.view({
-        question: {
-          question: textQuestion,
-          options: ['true', 'false'],
-          answer: trueAnswer.toString()
-        }
-      });
-    });
-
   }
-
-
-
-
 }

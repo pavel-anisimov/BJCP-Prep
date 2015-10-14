@@ -21,7 +21,9 @@ module.exports = {
 
   randomFromArray: arr => arr[Math.floor(Math.random() * arr.length)],
 
-  getRandom: function (arr, n) {
+  randomNumber: (min, max) =>  Math.floor(Math.random()*(max-min+1)+min),
+
+  getRandom: (arr, n) => {
 
     var result = new Array(n),
       len = arr.length,
@@ -34,6 +36,15 @@ module.exports = {
       taken[x] = --len;
     }
     return result;
+  },
+
+  removeFromArray: (array, element) => {
+    for(var i = array.length - 1; i >= 0; i--) {
+      if(array[i] === element) {
+        array.splice(i, 1);
+      }
+    }
+    return array;
   }
 
 }

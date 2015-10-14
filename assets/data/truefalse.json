@@ -3,4445 +3,4445 @@
     "topic": "ethics and judging",
     "question": "A competition organizer may serve as the judge director and may also serve as a judge, provided this person has no knowledge of the association between entries and entrants.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 2,
     "topic": "ethics and judging",
     "question": "A competition’s judge director may serve as a judge, provided this person has no knowledge of the association between entries and entrants.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 3,
     "topic": "ethics and judging",
     "question": "A competition organizer may serve as the judge director, provided this person has no knowledge of the association between entries and entrants.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 4,
     "topic": "ethics and judging",
     "question": "A competition’s judge director may not serve as a judge, even if this person has no knowledge of the association between entries and entrants.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 5,
     "topic": "ethics and judging",
     "question": "A competition organizer may NOT serve as a judge, even if this person has no knowledge of the association between entries and entrants.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 6,
     "topic": "ethics and judging",
     "question": "A competition’s judge director MAY serve as the competition organizer and may also serve as a judge, provided this person has no knowledge of the association between entries and entrants.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 7,
     "topic": "ethics and judging",
     "question": "An individual with knowledge of the association between entries and entrants may not serve as a judge.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 8,
     "topic": "ethics and judging",
     "question": "A member of the competition staff with access to information that associates entries with entrants may serve as a judge, provided this person does not divulge information about entries and entrants to other judges.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 9,
     "topic": "ethics and judging",
     "question": "The “head” judge at a table should try to tutor apprentice or lower-rank judges if time permits.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 10,
     "topic": "ethics and judging",
     "question": "The steward at the table has sole responsibility for completing the Cover Sheets for beers in each flight.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 11,
     "topic": "ethics and judging",
     "question": "The “head” judge at the table has sole responsibility for completing the Cover Sheets for beers in each flight.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 12,
     "topic": "ethics and judging",
     "question": "The “head” judge at a table should fill out Cover Sheets for beers in his or her flight as directed by the competition management.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 13,
     "topic": "ethics and judging",
     "question": "The “head” judge at a table has no responsibility for filling out Cover Sheets for beers in his or her flight unless directed to do so by the competition management.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 14,
     "topic": "ethics and judging",
     "question": "The “head” judge at the table has sole responsibility for completing the Cover Sheets for beers in each flight but with the agreement of the steward may delegate the completion of the Cover Sheets to the steward.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 15,
     "topic": "ethics and judging",
     "question": "The “head” judge, with the agreement of the steward, may delegate filling in of the Cover Sheets for beers in his or her flight to the steward.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 16,
     "topic": "ethics and judging",
     "question": "There is no need for the “head” judge to complete the Flight Summary Sheet - the competition organizer can obtain all that information from the cover sheets.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 17,
     "topic": "ethics and judging",
     "question": "If possible, there should be at least one BJCP-ranked judge in every flight.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 18,
     "topic": "ethics and judging",
     "question": "When Non-BJCP judges evaluate entries in a competition, each Non-BJCP judge should be paired with a BJCP judge.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 19,
     "topic": "ethics and judging",
     "question": "Non-BJCP judges may only evaluate entries if authorized by the judge director, and Non-BJCP judges should be paired with BJCP judges when possible.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 20,
     "topic": "ethics and judging",
     "question": "To reduce stray odors and flavors present, beverages and foods other than water, bread or crackers should not be brought to the judging table.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 21,
     "topic": "ethics and judging",
     "question": "It is acceptable to bring food items other than bread, crackers, and water to the judging table.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 22,
     "topic": "ethics and judging",
     "question": "You must filter out strong scents from fellow judges or the environment from your mind rather than discussing the problem with the competition organizer.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 23,
     "topic": "ethics and judging",
     "question": "Strong scents from the environment or other judges or stewards should be brought to the attention of the competition organizer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 24,
     "topic": "ethics and judging",
     "question": "Because entries cannot have any identifying marks, it is OK for a judge to judge beers in a category he or she has entered.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 25,
     "topic": "ethics and judging",
     "question": "If a judge is assigned to judge a category that he/she has entered, that judge should ask the competition organizer to reassign him/her to another category.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 26,
     "topic": "ethics and judging",
     "question": "If a judge is assigned to a category that he or she has entered, the judge should go ahead and evaluate the entries in that category without notifying the judge director or competition organizer.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 27,
     "topic": "ethics and judging",
     "question": "Judges should not review the style being judged from the BJCP Style Guidelines while at the judging table prior to judging that style.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 28,
     "topic": "ethics and judging",
     "question": "Judges may invite stewards to taste the beers in a flight, if there's enough sample to share.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 29,
     "topic": "ethics and judging",
     "question": "It is acceptable to change the order in which you judge the beers on your flight sheet from how it was printed.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 30,
     "topic": "ethics and judging",
     "question": "Beers must be evaluated in the sequence specified on the flight sheet.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 31,
     "topic": "ethics and judging",
     "question": "If you have eaten spicy or greasy food within a few hours prior to judging, you should use mouthwash or antiseptic rinse before judging.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 32,
     "topic": "ethics and judging",
     "question": "You should avoid eating spicy or greasy food within a few hours prior to judging.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 33,
     "topic": "ethics and judging",
     "question": "Spicy or greasy foods should be avoided prior to a judging event because they can reduce a judge's sensitivity to the aromas and flavors of beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 34,
     "topic": "ethics and judging",
     "question": "Perfumed shampoos and colognes should be avoided prior to a judging event because they can reduce a judge's sensitivity to the aromas of beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 35,
     "topic": "ethics and judging",
     "question": "It is a good idea to take a decongestant prior to a judging event to increase your sensitivity to the aromas of beer.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 36,
     "topic": "ethics and judging",
     "question": "Calibrations beers are selected to be the standard against which entries should be judged.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 37,
     "topic": "ethics and judging",
     "question": "It is the responsibility of the “head” judge, in consultation with the other judge in a flight, to assign a consensus score to each entry.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 38,
     "topic": "ethics and judging",
     "question": "It is not necessary for scores produced by the judges on a panel to be within seven points (or less if directed by the competition director) of each other.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 39,
     "topic": "ethics and judging",
     "question": "After discussing the initial scores, judges should adjust their final scores to be within seven points (or less if directed by the competition director).",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 40,
     "topic": "ethics and judging",
     "question": "Judges must adjust their scores to be within seven points (or less if directed by the competition director) of each other as part of developing a consensus score for the beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 41,
     "topic": "ethics and judging",
     "question": "The consensus score assigned to the beer is not necessarily an average score.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 42,
     "topic": "ethics and judging",
     "question": "When judging, It is important to evaluate entries quickly and also complete the score sheets thoroughly and completely.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 43,
     "topic": "ethics and judging",
     "question": "On average, experienced judges should be able to completely evaluate a beer, including arriving at a consensus, in 10 minutes.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 44,
     "topic": "ethics and judging",
     "question": "When there is a discrepancy in the scores for a given beer, the lower-ranked judges should yield to the opinion of the highest ranked BJCP judge at the table.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 45,
     "topic": "ethics and judging",
     "question": "It is acceptable to remove offensive smelling entries from the judging table after they have been evaluated.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 46,
     "topic": "ethics and judging",
     "question": "A judge must disqualify an entry if the bottle has raised lettering or the cap has identifying marks.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 47,
     "topic": "ethics and judging",
     "question": "A judge may disqualify an entry if it has an improper bottle or cap.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 48,
     "topic": "ethics and judging",
     "question": "Only the judge director or competition organizer can disqualify an entry.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 49,
     "topic": "ethics and judging",
     "question": "The results of the bottle inspection does not affect the scoring.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 50,
     "topic": "ethics and judging",
     "question": "Snide or rude comments are unacceptable on scoresheets.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 51,
     "topic": "ethics and judging",
     "question": "Pour each entry in a manner that gives it its optimum appearance, keeping in mind that some entries may be over- or under-carbonated.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 52,
     "topic": "ethics and judging",
     "question": "When you suspect an entry has been placed in the wrong flight based on the style being judged, you should request that it be judged in a different flight instead.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 53,
     "topic": "ethics and judging",
     "question": "When you suspect an entry has been placed in the wrong flight based on the style being judged, you should consult with the judge director or competition organizer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 54,
     "topic": "ethics and judging",
     "question": "Sniff the entry immediately after pouring to ensure proper evaluation of volatile aromatics.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 55,
     "topic": "ethics and judging",
     "question": "There is no need to sniff the aroma immediately after pouring the entry into the glass.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 56,
     "topic": "ethics and judging",
     "question": "Judges should complete the evaluation of each entry before moving on to the next.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 57,
     "topic": "ethics and judging",
     "question": "It is not necessary to offer any feedback for improvement if you score a beer above 40.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 58,
     "topic": "ethics and judging",
     "question": "It is common practice to refrain from sharing your thoughts while judging a beer until the other judges have completed their scoresheet.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 59,
     "topic": "ethics and judging",
     "question": "If you are very familiar with a beer style, it is preferable to disregard the BJCP Style Guidelines and rely on your personal expertise instead.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 60,
     "topic": "ethics and judging",
     "question": "If rushed, it's acceptable to write only comments and an overall score on a scoresheet, leaving the scores for the subsections blank.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 61,
     "topic": "ethics and judging",
     "question": "If rushed, it's acceptable to write only 1-2 comments on a scoresheet as long as the numeric score is filled out.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 62,
     "topic": "ethics and judging",
     "question": "If a beer is a “gusher” or has an unpleasant aroma upon opening, a judge may assign a courtesy score of 13 without tasting and commenting on the characteristics of the beer.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 63,
     "topic": "ethics and judging",
     "question": "All beers should be tasted and scored, even if they are “gushers” or have an unpleasant aroma upon opening.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 64,
     "topic": "ethics and judging",
     "question": "It is appropriate to penalize the entrant if the beer is not served at the proper temperature.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 65,
     "topic": "ethics and judging",
     "question": "If the beers are not served at the proper temperature, judges should work with the competition staff to resolve the problem.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 66,
     "topic": "ethics and judging",
     "question": "In each section of a scoresheet, you should only comment upon the most prominent features of each entry, not subtle characteristics.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 67,
     "topic": "ethics and judging",
     "question": "Judges' comments must not include phrases like “if you used ..”",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 68,
     "topic": "ethics and judging",
     "question": "Judges' comments must not include phrases like “did you ..”",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 69,
     "topic": "ethics and judging",
     "question": "Judges' comments must include a complete evaluation of the sensory aspects of the entry and how those aspects relate to the style guidelines.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 70,
     "topic": "ethics and judging",
     "question": "Judges' comments should be constructive and reflect knowledge of the brewing, fermentation, bottling, and handling process.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 71,
     "topic": "ethics and judging",
     "question": "Judges' comments need to provide information on how to improve the entry as warranted.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 72,
     "topic": "ethics and judging",
     "question": "Scores should not be assigned to the aroma section immediately because the entry's aroma profile may change over time.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 73,
     "topic": "ethics and judging",
     "question": "Each section must be scored with a number prior to writing any comments, to best capture your first impressions.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 74,
     "topic": "ethics and judging",
     "question": "To assure objectivity, you should never write your full name or put contact information on the scoresheet.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 75,
     "topic": "ethics and judging",
     "question": "You should write your full name and judging rank on each scoresheet.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 76,
     "topic": "ethics and judging",
     "question": "You should always fill out the “Style Scales” on the scoresheet, as a good check against your scores.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 77,
     "topic": "ethics and judging",
     "question": "You should use the “Overall Impression” section of the scoresheet to refer to how the entry compares to other entries in the flight.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 78,
     "topic": "ethics and judging",
     "question": "You should use the “Overall Impression” section of the scoresheet to comment on how much you enjoyed the entry or provide suggestions for how to improve the beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 79,
     "topic": "ethics and judging",
     "question": "A score in the “Outstanding range is reserved for entries that not only lack flaws but also have the hard-to-define “extraordinary” character that great beers have.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 80,
     "topic": "ethics and judging",
     "question": "The courteous lower limit for scores assigned to “Problematic“ beers is 6 points, with one point for each section of the scoresheet.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 81,
     "topic": "ethics and judging",
     "question": "The courteous lower limit for scores assigned to “Problematic” beers is 13 points.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 82,
     "topic": "ethics and judging",
     "question": "If judges require more pours than one bottle to judge an entry, the “head” judge should ask the steward to request a second bottle from the cellar master",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 83,
     "topic": "ethics and judging",
     "question": "It is preferable to use ink on scoresheets so that your scores and comments cannot be altered by contest personnel.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 84,
     "topic": "ethics and judging",
     "question": "It is preferable to use mechanical pencils, rather than wooden pencils, on scoresheets so that wood odors do not interfere with beer aromas.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 85,
     "topic": "ethics and judging",
     "question": "It is acceptable to request a second bottle to give the entry a fair chance at an accurate judging if a beer is a “gusher” or tastes infected.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 86,
     "topic": "ethics and judging",
     "question": "Entrants may contact the judge, the competition director, or their BJCP Regional Representative if they are dissatisfied with any aspect of their scoresheets.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 87,
     "topic": "ethics and judging",
     "question": "When your flight has finished, you should avoid having conversations that might distract other judges who have not yet finished their flights.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 88,
     "topic": "ethics and judging",
     "question": "When your flight has finished, it is acceptable to visit other flights still in progress to see how beers you have entered are faring.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 89,
     "topic": "ethics and judging",
     "question": "Because it may have been entered by a person in the room, it is polite to refrain from publicly deriding a “problem” beer that you have scored during a competition.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 90,
     "topic": "ethics and judging",
     "question": "Judges from outside the table should not be consulted on a beer unless the judges at the table cannot reach a consensus score, and then only if they all agree to the consultation.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 91,
     "topic": "ethics and judging",
     "question": "BJCP Apprentice judges have not yet taken the BJCP Beer Judging Exam.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 92,
     "topic": "ethics and judging",
     "question": "Novice is not an official BJCP judge rank.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 93,
     "topic": "ethics and judging",
     "question": "One can obtain the BJCP Recognized rank without acquiring judging experience points.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 94,
     "topic": "ethics and judging",
     "question": "One can obtain the BJCP Recognized rank without acquiring non-judging experience points.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 95,
     "topic": "ethics and judging",
     "question": "To become a BJCP Certified judge, it is sufficient to pass the Entrance Exam, score at least 70% on the Beer Judging Exam and earn 5 judging points.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 96,
     "topic": "ethics and judging",
     "question": "To become a BJCP Certified judge, it is sufficient to pass the Entrance Exam, score at least 70% on the Beer Judging Exam and earn 5 experience points.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 97,
     "topic": "ethics and judging",
     "question": "The maximum score on the Beer Judging Exam for the BJCP Certified rank is 79%.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 98,
     "topic": "ethics and judging",
     "question": "To become a BJCP National judge, it is sufficient to score 80% on the Beer Judging Exam and accumulate 20 experience points.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 99,
     "topic": "ethics and judging",
     "question": "To become a BJCP National judge, it is sufficient to score 80% on the Beer Judging Exam and accumulate 20 experience points, with at least half of them from judging.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 100,
     "topic": "ethics and judging",
     "question": "One can obtain the BJCP National rank without acquiring judging experience points.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 101,
     "topic": "ethics and judging",
     "question": "One can obtain the BJCP National rank without acquiring non-judging experience points.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 102,
     "topic": "ethics and judging",
     "question": "BJCP Master judges must have a minimum score of 90% on the combined written and tasting exams and at least 40 judging points.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 103,
     "topic": "ethics and judging",
     "question": "BJCP Master judges must score at least 90% on the combined written and tasting exams and earn at least 50 experience points, with at least half of them from judging.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 104,
     "topic": "ethics and judging",
     "question": "The maximum score on the combined written and tasting exams for the BJCP National rank is 89%.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 105,
     "topic": "ethics and judging",
     "question": "BJCP Master judges must score at least 90% on the combined written and tasting exams and fulfill a Grand Master Service Requirement.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 106,
     "topic": "ethics and judging",
     "question": "BJCP Grand Master judges must score at least 95% on the combined written and tasting exams.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 107,
     "topic": "ethics and judging",
     "question": "BJCP Grand Master judges must score at least 90% on the combined written and tasting exams.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 108,
     "topic": "ethics and judging",
     "question": "Each additional BJCP Grand Master level requires an additional 100 experience points.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 109,
     "topic": "ethics and judging",
     "question": "BJCP Honorary Grand Master judges do not have to take the BJCP exam.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 110,
     "topic": "ethics and judging",
     "question": "The BJCP Honorary Grand Master rank is bestowed upon professional brewers when they judge at homebrew competitions.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 111,
     "topic": "ethics and judging",
     "question": "Honorary Master is a temporary rank bestowed on operatives of the BJCP.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 112,
     "topic": "ethics and judging",
     "question": "The BJCP Grand Master rank requires the same minimum score on the combined written and tasting exams as the Master rank.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 113,
     "topic": "ethics and judging",
     "question": "The BJCP Grand Master rank requires the same minimum experience points as the Master rank.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 114,
     "topic": "ethics and judging",
     "question": "The only difference in requirements between the BJCP Master and Grand Master ranks is that the Grand Master rank requires a GMSR.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 115,
     "topic": "ethics and judging",
     "question": "Each BJCP Grand Master level has additional requirements for exam grading.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 116,
     "topic": "ethics and judging",
     "question": "A BJCP Grand Master Service Requirement can be fulfilled by grading exams.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 117,
     "topic": "ethics and judging",
     "question": "A BJCP Grand Master Service Requirement can be fulfilled by organizing competitions.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 118,
     "topic": "ethics and judging",
     "question": "At least one-half of the experience points required for any BJCP judge rank must be from judging.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 119,
     "topic": "ethics and judging",
     "question": "A BJCP Grand Master Service Requirement can be fulfilled just by serving on the BJCP Board.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 120,
     "topic": "ethics and judging",
     "question": "Judging at homebrew competitions is the only way to earn BJCP judging points.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 121,
     "topic": "ethics and judging",
     "question": "BJCP judges can earn non-judging experience points for participating in BJCP Continuing Education Program activities.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 122,
     "topic": "ethics and judging",
     "question": "Judging experience points can only be earned by judging in a competition or proctoring a BJCP exam.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 123,
     "topic": "ethics and judging",
     "question": "Stewards at homebrew competitions earn BJCP judging points if they taste the beers with the judges.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 124,
     "topic": "ethics and judging",
     "question": "Stewards at homebrew competitions earn BJCP experience points.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 125,
     "topic": "wort production",
     "question": "The primary goal of mashing is to complete the breakdown of proteins and starches that was begunduring the malting process",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 126,
     "topic": "wort production",
     "question": "Mashing is accomplished by several groups of enzymes that degrade different substrates during a series of rests at specific temperatures",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 127,
     "topic": "wort production",
     "question": "The breakdown of proteins and starches is not the primary goal of mashing ",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 128,
     "topic": "wort production",
     "question": "Mashing is accomplished by cooling down the wort to 100-110 °F",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 129,
     "topic": "wort production",
     "question": "With pale lager malts, this enzymatic degradation begins with the acid rest, where phytase breaks down phytin into calcium- and magnesium-phosphate and phytic acid.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 130,
     "topic": "wort production",
     "question": "Acid rest occurs at temperatures in the 95-120 °F (35-50 °C) range.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 131,
     "topic": "wort production",
     "question": "Acid rest occurs at temperatures in the 130-160 °F (55-70 °C) range.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 132,
     "topic": "wort production",
     "question": "For most malts, the mash begins with the protein rest, which is normally carried out at temperatures in the 113-127 °F (45-53 °C) range",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 133,
     "topic": "wort production",
     "question": "For most malts, the protein rest is usually carried out at temperatures in the 85-90 °F (30-35 °C) range.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 134,
     "topic": "wort production",
     "question": "For darker malts, the protein rest temperatures depend on amount of residual sugar but never goes above 100 °F (40 °C).",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 135,
     "topic": "wort production",
     "question": "Protein rest process begins with the proteinases, which break down high molecular weight proteins into smaller fractions such as polypeptides.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 136,
     "topic": "wort production",
     "question": "The final enzymatic process involves the conversion of starches into dextrins and fermentable sugars.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 137,
     "topic": "wort production",
     "question": "The starches must be gelatinized for conversion of it into dextrins and fermentable sugars; this occurs at temperatures of 130-150 °F (55-65 °C) for barley malt.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 138,
     "topic": "wort production",
     "question": "The starches should be crystalized for conversion of it into sugars; this occurs at temperatures of 160-180 °F (70-85 °C) for barley malt.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 139,
     "topic": "wort production",
     "question": "Mashing temperatures below 150 °F (65 °C) favor β-amylase, producing a more fermentable wort.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 140,
     "topic": "wort production",
     "question": "Mashing temperatures below 155 °F (68 °C) favor α-amylase, producing a more dextrinous wort. ",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 141,
     "topic": "wort production",
     "question": "Mashing temperatures above 150°F (65°C) favor β-amylase, producing a more fermentable wort.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 142,
     "topic": "wort production",
     "question": "Mashing temperatures above 155°F (68°C) favor α-amylase, producing a more dextrinous wort. ",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 143,
     "topic": "wort production",
     "question": "Mash-out is a process of raising the temperature of the mash to 168°F (76°C) and holding it there for several minutes.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 144,
     "topic": "wort production",
     "question": "Mash-out ensures the deactivation of the amylase enzymes, halting the conversion of dextrins to fermentable sugars.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 145,
     "topic": "wort production",
     "question": "Mash-out reduces the viscosity of the wort, helping to make the lautering easier and more efficient.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 146,
     "topic": "wort production",
     "question": "Mash-out is a process which begins with the proteinases, which break down high molecular weight proteins into smaller fractions such as polypeptides.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 147,
     "topic": "wort production",
     "question": "Mash-out is a process of cooling the mash to 145°F (60°C) and holding it there for 30 minutes.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 148,
     "topic": "wort production",
     "question": "The mashing process begins by doughing-in the crushed grains with approximately 1-2 liters of water per pound of grain (2-4 liters per kilogram).",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 149,
     "topic": "wort production",
     "question": "The mashing process begins by doughing-in the crushed grains with approximately 3 liters of water per pound of grain (5-6 liters per kilogram).",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 150,
     "topic": "wort production",
     "question": "The simplest mashing method is the single-step infusion, where the malt is combined with hot water to reach a temperature appropriate for starch conversion",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 151,
     "topic": "wort production",
     "question": "A step-infusion mash allows a little more flexibility by moving the mash through a series of temperature rests.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 152,
     "topic": "wort production",
     "question": "During single-step infusion the temperature is increased by external heat or the addition of boiling water.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 153,
     "topic": "wort production",
     "question": "A step-infusion mash has the advantage of requiring a minimum of labor, equipment, energy and time, but prohibits the use of undermodified malt or adjuncts",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 154,
     "topic": "wort production",
     "question": "A step-infusion mash requires more resources than a simple infusion mash.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 155,
     "topic": "wort production",
     "question": "A simple step mash requires more resources than a step-infusion mash.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 156,
     "topic": "wort production",
     "question": "Decoction mashing involves the removal of a thick fraction of the mash (usually one-third) and running it through a brief saccharification rest at a relatively high temperature. ",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 157,
     "topic": "wort production",
     "question": "Decoction is repeated as many as three times, depending on the modification of the malt and the beer style.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 158,
     "topic": "wort production",
     "question": "The decoction helps explode starch granules and break down the protein matrix in undermodified malt.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 159,
     "topic": "wort production",
     "question": "The decoction helps improving the extraction efficiency, and also promotes the formation of melanoidins.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 160,
     "topic": "wort production",
     "question": "Decoction is repeated until the end of the mashing process, depending on the water profile and temperature..",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 161,
     "topic": "wort production",
     "question": "The lautering helps explode starch granules and break down the protein matrix in undermodified malt.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 162,
     "topic": "wort production",
     "question": "During decoction a fraction of the mash is boiled for 15-30 minutes before mixing it back into the main mash.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 163,
     "topic": "wort production",
     "question": "During decoction it is not required to boil a fraction of the mash before mixing it back into the main mash.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 164,
     "topic": "wort production",
     "question": "A double mash is viewed as a combination of infusion and decoction.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 165,
     "topic": "wort production",
     "question": "A double mash is a process of mashing two different worts before mixing them into one.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 166,
     "topic": "wort production",
     "question": "A double mash is a process of repeating a mashing process of wort to ensure that wort is of a high quality.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 167,
     "topic": "wort production",
     "question": "The double mash is the most common way of producing beer styles such as American light lagers that contain a high proportion of corn grits or rice",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 168,
     "topic": "wort production",
     "question": "The double mash is the most common way of producing beer styles such as Imperial Stouts that are high in alcohol content.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 169,
     "topic": "wort production",
     "question": "Lautering is the process of separating the sweet wort from the grain fractions of the mash.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 170,
     "topic": "wort production",
     "question": "In most homebrewing setups, the mash tun, where the mash process occurs, and the lauter tun are the same unit.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 171,
     "topic": "wort production",
     "question": "Lautering consists of draining the wort off the grain and sparging, or the addition of hot liquor (treated brewing water) to the top of the grain bed to rinse the sugars from the grain. ",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 172,
     "topic": "wort production",
     "question": "The lautering must be done quickly as possible to assure that wort doesn't cool down and oxidize.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 173,
     "topic": "wort production",
     "question": "Lautering should be done slowly, with the wort returned to the tun until the run-off is clear.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 174,
     "topic": "wort production",
     "question": "The initial runoff and return of wort to the lauter tun is called a vorlauf.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 175,
     "topic": "wort production",
     "question": "The initial runoff (vorlauf) is critical to preventing astringency and haze in the finished beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 176,
     "topic": "wort production",
     "question": "The initial runoff and return of wort to the lauter tun is called a decoction.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 177,
     "topic": "wort production",
     "question": "The initial runoff (vorlauf) is critical to complete breaking down the protein matrix in undermodified malt.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 178,
     "topic": "wort production",
     "question": "Lautering too fast will give poor yield, poor extraction rates, and possibly flush starch and protein fractions into the wort.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 179,
     "topic": "wort production",
     "question": "Lautering too slow will give poor yield, poor extraction rates, and possibly flush starch and protein fractions into the wort.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 180,
     "topic": "wort production",
     "question": "A temperature range of 160-170°F (70-77°C) should be maintained throughout the entire lautering process.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 181,
     "topic": "wort production",
     "question": "Lautering Temperatures ABOVE 170°F (77°C) will leach tannins and permit undissolved starch balls to explode and get past the filterbed, and gums and proteins may also be released into the wort.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 182,
     "topic": "wort production",
     "question": "Lautering Temperatures BELOW 160°F (70°C) will leach tannins and permit undissolved starch balls to explode and get past the filterbed, and gums and proteins may also be released into the wort.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 183,
     "topic": "wort production",
     "question": "Wheat, rye, oats and some other cereal grains may contribute a much higher proportion of gums that can help cause a stuck mash.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 184,
     "topic": "wort production",
     "question": "Dark malts like Black Prinz and Chocolate is primary contributor of a much higher proportion of gums that can help cause a stuck mash.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 185,
     "topic": "wort production",
     "question": "Wheat, rye, oats and some other cereal grains often require a β-glucanase rest in order to break down gums and aid the resulting sparge.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 186,
     "topic": "wort production",
     "question": "Sparging is the addition of rinse water, or hot liquor, to the lauter tun.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 187,
     "topic": "wort production",
     "question": "Sparging ensures the deactivation of the amylase enzymes after mashing.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 188,
     "topic": "wort production",
     "question": "Mash pH should not exceed 6.0, which promotes the extraction of excess tannins.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 189,
     "topic": "wort production",
     "question": "Mash pH should be above 7.5 to prevents the extraction of excess tannins.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 190,
     "topic": "wort production",
     "question": "In general, the water chemistry of the sparge water should match that used in mashing.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 191,
     "topic": "wort production",
     "question": "In general, the water chemistry of the sparge water should not match that used in mashing to prevent the starch development.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 192,
     "topic": "wort production",
     "question": "The sparge rate should be slow, with the water (at 170°F, 77°C) added gently so that the filter bed is not disturbed.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 193,
     "topic": "wort production",
     "question": "The sparge rate should be quick, with the water (below 140°F, 60°C) added vigorously to prevents the extraction of excess tannins.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 194,
     "topic": "wort production",
     "question": "Sparging should cease when the gravity drops to below about 1.010 or the pH of the runoff increases above 6.0.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 195,
     "topic": "wort production",
     "question": "Sparging should cease when temperature drops below 110°F, 45°C.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 196,
     "topic": "wort production",
     "question": "A hydrometer reading of the first runs from the tun should be about twice the value desired in the finished beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 197,
     "topic": "wort production",
     "question": "A hydrometer reading of the first runs from the tun should be about three times of the value desired in the finished beer.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 198,
     "topic": "wort production",
     "question": "A minimum of a one hour boil is usually recommended for making quality beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 199,
     "topic": "wort production",
     "question": "A minimum of a 90 minutes boil is required for making quality beer.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 200,
     "topic": "wort production",
     "question": "When making all grain beer, a boil of 90 minutes is normal, with the bittering hops added for the last hour.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 201,
     "topic": "wort production",
     "question": "Boiling wort is normally required to stops enzymatic activity and kills bacteria, fungi with wild yeast.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 202,
     "topic": "wort production",
     "question": "Boiling wort would not kill bacteria, fungi, and wild yeast.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 203,
     "topic": "wort production",
     "question": "Boiling wort promotes the formation of melanoidins and caramelizes some of the wort sugars",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 204,
     "topic": "wort production",
     "question": "Boiling for less than one hour risks under-utilization of hop acids.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 205,
     "topic": "wort production",
     "question": "A good rolling boil for one hour is necessary to bind hop compounds to polypeptides, forming colloids that remain in the beer and help form a good stable head",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 206,
     "topic": "wort production",
     "question": "A good rolling boil for half an hour is sufficient enough to bind hop compounds to polypeptides, forming colloids that remain in the beer and help form a good stable head",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 207,
     "topic": "wort production",
     "question": "An open, rolling boil aids in the removal of undesired volatile compounds, such as some harsh hop compounds, esters, and sulfur compounds",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 208,
     "topic": "wort production",
     "question": "A boil in closed kettle increases pressure which aids in the removal of undesired volatile compounds, such as some harsh hop compounds, esters, and sulfur compounds",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 209,
     "topic": "wort production",
     "question": "Boiling wort would slightly lower the pH of the wort.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 210,
     "topic": "wort production",
     "question": "Boiling wort would increase the pH of the wort.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 211,
     "topic": "wort production",
     "question": "The pH will drop during the boil and at the conclusion should be 5.2-5.5 in order for proper cold break to form and fermentation to proceed normally.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 212,
     "topic": "wort production",
     "question": "The pH level should be 3.2-4.1 in order for proper cold break to form and fermentation to proceed normally.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 213,
     "topic": "wort production",
     "question": "Boiling the initial runnings of high gravity wort will quickly caramelize the sugars in the wort.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 214,
     "topic": "wort production",
     "question": "Boiling the initial runnings of low gravity wort will quickly caramelize the sugars in the wort.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 215,
     "topic": "wort production",
     "question": "Vigorously boiling wort uncovered will evaporate water from the wort at a rate of about one gallon (four liters) per hour.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 216,
     "topic": "wort production",
     "question": "Slow boiling wort covered will evaporate water from the wort at a rate of about 5-6 quarts (5-5.5 liters) per hour.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 217,
     "topic": "wort production",
     "question": "After boiling, the wort should be chilled at rapidly as possible.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 218,
     "topic": "wort production",
     "question": "After boiling, the wort can be chilled at slow rate without any sufficient harm to it.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 219,
     "topic": "wort production",
     "question": "Quick wort chilling minimizes the risk of contamination by Lactobacillus or wort-spoilage bacteria.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 220,
     "topic": "wort production",
     "question": "Quick wort chilling does not minimize and, sometimes, even may increase the risk of contamination by Lactobacillus or wort-spoilage bacteria.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 221,
     "topic": "wort production",
     "question": "The cold break consists of protein-protein and protein-polyphenol complexes.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 222,
     "topic": "wort production",
     "question": "The cold break is often promoted by the addition of Irish moss to the kettle near the end of the boil.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 223,
     "topic": "wort production",
     "question": "The cold break is promoted only by the addition of Irish moss and never by whirlfloc tablets.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 224,
     "topic": "wort production",
     "question": "Removal of cold break can provide carbon skeletons that can be used by the yeast for sterol synthesis.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 225,
     "topic": "wort production",
     "question": "The cold break can provide carbon skeletons that can be used by the yeast for sterol synthesis.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 226,
     "topic": "water",
     "question": "Chlorine gas may in tap water be eliminated by boiling, but charcoal filtration or Campden tablets must be used to eliminatethe more commonly used chloramines.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 227,
     "topic": "water",
     "question": "Chlorine gas may in tap water would evaporate with time, but whirfloc tablets must be used to eliminatethe more commonly used chloramines.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 228,
     "topic": "water",
     "question": "The reverse osmosis (RO) process strips out trace minerals such as iron, manganese, copper, and zinc, so yeast nutrients might need to be added to compensate.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 229,
     "topic": "water",
     "question": "The reverse osmosis (RO) is a process off adding minerals such as iron, manganese, copper, and zinc, so yeasts would have enough nutrients to produce alcohol.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 230,
     "topic": "water",
     "question": "Most water contains very low concentrations of bacteria, so it must be sterilized by boiling at some point in the brewing process",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 231,
     "topic": "water",
     "question": "Most water contains very low concentrations of bacteria, so it is not required to sterilize it by boiling.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 232,
     "topic": "water",
     "question": "The pH is chemical shorthand term referring to the concentration of hydrogen ions, indicates the relative concentrations of these ions.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 233,
     "topic": "water",
     "question": "Neutral water has equal OH- and H+ concentrations corresponding to a pH of exactly 7.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 234,
     "topic": "water",
     "question": "Neutral water has equal OH- and H+ concentrations corresponding to a pH of exactly 0.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 235,
     "topic": "water",
     "question": "Lower pH values indicate a higher H+ concentration and acidic water, while higher pH values correspond to a higher OH- concentration and thus alkaline water",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 236,
     "topic": "water",
     "question": "Higher pH values indicate a higher H+ concentration and acidic water, while lower pH values correspond to a higher OH- concentration and thus alkaline water",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 237,
     "topic": "water",
     "question": "In brewing, the pH is determined by the hardness, alkalinity and buffering salts derived from the ingredients",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 238,
     "topic": "water",
     "question": "Permanent hardness is a measure of the cations that remain after boiling and racking the water from the precipitate, and is primarily due to Ca+2 and Magnesium (Mg+2) ions.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 239,
     "topic": "water",
     "question": "Alkalinity is a measure of the cations that remain after boiling and racking the water from the precipitate, and is primarily due to Ca+2 and Magnesium (Mg+2) ions.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 240,
     "topic": "water",
     "question": "Alkalinity is a measure of the capacity of the dissolved anions to neutralize reductions in the pH value of the solution.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 241,
     "topic": "water",
     "question": "Permanent hardness is a measure of the capacity of the dissolved anions to neutralize reductions in the pH value of the solution.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 242,
     "topic": "water",
     "question": "The most important cation in brewing is calcium, which: ",
     "options": ["Is essential for reducing the mash pH to the appropriate range", "Keeps oxalate salts in solution (they form haze and gushing if they precipitate)", "reduces the extraction of tannins, and assists in protein coagulation in the hot and cold breaks.", "All of the above."],
-    "answer": "All of the above."
+    "answer": 3
   },
   {
     "question_id": 242,
     "topic": "water",
     "question": "Which is not true about calcium in brewing?",
     "options": ["Is essential for reducing the mash pH to the appropriate range", "Does not play a significant role in the brewing process, but accents hop bitterness and dryness.", "Keeps oxalate salts in solution (they form haze and gushing if they precipitate)", "reduces the extraction of tannins, and assists in protein coagulation in the hot and cold breaks."],
-    "answer": "Does not play a significant role in the brewing process, but accents hop bitterness and dryness."
+    "answer": 1
   },
   {
     "question_id": 244,
     "topic": "water",
     "question": "Magnesium ions participate in the same reactions as calcium during the brewing process, but are not as effective",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 245,
     "topic": "water",
     "question": "Magnesium ions participate in the same reactions as calcium during the brewing process, but much more effective, thus should be use in smaller portions.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 246,
     "topic": "water",
     "question": "Sodium in homebrew accents the sweetness at low levels, but tastes salty at higher concentrations.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 247,
     "topic": "water",
     "question": "Sodium in homebrew accents the tartness/acidity at low levels, but tastes salty at higher concentrations.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 248,
     "topic": "water",
     "question": "Bicarbonate (HCO3-) determines the alkalinity of the brewing water.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 249,
     "topic": "water",
     "question": "Bicarbonate (HCO3-) determines the acidity of the brewing water.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 250,
     "topic": "water",
     "question": "Bicarbonate neutralizes acids from dark and roasted malts, reacts with calcium to reduce the hardness and promotes the extraction of tannins and coloring compounds",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 251,
     "topic": "water",
     "question": "Bicarbonate neutralizes alkalinity from light and wheat malts, reacts with magnesium to reduce the softness and promotes the extraction of starches and produces coloring compounds.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 252,
     "topic": "water",
     "question": "The sulfate (SO4-2) ion does not play a significant role in the brewing process, but accents hop bitterness and dryness.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 253,
     "topic": "water",
     "question": "The sulfate (SO4-2) ion play a significant and most important role in the brewing process by reducing hop bitterness and dryness.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 254,
     "topic": "water",
     "question": "Chloride (Cl-) enhances sweetness at low concentrations, but high levels can hamper yeast flocculation. ",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 255,
     "topic": "water",
     "question": "Chloride (Cl-) enhances bitterness at low concentrations and can boost yeast flocculation.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 256,
     "topic": "water",
     "question": "Plzen water profile is reach on minerals and considered to be hard.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 257,
     "topic": "water",
     "question": "Plzen water profile is poor on minerals and considered to be soft.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 258,
     "topic": "water",
     "question": "In London, Dublin and Munich, the high bicarbonate content is needed to balance the acidifying properties of the dark and roasted malts used in porters, stouts and bocks.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 259,
     "topic": "water",
     "question": "In London, Dublin and Munich, the low bicarbonate content is needed to balance the alkalinity properties of the dark and roasted malts used in porters, stouts and bocks.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 260,
     "topic": "water",
     "question": "Munich and London water are rich with calcium and sulfates, thus it's favorable for production of darker beers.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 261,
     "topic": "water",
     "question": "When brewing pale beers with London, Dublin or Munich type of water, the mash pH generally needs to be reduced through an acid rest, the use of acid malt or directly adding lactic or phosphoric acid to the brewing liquor to reduce its alkalinity",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 262,
     "topic": "water",
     "question": "When brewing pale beers with London, Dublin or Munich type of water, the mash pH generally needs to be reduced through all of the following, except:",
     "options": ["An acid rest", "The use of acid malt", "Increasing the mashing temperature or boil time", "Directly adding lactic or phosphoric acid to the brewing liquor to reduce its alkalinity"],
-    "answer": "Increasing the mashing temperature or boil time"
+    "answer": 2
   },
   {
     "question_id": 263,
     "topic": "water",
     "question": "Extremely hard water with the high concentrations of sulfate and magnesium ions lend a dryness that accents the hoppiness of English bitters and pale ales from UK region.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 264,
     "topic": "water",
     "question": "Soft water with the low concentrations of sulfate and magnesium ions lend a dryness that accents the hoppiness of English bitters and pale ales from UK region.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 265,
     "topic": "water",
     "question": "The adoption of decoction mashing have been in part due to the lack of minerals in the water, along with the use of undermodified malts.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 266,
     "topic": "water",
     "question": "The adoption of decoction mashing have been in part due to the excessive amount of minerals in the water, along with the use of undermodified malts.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 267,
     "topic": "water",
     "question": "The addition of gypsum and Epsom salts is known as Burtonizing.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 268,
     "topic": "water",
     "question": "The addition of non-iodized table salt and calcium chloride salts is known as Burtonizing.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 269,
     "topic": "water",
     "question": "All of this are the most common salt additions, except:",
     "options": ["gypsum", "Epsom salts", "non-iodized table salt", "dihydrogen monoxide", "calcium carbonate", "calcium chloride"],
-    "answer": "dihydrogen monoxide"
+    "answer": 3
   },
   {
     "question_id": 270,
     "topic": "malts",
     "question": "Barley malt is formed by sprouting barley kernels to a desired length, then stripping off the rootlets and kilning (drying) the kernels to a specific color.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 271,
     "topic": "malts",
     "question": "Two types (2-row and 6-row) of barley are commonly used in brewing. They are distinguished by the number of fertile flowers on the heads along the central stem.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 272,
     "topic": "malts",
     "question": "Three types (2-row, 4-row and 6-row) of barley are commonly used in brewing. They are distinguished by the number of fertile flowers on the heads along the central stem.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 273,
     "topic": "malts",
     "question": "Two-row barley (Hordeum vulgare) has only two of the six flowers on the head fertile and able to produce kernels.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 274,
     "topic": "malts",
     "question": "Two-row barley (Hordeum vulgare) has only two rows by six flowers on the head fertile and able to produce kernels.",
     "options": ["true", "false"],
-    "answer": "flowers"
+    "answer": 1
   },
   {
     "question_id": 275,
     "topic": "malts",
     "question": "Two-row barley will have bigger kernels, and thus higher yield than six-row.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 276,
     "topic": "malts",
     "question": "Six-row barley will have bigger kernels, and thus higher yield than two-row.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 277,
     "topic": "malts",
     "question": "2-row barley usually has a lower nitrogen and protein content and also has a lower husk content, which makes 2-row beers taste less grainy.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 278,
     "topic": "malts",
     "question": "Two row barley usually has a lower nitrogen and protein content and also has a lower husk content, which makes 6-row beers taste less grainy.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 279,
     "topic": "malts",
     "question": "Six row barley, however, generally gives more yield per acre and has a higher diastatic power (more enzymes), so it is the choice whenever large amounts of adjuncts are used.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 280,
     "topic": "malts",
     "question": "Two row barley, however, generally gives more yield per acre and has a higher diastatic power (more enzymes), so it is the choice whenever large amounts of adjuncts are used.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 281,
     "topic": "malts",
     "question": "The process of malting is done to convert the large, insoluble starch chains of the endosperm to watersoluble starches.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 282,
     "topic": "malts",
     "question": "One of the purposes of malting is to activate both the proteolytic and diastatic enzymes that will reduce the proteins and starches into desirable components in the mash.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 283,
     "topic": "malts",
     "question": "The process of kilning is done to convert the large, insoluble starch chains of the endosperm to watersoluble starches.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 284,
     "topic": "malts",
     "question": "During the germination phase, the cell walls are broken down by the cytase enzyme complex, which includes hemicellulases and the ß-glucanases",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 285,
     "topic": "malts",
     "question": "Malting is basically sprouting the grains to a desired modification.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 286,
     "topic": "malts",
     "question": "American and Continental malts are generally less modified then other malts.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 287,
     "topic": "malts",
     "question": "American and Continental malts are generally more modified then other malts.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 288,
     "topic": "malts",
     "question": "Continental malt is modified only to 50-75%, which retains more of the endosperm for fermentability and creates greater nitrogen complexity, but at the price of reduced enzyme activity.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 289,
     "topic": "malts",
     "question": "Continental malt is modified only to 30-50%, which retains less of the endosperm for fermentability and creates less nitrogen complexity, but at the price of increased enzyme activity.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 290,
     "topic": "malts",
     "question": "American six-row is also modified to between 50-75%, but the higher protein and nitrogen content of six-row gives greater enzyme strength. ",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 291,
     "topic": "malts",
     "question": "American six-row is modified to between 35%-50%, but the lower protein and nitrogen content of six-row gives neutral enzyme strength.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 292,
     "topic": "malts",
     "question": "Both Continental and American malts require a protein rest (at ~122 °F, 50 °C) to degrade the albuminous proteins into fractions that can be both used to promote yeast growth and give good head retention.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 293,
     "topic": "malts",
     "question": "Unlike Continental malts American malts require a protein rest (at ~152 °F, 70 °C) to increase the albuminous proteins into fractions that can be both used to reduce yeast growth.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 294,
     "topic": "malts",
     "question": "The barley is steeped in 50-65 °F (10-18 °C) water for about two or three days, then allowed to germinate for six to ten days between 50 and 70 °F (10 and 20 °C)",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 295,
     "topic": "malts",
     "question": "The barley is allowed to germinate for six to ten days between 50 and 60 °F (10 and 16 °C), then allowed steeped in 60-75 °F (16-22 °C) water for about two or three days.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 296,
     "topic": "malts",
     "question": "At the end of germination, the malt is gradually raised in temperature to 90 °F (30 °C), held there for 24 hours to permit enzyme action, and then gradually raised to 120 °F (50 °C)",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 297,
     "topic": "malts",
     "question": "At the end of germination, the malt is gradually raised in temperature to 120 °F (50 °C), held there for 48 hours to permit enzyme action, and then gradually lowered to 90 °F (30 °C)",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 298,
     "topic": "malts",
     "question": "After germination malts are is held at 120 °F (50 °C) for 12 hours to dry the malt, as it is essential that the malt be bone-dry before being heated to kilning temperatures to prevent the destruction of the enzymes.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 299,
     "topic": "malts",
     "question": "It is essential that the malt kernels be slightly moist before being heated to kilning temperatures to increase the vulnerability of the enzymes.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 300,
     "topic": "malts",
     "question": "Kilning, or roasting the malt, combined with the degree of modification, determines the type and character of the grain.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 301,
     "topic": "malts",
     "question": "Vienna malts are low-kilned at around 145 °F (63 °C).",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 302,
     "topic": "malts",
     "question": "British and American pale malts at between 130 and 180 °F (55 and 80 °C).",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 303,
     "topic": "malts",
     "question": "Czech malts are raised slowly from 120 to 170 °F (50 to 75 °C) to dry, and then roasted at 178 °F (80 °C)",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 304,
     "topic": "malts",
     "question": "Dortmund and Munich malts are first kilned at low temperatures before the malt has dried, then the temperature is slowly raised to 195-205°F (90-95 °C) for Dortmunder malt, and 210 to 244 °F (100-120 °C)for Munich malt.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 305,
     "topic": "malts",
     "question": "British and American malts are first kilned at low temperatures before the malt has dried, then the temperature is slowly raised to 195-205°F (90-95 °C) for British malt, and 210 to 244 °F (100-120 °C) for American malt.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 306,
     "topic": "malts",
     "question": "Dortmund and Munich  pale malts at between 130 and 180 °F (55 and 80 °C).",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 307,
     "topic": "malts",
     "question": "Viena malts are raised slowly from 120 to 170 °F (50 to 75 °C) to dry, and then roasted at 178 °F (80 °C)",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 308,
     "topic": "malts",
     "question": "Czech malts are low-kilned at around 145 °F (63 °C).",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 309,
     "topic": "malts",
     "question": "Amber malt is wellmodified, and then dried and rapidly heated to 200 °F (95 °C). The temperature is then raised to 280-300 °F (140-150 °C) and held there until the desired color is reached. ",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 310,
     "topic": "malts",
     "question": "Crystal and caramel malts are fully modified, then kilned at 50% moisture content. The temperature is raised to 150-170 °F (65-75 °C) and held for 1 1/2 to 2 hours",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 311,
     "topic": "malts",
     "question": "Crystal and caramel malt is wellmodified, and then dried and rapidly heated to 200 °F (95 °C). The temperature is then raised to 280-300 °F (140-150 °C) and held there until the desired color is reached. ",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 312,
     "topic": "malts",
     "question": "Chocolate and Black Patent malts are fully modified, then kilned at 50% moisture content. The temperature is raised to 150-170 °F (65-75 °C) and held for 1 1/2 to 2 hours",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 313,
     "topic": "malts",
     "question": "Chocolate and Black Patent malts are undermodified (less than 1/2), dried to 5% moisture, then roasted at 420-450 °F (215-230 °C) for up to two hours, depending on the degree of roastiness desired.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 314,
     "topic": "malts",
     "question": "Amber malts are undermodified (less than 1/2), dried to 5% moisture, then roasted at 420-450 °F (215-230 °C) for up to two hours, depending on the degree of amberness desired.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 315,
     "topic": "malts",
     "question": "The high heat helps degrade the starches, so no protein rest is require for dark malts even though they are not fully modified.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 316,
     "topic": "malts",
     "question": "The low slow heat helps degrade the starches, so no protein rest is require for dark malts even though they are fully modified.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 317,
     "topic": "malts",
     "question": "After kilning grains are cooled to below 100 °F (40 °C) and the rootlets removed.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 318,
     "topic": "malts",
     "question": "After kilning grains are cooled to below 40 °F (5 °C) to rest.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 319,
     "topic": "malts",
     "question": "Malts should be allowed to rest for a month or so after kilning before being mashed.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 320,
     "topic": "malts",
     "question": "Malts should be allowed to rest for 3 hours or so after kilning before being mashed.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 321,
     "topic": "malts",
     "question": "Wheat malt has sufficient diastatic power to breakdown its own proteins and starches.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 322,
     "topic": "malts",
     "question": "Since wheat does not have a husk, it is usually mashed with barley malt in order for an adequate filter bed to be formed during the lautering stage.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 323,
     "topic": "malts",
     "question": "Since wheat has a husk, it has to be mashed separately from barley malt in order for an adequate filter bed to be formed during the lautering stage.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 324,
     "topic": "malts",
     "question": "Wheat malt lacks any diastatic power to breakdown its own proteins and starches.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 325,
     "topic": "malts",
     "question": "The protein and ß-glucan content of wheat is high compared to barley, so a more extensive mash schedule with an extended protein rest may be needed when large quantities are used.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 326,
     "topic": "malts",
     "question": "The protein and ß-glucan content of wheat is very low compared to barley, so a less extensive mash schedule with an shorter protein rest may be needed.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 327,
     "topic": "malts",
     "question": "The starches will be converted into simple and complex sugars by diastatic enzymes during the mash.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 328,
     "topic": "malts",
     "question": "The starches will be converted into simple and complex sugars by diastatic enzymes during the kilning.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 329,
     "topic": "malts",
     "question": "Since enzymes are proteins, the protein content of the malt is an indication of its enzymatic strength.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 330,
     "topic": "malts",
     "question": "Since enzymes are starches, the starch content of the malt is an indication of its enzymatic strength.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 331,
     "topic": "malts",
     "question": "Peptides of the B-complex vitamins are present in malt and necessary for yeast development.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 332,
     "topic": "malts",
     "question": "Peptides of the E-complex vitamins are present in wheat malt and necessary for lager yeast development.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 333,
     "topic": "malts",
     "question": "Cellulose, polyphenols and tannins are present in the husk and can lead to harsh flavors in the finished beer if they are leached out by hot or alkaline sparge water.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 334,
     "topic": "malts",
     "question": "Cellulose, polyphenols and tannins are present in the husk and complement flavors in the finished beer.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 335,
     "topic": "malts",
     "question": "The gums are soluble, but the hemicellulose must be reduced by the appropriate enzymes into fractions that permit good head retention, otherwise they may cause clarity problems in the finished beer",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 336,
     "topic": "malts",
     "question": "Unmalted cereal grains can be used in conjunction with high-protein malts such as American 6-row to give a more fermentable wort and a less filling beer.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 337,
     "topic": "malts",
     "question": "Unmalted cereal grains cannot be used in conjunction with high-protein malts such as American 4-row or 6-row to give a more fermentable wort and a less filling lager.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 338,
     "topic": "malts",
     "question": "The starches from cereal adjuncts must be gelatinized before mashing, either by doing a preliminary boil in the double-mash procedure or by flaking them through hot rollers.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 339,
     "topic": "malts",
     "question": "The proteins from cereal adjuncts must be saccharized before mashing, either by soaking in the double-mash procedure or by flaking them through warm rollers.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 340,
     "topic": "malts",
     "question": "All of these are the most common cereal grains except",
     "options": ["corn", "rice grits", "sorghum", "flaked barley", "amaranth", "flaked rye", "flaked wheat"],
-    "answer": "amaranth"
+    "answer": 4
   },
   {
     "question_id": 341,
     "topic": "malts",
     "question": "Two scales are used for color determination - the EBC scale used in Europe, and the SRM scale in the USA.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 342,
     "topic": "malts",
     "question": "Two scales are used for color determination - the EBC scale used in USA, and the SRM scale in the Europe.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 343,
     "topic": "malts",
     "question": "The beer color is primarily determined by the malt, but factors such as the intensity and length of the boil also play a role.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 344,
     "topic": "malts",
     "question": "The beer color is primarily determined by the length of the boil, but factors such as the yeas and hops types also play a role.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 345,
     "topic": "hops",
     "question": "Hops also contribute many secondary attributes to beer except for",
     "options": ["provide a measure of bacteriological stability", "increase alcohol content", "aid in kettle coagulation", "contribute to a stable head"],
-    "answer": "increase alcohol content"
+    "answer": 1
   },
   {
     "question_id": 346,
     "topic": "hops",
     "question": "Brewers' hops are the cone-like flower of the Humulus lupulus vine, a relative to the cannabis plant.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 347,
     "topic": "hops",
     "question": "Brewers' hops are the cone-like flower of the Lumulus hupulus vine, a relative to the poppy plant.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 348,
     "topic": "hops",
     "question": "The essential ingredients are concentrated in the lupulin glands, located at the base of the bracteoles, or leaves of the cone. ",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 349,
     "topic": "hops",
     "question": "The lupulin resin contains alpha acids and essential oils that contribute the characteristic bitterness, flavor, and aroma that are associated with hops in beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 350,
     "topic": "hops",
     "question": "The lupulin resin contains sigma acids and omega oils.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 351,
     "topic": "hops",
     "question": "The amount of alpha acid is usually expressed as a weight percent, and is determined by extractive and chromatographic methods.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 352,
     "topic": "hops",
     "question": "The amount of alpha acid is usually expressed as a weight in milligrams per gland.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 353,
     "topic": "hops",
     "question": "Many varieties of hops are known, though they are generally divided into two subsets: aroma and bittering hops.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 354,
     "topic": "hops",
     "question": "The finest of the aroma hops are referred to as “noble,” due to their prized aromatic and subtle bittering properties.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 355,
     "topic": "hops",
     "question": "The finest of the aroma hops are referred to as “nobel,” after its inventor, Alfred Nobel.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 356,
     "topic": "hops",
     "question": "All of the listed hops are considered to be noble, except for:",
     "options": ["Saaz", "Spalt", "Tettnanger", "Styrian Goldings,", "Hallertauer Mittelfrüh"],
-    "answer": "Styrian Goldings"
+    "answer": 3
   },
   {
     "question_id": 357,
     "topic": "hops",
     "question": "Aroma hops are generally lower in alpha acid content, but contribute desirable flavor and aroma characteristics.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 358,
     "topic": "hops",
     "question": "Bittering hops are generally lower in alpha acid content.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 359,
     "topic": "hops",
     "question": "Bittering varieties are higher in alpha acid content, but their flavor and aroma characteristics are generally considered to be less refined.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 360,
     "topic": "hops",
     "question": "Generally, aroma hops consist of such varieties as Saaz, Tettnanger, Hallertauer, Spalt, East Kent and Styrian Goldings, Fuggles, Cascade, Willamette, Liberty, Crystal, Ultra, and Mount Hood.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 361,
     "topic": "hops",
     "question": "Bittering varieties include Brewer's Gold, Nugget, Chinook, Eroica, Galena, and Bullion.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 362,
     "topic": "hops",
     "question": "Dual-purpose varieties include Northern Brewer, Columbus, Cluster, Perle, and Centennial, among others.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 363,
     "topic": "hops",
     "question": "Generally, bittering hops consist of such varieties as Saaz, Tettnanger, Hallertauer, Spalt, East Kent and Styrian Goldings, Fuggles, Cascade, Willamette, Liberty, Crystal, Ultra, and Mount Hood.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 364,
     "topic": "hops",
     "question": "Dual-purpose varieties include Brewer's Gold, Nugget, Chinook, Eroica, Galena, and Bullion.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 365,
     "topic": "hops",
     "question": "Aroma varieties include Northern Brewer, Columbus, Cluster, Perle, and Centennial, among others.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 366,
     "topic": "hops",
     "question": "Bitterness arises from the alpha acids, which consist of humulone, cohumulone, and adhumulone; the proportions of each will vary according to hop variety.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 367,
     "topic": "hops",
     "question": "Bitterness arises from the beta acids, which consist of metahumulinone, dihumulone, and hydrohumulinic acid; the proportions of each will vary according to hop variety.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 368,
     "topic": "hops",
     "question": "Brewing hops are available in many forms: whole hops, plugs, pellets, and extracts.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 369,
     "topic": "hops",
     "question": "The simplest method to measure of hops used is the Alpha Acid Unit (AAU), also known as the Homebrew Bittering Unit (HBU).",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 370,
     "topic": "hops",
     "question": "The simplest method to measure of hops used is the Acridity Addition Unit (AAU), also known as the Hops Brewing Unit (HBU).",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 371,
     "topic": "hops",
     "question": "The main downfall of the AAU/HBU quantification method is that it describes the potential bitterness without accounting for many critical factors which determine the actual bitterness.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 372,
     "topic": "hops",
     "question": "The main downfall of the AAU/HBU quantification method is that it is using European/metric system.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 373,
     "topic": "hops",
     "question": "IBU is a measure of the concentration of isomerized alpha acids present in the finished beer, and is expressed in milligrams per liter, or parts per million (ppm).",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 374,
     "topic": "hops",
     "question": "IBU is a measure of the concentration of esteric beta acids present in the finished beer, and is expressed in milligrams per gallon.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 375,
     "topic": "hops",
     "question": "The relative IBU level does not always translate directly to the perceived bitterness of the finished beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 376,
     "topic": "hops",
     "question": "Unlike AAU/HBU, the relative IBU level always translate directly to the perceived bitterness of the finished beer.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 377,
     "topic": "hops",
     "question": "The ionic makeup of the brewing water, particularly carbonate and sulfate levels, directly affect the perception of bitterness.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 378,
     "topic": "hops",
     "question": "The IBU content of a beer may be expressed as: IBU = 7489 x (W x A x U)/V, where 7489 is a conversion from milligrams/liter to ounces/gallon, W is the weight of hops in ounces, A is the alpha acid content, U is a percent utilization factor, and V is the final volume of beer, in gallons.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 379,
     "topic": "hops",
     "question": "The IBU content of a beer may be expressed as: IBU = 4289 x (W + A x V)/U, where 7489 is a conversion from liter to gallon, W is the weight of hops in ounces, A is the alpha acid content, U is a percent utilization factor, and V is the final volume of beer, in gallons.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 380,
     "topic": "hops",
     "question": "The most important variable in the IBU equation is the utilization factor, which depends on the aforementioned parameters.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 381,
     "topic": "hops",
     "question": "The most important variable in the IBU equation is the alpha acid content, which depends on the aforementioned parameters.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 382,
     "topic": "hops",
     "question": "Many varieties of hops are known, though they are generally divided into three subsets: aroma, bittering and nobble hops.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 383,
     "topic": "hops",
     "question": "Hop percent utilization factor normally tops out at about 30% in the home brewery; often, it is significantly lower.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 384,
     "topic": "hops",
     "question": "Hop percent utilization factor normally at about 50% in the home brewery; sometimes, it can go higher.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 385,
     "topic": "hops",
     "question": "Different utilization is typically assumed for each hop addition (when multiple additions are used); in this manner, the IBU contribution for each hop addition may be estimated, and then totaled.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 386,
     "topic": "hops",
     "question": "Utilization is typically assumed for all hop additions (when multiple additions are used) at once; in this manner, the IBU contribution for each hop addition may be calculated in bulk.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 387,
     "topic": "hops",
     "question": "The only way to determine the IBU level in the finished beer is through a direct measurement in the laboratory.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 388,
     "topic": "hops",
     "question": "The only way to determine the IBU level in the finished beer is through a accurate hops amounts calculation.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 389,
     "topic": "hops",
     "question": "One way to characterize the bitterness of a given style is the BU:GU ratio where IBU content divided by the last two digits of theoriginal specific gravity.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 390,
     "topic": "hops",
     "question": "One way to characterize the bitterness of a given style is the BU*GU ratio where IBU content multiplied by the color (roastness) index unit of the grain.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 391,
     "topic": "hops",
     "question": "Bittering hops are usually most efficient at yielding their iso-alpha acids with 60 to 90 minutes of vigorous wort boiling.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 392,
     "topic": "hops",
     "question": "Taste hops are usually most efficient at yielding their iso-alpha acids with 60 to 90 minutes of vigorous wort boiling.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 393,
     "topic": "hops",
     "question": "Hops boiled for 10 to 40 minutes are often referred to as “flavor hops,” since they contribute less bitterness, but retain some essential oils which contribute characteristic flavors.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 394,
     "topic": "hops",
     "question": "Hops boiled for 10 to 40 minutes are often referred to as “bittering hops,” since they contribute more bitterness, but retain some essential oils which contribute characteristic flavors.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 395,
     "topic": "hops",
     "question": "Hops added at or near the end of the boil contribute little or no bitterness, some flavor, and aromatic quality to the finished beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 396,
     "topic": "hops",
     "question": "Hops added at or near the end of the boil contribute more fresh bitterness to the finished beer.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 397,
     "topic": "hops",
     "question": "Oxidation (staling) reduces bitterness, and may also add a harsh edge to flavor, as well as diminishing aroma.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 398,
     "topic": "hops",
     "question": "Oxidation (staling) increases bitterness, and may also reduce a harsh edge to flavor from the malts, as well as diminishing odd aromas.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 399,
     "topic": "hops",
     "question": "One of the most well known hop-derived off flavors is that of skunkiness.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 400,
     "topic": "hops",
     "question": "One of the most well known hop-derived off flavors is that of sulfurity (rotten eggs).",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 401,
     "topic": "hops",
     "question": "First wort hopping consists of adding a portion of the hop charge to the first sweet wort runnings from lautering, during which time the higher pH is thought to extract some of the finer qualities of the hop flavor.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 402,
     "topic": "hops",
     "question": "Second wort hopping consists of adding a portion of the hop charge to the second sweet wort runnings from mash tun, during which time the lower pH is thought to extract some of the finer qualities of the hop flavor.",
     "options": ["true", "false"],
-    "answer": "false", "ZHOPA":"ZHOPA"
+    "answer": 1
   },
   {
     "question_id": 403,
     "topic": "hops",
     "question": "First wort hopping is an old German method that was originally used for hop-centered styles, such as Pilsener.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 404,
     "topic": "hops",
     "question": "First wort hopping is an old Belgian method that was originally used for darker styles, such as Oud Bruin and Dubbel.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 405,
     "topic": "hops",
     "question": "British ales are normally associated with native hop varieties: East Kent Goldings, Northern Brewer, and Fuggles, for example.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 406,
     "topic": "hops",
     "question": "Continental styles, are often associated with more local Continental hop varieties:  Saaz, Tettnanger, Hallertauer Mittelfrüh, and Spalt for example.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 407,
     "topic": "hops",
     "question": "American styles, benefit greatly from the floral, citrusy character of the dominant American varieties such as Cascades, Centennial, Columbus or Chinook",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 408,
     "topic": "hops",
     "question": "Continental ales are normally associated with native hop varieties: East Kent Goldings, Northern Brewer, or Fuggles, for example.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 409,
     "topic": "hops",
     "question": "American styles, are often associated with more local American hop varieties: Saaz, Tettnanger, Hallertauer Mittelfrüh, or Spalt, for example.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 410,
     "topic": "hops",
     "question": "British styles, benefit greatly from the floral, citrusy character of the dominant British varieties such as Cascades, Centennial, Columbus or Chinook, for example.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 411,
     "topic": "hops",
     "question": "Classic European hop varieties grown in a different climate in the United States exhibit different characteristics than the same varieties grown in European soil. ",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 412,
     "topic": "hops",
     "question": "Classic European hop varieties grown in a different climate in the United States exhibit the same characteristics as the varieties grown in European soil.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 413,
     "topic": "hops",
     "question": "The place of origin is every bit as important as the genealogy when selecting the appropriate hop variety for a particular application.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 414,
     "topic": "hops",
     "question": "The place of origin is not important unlike the genealogy when selecting the appropriate hop variety for a particular application.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 415,
     "topic": "yeast",
     "question": "Most beer styles are made using one of two unicellular species of microorganisms of the Saccharomyces genus, more commonly called yeast.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 416,
     "topic": "yeast",
     "question": "Most beer styles are made using monotypic species of microorganisms of the Byrsomyces Olivaceus genus, more commonly called just Byrsomyces.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 417,
     "topic": "yeast",
     "question": "Ale yeast strain is also known as Saccharomyces cerevisiae.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 418,
     "topic": "yeast",
     "question": "Lager yeast strain is also known as Saccharomyces pastorianus.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 419,
     "topic": "yeast",
     "question": "Lager yeast strain is also known as Saccharomyces cerevisiae.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 420,
     "topic": "yeast",
     "question": "Ale yeast strain is also known as Saccharomyces pastorianus.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 421,
     "topic": "yeast",
     "question": "Functionally ale and lager yeasts differ in all of the following except:",
     "options": ["optimum fermentation temperatures", "ability to ferment different sugars", "ability of production beers vs lighter beers", "environmental condition and ability to settle out upon completion of fermentation", "production and/or metabolism of fermentation byproducts"],
-    "answer": "ability of production beers vs lighter beers"
+    "answer": 2
   },
   {
     "question_id": 422,
     "topic": "yeast",
     "question": "The attenuation of a particular yeast strain describes its ability to decrease the original gravity of wort upon fermentation.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 423,
     "topic": "yeast",
     "question": "The flocculation of a particular yeast strain describes its ability to decrease the original gravity of wort upon fermentation.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 424,
     "topic": "yeast",
     "question": "The flocculation is the ability of the yeast to settle out of the beer upon completion of fermentation.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 425,
     "topic": "yeast",
     "question": "The attenuation is the ability of the yeast to settle out of the beer upon completion of fermentation.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 426,
     "topic": "yeast",
     "question": "Most lager yeast can ferment up to about 8% alcohol by volume, and some ale strains can ferment up to 12%.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 427,
     "topic": "yeast",
     "question": "Most ale yeast can ferment up to about 8% alcohol by volume, and some lager strains can ferment up to 12%.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 428,
     "topic": "yeast",
     "question": "The followings are by-products produced (and also metabolized) by the yeast except for:",
     "options": ["esters", "fusel alcohols", "diaminopimelic acid", "diacetyl", "sulfur compounds"],
-    "answer": "diaminopimelic acid"
+    "answer": 2
   },
   {
     "question_id": 429,
     "topic": "yeast",
     "question": "Esters are produced by yeast combining an organic alcohol and an acid. These impart a fruity, sweet aroma to the beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 430,
     "topic": "yeast",
     "question": "A fusel alcohols is one of the by-products of fermentation, which contain more carbon atoms than the most common alcohol, ethanol.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 431,
     "topic": "yeast",
     "question": "A diacetyl is one of the by-products of fermentation, which is generally reduced to more benign compounds during the secondary fermentation, but premature removal of the yeast (among other things) can lead to elevated levels.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 432,
     "topic": "yeast",
     "question": "Fusel alcohols are produced by yeast combining an organic alcohol and an acid. These impart a fruity, sweet aroma to the beer.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 433,
     "topic": "yeast",
     "question": "A diacetyl is one of the by-products of fermentation, which contain more carbon atoms than the most common alcohol, thus produces heavy aroma.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 434,
     "topic": "yeast",
     "question": "Esters are one of the by-products of fermentation, which is generally reduced to more benign compounds during the secondary fermentation, but premature removal of the yeast (among other things) can lead to elevated levels.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 435,
     "topic": "yeast",
     "question": "Presence of diacetyl imparts a buttery note to the beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 436,
     "topic": "yeast",
     "question": "Presence of diacetyl imparts a corny note to the beer.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 437,
     "topic": "yeast",
     "question": "One of sulfur compounds that can be produced by the yeast is hydrogen sulfide, which smells like rotten eggs.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 438,
     "topic": "yeast",
     "question": "One of sulfur compounds that can be produced by the yeast is hydrogen sulfide, which smells like cooked butter.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 439,
     "topic": "yeast",
     "question": "Ale Yeast, for the purposes of beer fermentation, tend to work best in the 55-75 °F (13-24 °C) temperature range. Apparent attenuation can range from 69 to 80%.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 440,
     "topic": "yeast",
     "question": "Lager Yeast generally tend to work best between 46-56 °F (8-13 °C), but California Common Lager yeast is an exception, having a range of 58-68 °F (14-20 °C).",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 441,
     "topic": "yeast",
     "question": "Lager Yeast, for the purposes of beer fermentation, tend to work best in the 55-75 °F (13-24 °C) temperature range. Apparent attenuation can range from 69 to 80%.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 442,
     "topic": "yeast",
     "question": "Ale Yeast generally tend to work best between 46-56 °F (8-13 °C), but California Common yeast is an exception, having a range of 58-68 °F (14-20 °C).",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 443,
     "topic": "yeast",
     "question": "Ale yeasts can fully ferment the common sugars glucose, fructose, maltose, sucrose, maltotriose and the trace sugars xylulose, mannose, galactose and partially ferment raffinose.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 444,
     "topic": "yeast",
     "question": "Ale yeasts can partially ferment the common sugars glucose, fructose, maltose, sucrose, maltotriose and the trace sugars xylulose, mannose, galactose and fully ferment raffinose.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 445,
     "topic": "yeast",
     "question": "Ale yeasts have traditionally been called top fermenting because they form colonies that are supported by the surface tension of the beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 446,
     "topic": "yeast",
     "question": "Lager yeasts have traditionally been called top fermenting because they form colonies that are supported by the surface tension of the beer.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 447,
     "topic": "yeast",
     "question": "Ale yeasts produce esters since they require higher temperatures to remain active.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 448,
     "topic": "yeast",
     "question": "Ale yeasts produce fusel alcohol since they require higher temperatures to remain active.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 449,
     "topic": "yeast",
     "question": "Lager yeasts have traditionally been called bottom fermenters, since they do not cling together to form colonies on the surface, but instead fall to the bottom of the fermenter.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 450,
     "topic": "yeast",
     "question": "Ale yeasts have traditionally been called bottom fermenters, since they do not cling together to form colonies on the surface, but instead fall to the bottom of the fermenter.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 451,
     "topic": "yeast",
     "question": "Lager yeasts, in comparison to ale yeasts, produce beers that lack the esters and fusel alcohols, since they are active at cooler temperatures.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 452,
     "topic": "yeast",
     "question": "Ale yeasts, in comparison to lager yeasts, produce beers that lack the esters and fusel alcohols, since they are active at cooler temperatures.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 453,
     "topic": "yeast",
     "question": "Lager beer styles should have a cleaner aroma to them, reflecting only the malt and /or hop aromas used to make the wort.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 454,
     "topic": "yeast",
     "question": "Ale beer styles should have a cleaner aroma to them, reflecting only the malt and /or hop aromas used to make the wort.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 455,
     "topic": "yeast",
     "question": "Bacteria, specifically Lactobacillus delbrückii, are used in the production of the Berliner Weiss style of wheat beer with an intense lactic sourness.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 456,
     "topic": "yeast",
     "question": "Bacteria, specifically Lactobacillus delbrückii, are used in the production of the hefeweizen style or weissbier.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 457,
     "topic": "yeast",
     "question": "Lambics have varying degrees of sourness which is appropriate for their style. Yeasts of the Brettanomyces genus and various bacteria generate these flavors.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 458,
     "topic": "yeast",
     "question": "Leichtbier have varying degrees of sourness which is appropriate for their style. Yeasts of the Brettanomyces genus and various bacteria generate these flavors.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 459,
     "topic": "yeast",
     "question": "The  Gram-negative bacteria involved in lambic production are Escherichia coli and also various species of Citrobacter and Enterobacter.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 460,
     "topic": "yeast",
     "question": "The  Gram-positive bacteria involved in lambic production are Escherichia coli and also various species of Citrobacter and Enterobacter.",
     "options": ["true", "false"],
-    "answer": "false", "ZHOPA": "ZHOPA"
+    "answer": 1, "ZHOPA": "ZHOPA"
   },
   {
     "question_id": 461,
     "topic": "yeast",
     "question": "Gram-negative bacteria involved in lambic production cannot tolerate even moderate alcohol levels and do not survive in the finished beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 462,
     "topic": "yeast",
     "question": "Gram-negative bacteria involved in lambic production can tolerate strong alcohol levels.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 463,
     "topic": "yeast",
     "question": "At low contamination levels, Gram-positive bacteria may be responsible for the sweet, butterscotch or buttery notes associated with diacetyl and related vicinal diketones.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 464,
     "topic": "yeast",
     "question": "At low contamination levels, Gram-positive bacteria may be responsible for the spicy, peppery or bitter notes associated.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 465,
     "topic": "yeast",
     "question": "The Gram-positive bacteria involved are from genus Pediococcus and Lactobacillus. It involves the esterification of the various alcohols to the corresponding carboxylic acids, thus generating lactic sourness.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 466,
     "topic": "yeast",
     "question": "The Gram-negative bacteria involved are from genus Pediococcus and Lactobacillus. It involves the esterification of the various alcohols to the corresponding carboxylic acids, thus generating lactic sourness.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 467,
     "topic": "yeast",
     "question": "Most technical brewing references break the yeast life cycle into five phases of growth, except:",
     "options": ["exponential" , "decelerating", "scoping", "stationary", "lag", "accelerating"],
-    "answer": "scoping"
+    "answer": 2
   },
   {
     "question_id": 468,
     "topic": "yeast",
     "question": "During lag phase, the yeast will adapt to the new environment they are now in and begin to make enzymes they will need to grow and ferment the sugars in the wort.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 469,
     "topic": "yeast",
     "question": "During accelerating phase, the yeast will start to divide by budding to reach the optimal density necessary for the true fermentation.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 470,
     "topic": "yeast",
     "question": "During the exponential phase, the growth rate is constant at the maximum rate determined by the yeast strain, temperature and wort composition.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 471,
     "topic": "yeast",
     "question": "During deceleration phase, the growth rate gradually decreases.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 472,
     "topic": "yeast",
     "question": "During the stationary phase, the number of yeast cells remains approximately constant. The kräusen begins to fall, and the yeast drop out of suspension, or flocculate.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 473,
     "topic": "yeast",
     "question": "During exponential phase, the yeast will adapt to the new environment they are now in and begin to make enzymes they will need to grow and ferment the sugars in the wort.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 474,
     "topic": "yeast",
     "question": "During deceleration phase, the yeast will start to divide by budding to reach the optimal density necessary for the true fermentation.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 475,
     "topic": "yeast",
     "question": "During the stationary phase, the growth rate is constant at the maximum rate determined by the yeast strain, temperature and wort composition.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 476,
-    "topic": "false",
+    "topic": 1,
     "question": "During lag phase, the growth rate gradually decreases.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 477,
-    "topic": "false",
+    "topic": 1,
     "question": "During the accelerating phase, the number of yeast cells remains approximately constant. The kräusen begins to fall, and the yeast drop out of suspension, or flocculate.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 478,
     "topic": "yeast",
     "question": "During the lag phase he yeast will be utilizing their internal reserves of energy for this purpose, which is the carbohydrate glycogen. ",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 479,
     "topic": "yeast",
     "question": "During the accelerating phase he yeast will be utilizing their internal reserves of energy for this purpose, which is the carbohydrate glycogen. ",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 480,
     "topic": "yeast",
     "question": "The oxygen that was used to aerate the wort is absorbed during accelerating phase to allow the yeast to generate sterols, which are key components of the cell wall ",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 481,
     "topic": "yeast",
     "question": "The oxygen that was used to aerate the wort is absorbed during stationary phase to allow the yeast to generate sterols, which are key components of the cell wall ",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 482,
     "topic": "yeast",
     "question": "It has been proposed that if an adequate amount of yeast has been pitched, such that cell growth is not necessary, then the oxygenation is not necessary.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 483,
     "topic": "yeast",
     "question": "It has been proposed that if an adequate amount of yeast has been pitched, such that cell growth is not necessary, then the oxygenation is still necessary for yeast to stay healthy.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 484,
     "topic": "yeast",
     "question": "Glucose repression can be described as an effect when the wort contains greater than 0.4% glucose, the yeast will ferment the glucose, even in the presence of oxygen.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 485,
     "topic": "yeast",
     "question": "Glucose repression can be described as an effect when the wort contains greater than 5% glucose, the yeast will ferment the maltose ignoring glucose, even in the presence of oxygen.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 486,
     "topic": "yeast",
     "question": "During the exponential phase, esters are formed by the esterification of fatty acids by ethanol and also possibly by the esterification of higher alcohols.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 487,
     "topic": "yeast",
     "question": "During the accelerating phase, esters are formed by the esterification of fatty acids by ethanol and also possibly by the esterification of higher alcohols.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 488,
     "topic": "yeast",
     "question": "Fusel alcohols can be produced by the conversion of fatty acids to higher level acids via desugarization, dehydrocarbonation and reproduction processes",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 489,
     "topic": "yeast",
     "question": "To minimize the formation of esters and fusel alcohols, the brewer should ensure all of the following except:",
     "options": ["a healthy amount of freely available nitrogen (FAN) is available in the wort", "the wort is chilled to a maximum of 75 °F (24 °C) for ales and 55 °F (13 °C) for lagers prior to pitching the yeast", "the chilled wort is sufficiently but not excessively aerated prior to pitching the yeast", "make sure that ale yeast are only used for ales and lager yeast used for lagers", "the fermentation temperature is maintained within the optimum range for the yeast strain"],
-    "answer": "make sure that ale yeast are only used for ales and lager yeast used for lagers"
+    "answer": 3
   },
   {
     "question_id": 490,
     "topic": "yeast",
     "question": "A diacetyl rest may be performed to help with the re-absorption and subsequent reduction of the diacetyl and the related diketones during deceleration phase.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 491,
     "topic": "yeast",
     "question": "A diacetyl rest may be performed to help with the re-absorption and subsequent reduction of the diacetyl and the related diketones during acceleration phase.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 492,
     "topic": "yeast",
     "question": "During the diacetyl rest the temperature of the beer may be allowed to rise up to 50 °F (12 °C) for lagers and up to 75 °F (25 °C) for ales.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 493,
     "topic": "yeast",
     "question": "During the diacetyl rest the temperature of the beer may be allowed to rise up to 68 °F (20 °C) during the diacetyl rest.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 494,
     "topic": "yeast",
     "question": "During this deceleration phase, the specific gravity of the beer approaches its terminal point, and the yeast will begin to flocculate.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 495,
     "topic": "yeast",
     "question": "During this deceleration phase, the specific gravity of the beer approaches its terminal point, and the yeast will begin to produce more alcohol.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 496,
     "topic": "yeast",
     "question": "Removal of the excess yeast and trub will prevent formation of off flavors due to autolysis and/or reactions with trub substrates",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 497,
     "topic": "yeast",
     "question": "Removal of the excess yeast is not required for darker styles.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 498,
     "topic": "yeast",
     "question": "When lagering The general rule of thumb is that a temperature drop should be no more than 5 °F (3 °C) per day; otherwise it is possible to cold shock the yeast.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 499,
     "topic": "yeast",
     "question": "When lagering The general rule of thumb is that a temperature drop should be no more than 17 °F (10 °C) per day.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 500,
     "topic": "yeast",
     "question": "Kräusening is a method of the addition of freshly fermenting beer as is often practiced with German lagers.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 501,
     "topic": "yeast",
     "question": "Lagering is a method of the addition of freshly fermenting beer as is often practiced with German lagers.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 502,
     "topic": "yeast",
     "question": "For bottle conditioned beers, a 250 ml starter is usually added for a five gallon (20 liter) batch along with the sugar; which provides fresh yeast to metabolize the added sugar.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 503,
     "topic": "yeast",
     "question": "For bottle conditioned beers, a 500 ml starter is usually added for a five gallon (10 liter) batch; which provides fresh yeast to metabolize the sugar.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 504,
     "topic": "yeast",
     "question": "Adding this actively-fermenting beer serves two purposes; it carbonates and also helps clean up any off flavors generated from the previous fermentation.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 505,
     "topic": "yeast",
     "question": "Adding this actively-fermenting beer serves two purposes; it makes beer cleaner and lighter.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 506,
     "topic": "yeast",
     "question": "In general, ale yeast strains produce higher ester levels, although there are variances among different ale strains.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 507,
     "topic": "yeast",
     "question": "In general, lager yeast strains produce higher ester levels, although there are variances among different lager strains.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 508,
     "topic": "yeast",
     "question": "A four-fold increase in ester production may be observed as a result of increasing the fermentation temperature from 60 to 68 °F, 16-20 °C.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 509,
     "topic": "yeast",
     "question": "A four-fold increase in ester production may be observed as a result of decreasing the fermentation temperature from 60 to 50 °F, 16-10 °C, especially for lagers.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 510,
     "topic": "yeast",
     "question": "Phenols can be produced by certain wild yeast strains; hence, their control in styles in which they are not desired is a matter of proper sanitation.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 511,
     "topic": "yeast",
     "question": "Phenols can be produced by certain ale yeast strains; hence, their control in styles in which they are not desired is in choosing proper yeast for particular styles.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 512,
     "topic": "yeast",
     "question": "Phenol 4-vinyl guaiacol in German wheat beers may be controlled by the amount of precursor amino acid that is made in the mash during a protein rest at 111 °F, 44 °C",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 513,
     "topic": "yeast",
     "question": "Phenol 4-vinyl guaiacol in German altbiers may be controlled by the amount of precursor amino acid that is made in the mash during a acid rest at 140 °F, 60 °C",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 514,
     "topic": "yeast",
     "question": "Fusel alcohols are metabolized from amino acids. Their production is increased as the fermentation temperature is increased.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 515,
     "topic": "yeast",
     "question": "Fusel alcohols are metabolized from lipid acids. Their production is increased as the mashing temperature is increased.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 516,
     "topic": "yeast",
     "question": "Various wild yeasts tend to produce excessive amounts of fusel alcohols; hence, proper sanitation is important for their reduction.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 517,
     "topic": "yeast",
     "question": "Wild yeasts usually do not produce fusel alcohols; hence, for styles where it is required, addition of ale yeast is recommended.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 518,
     "topic": "yeast",
     "question": "Diacetyl precursors are produced during yeast metabolism, but they are not converted into diacetyl until the active stages of fermentation.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 519,
     "topic": "yeast",
     "question": "Diacetyl and related compounds can only be removed by the yeast, and only through the conversion to the nearly flavorless compound, butanediol.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 520,
     "topic": "yeast",
     "question": "Diacetyl and related compounds can only be removed by cold crush, and only through the conversion to the nearly flavorless compound, bromhexine.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 521,
     "topic": "yeast",
     "question": "Diacetyl reduction is highly dependent on ensuring that the yeast remains in contact with the beer, so premature removal of the beer from the yeast can lead to an elevated diacetyl level.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 522,
     "topic": "yeast",
     "question": "Diacetyl production is highly dependent on ensuring that the yeast remains in contact with the beer, so premature removal of the beer from the yeast can reduce an elevated diacetyl level.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 523,
     "topic": "yeast",
     "question": "Diacetyl can be produced by Gram-positive bacteria, hence proper sanitation and control during yeast propagation will help minimize its presence.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 524,
     "topic": "troubleshooting",
     "question": "Acetaldehyde has the taste and aroma of fresh-cut green apples, and has also been compared to grass, green leaves and latex paint.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 525,
     "topic": "troubleshooting",
     "question": "All of the followings are aromas are result of presence of acetaldehyde, except for:",
     "options": ["fresh-cut green apples", "burned rubber", "grass and green leaves", "latex paint"],
-    "answer": "burned rubber"
+    "answer": 1
   },
   {
     "question_id": 526,
     "topic": "troubleshooting",
     "question": "Elevated levels of acetaldehyde are generally present in green beer or if the beer is prematurely removed from the yeast.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 527,
     "topic": "troubleshooting",
     "question": "Elevated levels of acetaldehyde are generally present in aged beer or if the beer has been aged on yeasts without racking it.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 528,
     "topic": "troubleshooting",
     "question": "Acetaldehyde can be the result of inadequate wort oxygenation, though the resultant yeast byproducts are normally metabolic intermediates they can remain after fermentation in some cases.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 529,
     "topic": "troubleshooting",
     "question": "Astringency can be the result of inadequate wort oxygenation, though the resultant yeast byproducts are normally metabolic intermediates they can remain after fermentation in some cases.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 530,
     "topic": "troubleshooting",
     "question": "Astringency is a mouth-puckering sensation that is comparable to chewing on grape skins or grape seeds.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 531,
     "topic": "troubleshooting",
     "question": "Acetaldehyde is a mouth-puckering sensation that is comparable to chewing on grape skins or grape seeds.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 532,
     "topic": "troubleshooting",
     "question": "Astringency has the taste and aroma of fresh-cut green apples, and has also been compared to grass, green leaves and latex paint.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 533,
     "topic": "troubleshooting",
     "question": "Astringency is often produced by the extraction of tannins from grain husks due to overcrushing, oversparging, or sparging with water with a pH over 6.0 and a temperature higher than 170 °F (77 °C).",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 534,
     "topic": "troubleshooting",
     "question": "Astringency is often produced by locking of tannins inside grain husks due to undercrushing, undersparging, or sparging with water with a pH under 5.0 and a temperature lower than 160 °F (70 °C).",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 535,
     "topic": "troubleshooting",
     "question": "One of the possible sources of astringency is oxidation, in which case the responsible compounds are polyphenols and aldehydes",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 536,
     "topic": "troubleshooting",
     "question": "One of the possible sources of DMS (dimethyl-sulfide) is oxidation, in which case the responsible compounds are polyphenols and aldehydes",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 537,
     "topic": "troubleshooting",
     "question": "Alcoholic flavor may be detected as a spicy, vinous character in the aroma and taste and is often accompanied by a warm or prickly mouthfeel.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 538,
     "topic": "troubleshooting",
     "question": "Astringency may be detected as a spicy, vinous character in the aroma and taste and is often accompanied by a warm or prickly mouthfeel.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 539,
     "topic": "troubleshooting",
     "question": "Еlevated levels of fusel alcohols are associated with underpitching, low levels of dissolved oxygen prior to pitching or low levels of free available nitrogen (FAN).",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 540,
     "topic": "troubleshooting",
     "question": "Еlevated levels of ester are associated with underpitching, low levels of dissolved oxygen prior to pitching or low levels of free available nitrogen (FAN).",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 541,
     "topic": "troubleshooting",
     "question": "Еlevated levels of fusel alcohols are associated with all of the following, except:",
     "options": ["underpitching", "pitching at low temperature", "low levels of dissolved oxygen prior to pitching", "low levels of free available nitrogen (FAN)"],
-    "answer": "pitching at low temperature"
+    "answer": 1
   },
   {
     "question_id": 542,
     "topic": "troubleshooting",
     "question": "Alcoholic characteristics are desired in strong ales and lagers as long as they are not coupled with the solvent notes associated with elevated ester or fusel alcohol levels.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 543,
     "topic": "troubleshooting",
     "question": "Phenolic characteristics are desired in strong ales and lagers as long as they are not coupled with the solvent notes associated with elevated ester or fusel alcohol levels.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 544,
     "topic": "troubleshooting",
     "question": "Excessive bitterness, is perceived as a harsh dry taste mostly on the back of the tongue and is usually due to over-hopping, especially when high alpha hops are used",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 545,
     "topic": "troubleshooting",
     "question": "Astringency is perceived as a harsh dry taste mostly on the back of the tongue and is usually due to over-hopping, especially when high alpha hops are used",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 546,
     "topic": "troubleshooting",
     "question": "Roasted malts and high concentrations of magnesium and sulfate ions also contribute to the overall bitterness.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 547,
     "topic": "troubleshooting",
     "question": "Roasted malts and high concentrations of magnesium and sulfate ions do not contribute to the overall bitterness unlike bittering hops.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 548,
     "topic": "troubleshooting",
     "question": "High levels of hop bitterness are appropriate in IPAs and barleywines, while bitterness due to roasted barley/malt is appropriate in robust porters and dry stouts",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 549,
     "topic": "troubleshooting",
     "question": "High levels of hop bitterness are appropriate in robust porters and dry stouts, while bitterness due to roasted barley/malt is appropriate in IPAs and barleywines.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 550,
     "topic": "troubleshooting",
     "question": "The body of a beer is characterized following, except: ",
     "options": ["fullness", "viscosity", "tastiness", "thickness on the tongue"],
-    "answer": "tastiness"
+    "answer": 2
   },
   {
     "question_id": 551,
     "topic": "troubleshooting",
     "question": "The body is determined by the levels of dextrins and medium-length proteins.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 552,
     "topic": "troubleshooting",
     "question": "The bitterness is determined by the levels of dextrins and medium-length proteins.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 553,
     "topic": "troubleshooting",
     "question": "Lack of dextrins is caused by low saccharification temperatures, excessive use of adjuncts or by highly attenuative yeast strains.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 554,
     "topic": "troubleshooting",
     "question": "Lack of sweetness is caused by low saccharification temperatures, excessive use of adjuncts or by highly attenuative yeast strains.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 555,
     "topic": "troubleshooting",
     "question": "A low protein level may be caused by excessively long protein rests, excessive fining or the addition of large amounts of fermentable sugars.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 556,
     "topic": "troubleshooting",
     "question": "A low protein level may be caused by excessively short protein rests, short fining or the addition of small amounts of fermentable sugars.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 557,
     "topic": "troubleshooting",
     "question": "Diacetyl is responsible for an artificial butter, butterscotch or toffee-like aroma and taste.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 558,
     "topic": "troubleshooting",
     "question": "DMS (dimethyl-sulfide) is responsible for an artificial butter, butterscotch or toffee-like aroma and taste.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 559,
     "topic": "troubleshooting",
     "question": "DMS, or dimethyl-sulfide produces the aroma and taste of cooked vegetables, notably corn, celery, cabbage or parsnips.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 560,
     "topic": "troubleshooting",
     "question": "Diacetyl produces the aroma and taste of cooked vegetables, notably corn, celery, cabbage or parsnips.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 561,
     "topic": "troubleshooting",
     "question": "A significant number of tasters cannot perceive diacetyl at any concentration, so every judge should be aware of his or her limitations.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 562,
     "topic": "troubleshooting",
     "question": "High levels of diacetyl can result from prematurely separating the beer from the yeast or by exposure to oxygen during the fermentation.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 563,
     "topic": "troubleshooting",
     "question": "High levels of diacetyl can result from not separating the beer from the yeast after fermentation.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 564,
     "topic": "troubleshooting",
     "question": "Low levels of diacetyl are permissible in nearly all ales, particularly those brewed in the United Kingdom, and even some lagers, notably Czech pilseners",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 565,
     "topic": "troubleshooting",
     "question": "Diacetyl in any amounts is not permissible in ales, and only permitted in German lagers.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 566,
     "topic": "troubleshooting",
     "question": "Though rarely used by homebrewers, kräusening is a technique that can be used to eliminate diacetyl in beer.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 567,
     "topic": "troubleshooting",
     "question": "Though rarely used by homebrewers, kräusening is a technique that can increase the level of diacetyl in beer.",
     "options": ["truef", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 568,
     "topic": "troubleshooting",
     "question": "The kräusening works because of the introduction of fresh yeast that is actively multiplying and is thus able to rapidly remove diacetyl.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 569,
     "topic": "troubleshooting",
     "question": "The kräusening is not recommended because of the introduction of fresh yeast that is actively multiplying and is thus able to produce more diacetyl.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 570,
     "topic": "troubleshooting",
     "question": "DMS is normally produced by the heat-induced conversion of S-methylmethionine (SMM), but most of this evaporates during a long, open, rolling boil.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 571,
     "topic": "troubleshooting",
     "question": "Astringency is normally produced by the heat-induced conversion of S-methylmethionine (SMM), but most of this evaporates during a long, open, rolling boil.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 572,
     "topic": "troubleshooting",
     "question": "DMS, or dimethyl-sulfide may be reulted by all of these, except:",
     "options": ["short, weak or closed boil", "excessive amount of magnesium in water", "slow cooling of the wort", "wild yeast or Zymomonas bacteria", "slow fermentation"],
-    "answer": "excessive amount of magnesium in water"
+    "answer": 1
   },
   {
     "question_id": 573,
     "topic": "troubleshooting",
     "question": "Wheat malt contains as much as 8 times the SMM of pale malt, so German wheat based beers sometimes have a DMS character.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 574,
     "topic": "troubleshooting",
     "question": "Pilsner malt contains as much as 8 times the SMM of pale malt, so Pils-based beers sometimes have a DMS character.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 575,
     "topic": "troubleshooting",
     "question": "Low levels of DMS are appropriate in most wheat-based beers, particularly German wheat styles and Belgium Blonde, but are not desirable in most lager styles.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 576,
     "topic": "troubleshooting",
     "question": "Estery is an aroma and taste that recalls bananas, strawberries, pears, apples, plums, papaya and/or other fruits.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 577,
     "topic": "troubleshooting",
     "question": "Astringency is an aroma and taste that recalls bananas, strawberries, pears, apples, plums, papaya and/or other fruits.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 578,
     "topic": "troubleshooting",
     "question": "High ester levels are a product of all of the following except:",
     "options": ["yeast strain", "low mash temperature", "high fermentation temperature", "high gravity worts", "the metabolism of fatty acids in the trub", "low yeast pitching rate", "low wort aeration"],
-    "answer": "low mash temperature"
+    "answer": 1
   },
   {
     "question_id": 579,
     "topic": "troubleshooting",
     "question": "Estery/fruity flavors are desirable in most ales, particularly Belgian and British styles.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 580,
     "topic": "troubleshooting",
     "question": "Estery/fruity flavors are desirable in most lagers, particularly German and Czech styles.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 581,
     "topic": "troubleshooting",
     "question": "The signature banana notes in Bavarian wheat beers are primarily due to the ester isoamyl acetate.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 582,
     "topic": "troubleshooting",
     "question": "The signature banana notes in hybrid beers are primarily due to the ester isoamyl acetate.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 583,
     "topic": "troubleshooting",
     "question": "Good head retention (time required for the head to collapse by half) should be at least a minute in well-brewed and conditioned beers.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 584,
     "topic": "troubleshooting",
     "question": "Good head retention (time required for the head to collapse by a third) should be at least two minutes in well-brewed and conditioned beers.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 585,
     "topic": "troubleshooting",
     "question": "Good head retention is promoted by several factors, including all of the following, except:",
-    "options": ["isohumulones", "high original gravity", "presence of enzymes", "alcohol content", "the levels of proteins"],
-    "answer": "presence of enzymes"
+    "options": ["isohumulones", "high original gravity", "alcohol content", "the levels of proteins", "presence of enzymes"],
+    "answer": 4
   },
   {
     "question_id": 586,
     "topic": "troubleshooting",
     "question": "Possible causes of husky/grainy aroma/taste include overcrushing, oversparging or sparging with hot or alkaline water.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 587,
     "topic": "troubleshooting",
     "question": "Possible causes of paper/cardboard taste include overcrushing, oversparging or sparging with hot or alkaline water.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 588,
     "topic": "troubleshooting",
     "question": "Low levels of husky/grainy characteristics are acceptable in some lagers, but are not appropriate in any ale.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 589,
     "topic": "troubleshooting",
     "question": "Low levels of husky/grainy characteristics are acceptable in some ales, but are not appropriate in any lagers.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 590,
     "topic": "troubleshooting",
     "question": "Lightstruck/Skunky compounds are formed when ultraviolet light cleaves an isohumulone molecule, and the resulting radical combines with a sulfur compound.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 591,
     "topic": "troubleshooting",
     "question": "Sulfury/Yeasty compounds are formed when ultraviolet light cleaves an isohumulone molecule, and the resulting radical combines with a sulfur compound.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 592,
     "topic": "troubleshooting",
     "question": "Beer stored in clear or brown glass bottles is more susceptible to this reaction, which is why green glass offers more protection.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 593,
     "topic": "troubleshooting",
     "question": "Beer stored in clear or green glass bottles is more susceptible to this reaction, which is why brown glass offers more protection.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 594,
     "topic": "troubleshooting",
     "question": "Lightstruck flavors are not desirable in any style, but many European imports possess this quality.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 595,
     "topic": "troubleshooting",
     "question": "Lightstruck flavors is only acceptable in steam/hybrid styles.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 596,
     "topic": "troubleshooting",
     "question": "Miller Brewing is able to use clear glass bottles because they use a chemically modified form of isohumulone that does not interact with light.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 597,
     "topic": "troubleshooting",
     "question": "Miller Brewing is able to use clear glass bottles because they use a genetically modified 8-row malts that does not interact with light or glass.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 598,
     "topic": "troubleshooting",
     "question": "Musty stale aroma and taste is  associated with the oxidation of malt compounds in the melanoidin family.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 599,
     "topic": "troubleshooting",
     "question": "Phenolic aroma and taste is  associated with the oxidation of malt compounds in the melanoidin family.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 600,
     "topic": "troubleshooting",
     "question": "Musty flavors are generally not desirable, but may be found in some cellared beer styles such as Bière de Garde",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 601,
     "topic": "troubleshooting",
     "question": "Low levels of DMS are appropriate in most Pils-based lagers, particularly American light lagers and Classic American Pilsners, but are not desirable in most ale styles.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 602,
     "topic": "troubleshooting",
     "question": "Musty flavors are generally not desirable, but may be found in some cellared beer styles such as German Leichtbier.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 603,
     "topic": "troubleshooting",
     "question": "Paper/Cardboard compound has an extremely low flavor threshold and is produced by the oxidation of higher alcohols.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 604,
     "topic": "troubleshooting",
     "question": "Paper/Cardboard compound has an extremely high flavor threshold and is produced by higher fermentation temperature of higher gravity wort.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 605,
     "topic": "troubleshooting",
     "question": "Paper/Cardboard flavor is never appropriate and is rare in homebrew due to the reducing power of yeast, but it is a common flaw in many old or abused commercial beers.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 606,
     "topic": "troubleshooting",
     "question": "Paper/Cardboard flavor is never appropriate and is rare in commercial beermaking due to the reducing power of yeast, but it is a common flaw in many old or abused homebrew beers.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 607,
     "topic": "troubleshooting",
     "question": "Phenolic is an aroma and taste often compared to Band-aids (tm), medicine chest or disinfectant.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 608,
     "topic": "troubleshooting",
     "question": "Estery is an aroma and taste often compared to Band-aids (tm), medicine chest or disinfectant.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 609,
     "topic": "troubleshooting",
     "question": "High levels of phenols are generally produced by bacteria or wild yeast, both of which indicate a sanitation problem.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 610,
     "topic": "troubleshooting",
     "question": "High levels of phenols are generally produced by the oxidation of higher alcohols.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 611,
     "topic": "troubleshooting",
     "question": "Phenolic flavors are generally never desirable, the exception being the clove-like, vanilla-like or slightly smoky flavors and aromas in Bavarian wheat beers and some Belgian ales.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 612,
     "topic": "troubleshooting",
     "question": "Phenolic flavors are generally never desirable, the exception being the clove-like, vanilla-like or slightly smoky flavors and aromas in American Hybrid beers and some British ales.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 613,
     "topic": "troubleshooting",
     "question": "Sherry-like compound is the aroma and taste of dry sherry and is often accompanied by hazelnut or almond notes.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 614,
     "topic": "troubleshooting",
     "question": "The responsible compounds of phenolic aroma are oxidized members of the melanoidin family.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 615,
     "topic": "troubleshooting",
     "question": "The responsible compounds of shery-like aroma are oxidized members of the melanoidin family.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 616,
     "topic": "troubleshooting",
     "question": "Shery-like flavor is one of the few positive flavors attributed to oxidation and adds complexity to barleywines and old ales.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 617,
     "topic": "troubleshooting",
     "question": "Shery-like flavor is one common attributed to oxidation and adds complexity to dark and amber lagers.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 618,
     "topic": "troubleshooting",
     "question": "Solvent-like describes an aroma and taste similar to turpentine or acetone that is often accompanied by a burning sensation in the back of the mouth.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 619,
     "topic": "troubleshooting",
     "question": "Astringency describes an aroma and taste similar to turpentine or acetone that is often accompanied by a burning sensation in the back of the mouth.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 620,
     "topic": "troubleshooting",
     "question": "Possible sources of solvent-like aroma include underpitching, lack of oxygen, and fermenting on the trub, especially at elevated temperatures.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 621,
     "topic": "troubleshooting",
     "question": "Possible sources of sweet-like taste/aroma include underpitching, lack of oxygen, and fermenting on the trub, especially at elevated temperatures.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 622,
     "topic": "troubleshooting",
     "question": "Solvent-like notes are generally undesirable, but perceptible levels may be encountered in old ales such as Theakston’s Old Peculier.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 623,
     "topic": "troubleshooting",
     "question": "Solvent-like notes are generally undesirable, but perceptible levels may be encountered in Kellerbier and German Leichtbier.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 624,
     "topic": "troubleshooting",
     "question": "The two most common acids responsible for this flavor are lactic and acetic, which both have related esters that may be perceived in the aroma.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 625,
     "topic": "troubleshooting",
     "question": "The three most common acids responsible for this flavor are citric, nitric and phenolic, which both have related esters that may be perceived in the aroma.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 626,
     "topic": "troubleshooting",
     "question": "Lactic acid is produced by Grampositive bacteria such as Lactobacillus and Pediococcus, which are present in dust and saliva.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 627,
     "topic": "troubleshooting",
     "question": "Acetic acid may be produced by several contaminants, including Acetobacter, Zymomonas, and yeast in the Kloeckera and Brettanomyces families.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 628,
     "topic": "troubleshooting",
     "question": "Acetic acid is produced by Grampositive bacteria such as Lactobacillus and Pediococcus, which are present in dust and saliva.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 629,
     "topic": "troubleshooting",
     "question": "Lactic acid may be produced by several contaminants, including Acetobacter, Zymomonas, and yeast in the Kloeckera and Brettanomyces families.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 630,
     "topic": "troubleshooting",
     "question": "Sulfury/Yeasty flavors, not to be confused with DMS, have the aroma and taste of rotten eggs, shrimp or rubber.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 631,
     "topic": "troubleshooting",
     "question": "Lightstruck/Skunky flavors, not to be confused with DMS, have the aroma and taste of rotten eggs, shrimp or rubber.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 632,
     "topic": "troubleshooting",
     "question": "Possible sources of sulfury/yeasty include yeast autolysis, bacterial spoilage and water contamination.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 633,
     "topic": "troubleshooting",
     "question": "Possible sources of sulfury/yeasty include underpitching, lack of oxygen, and fermenting on the trub, especially at elevated temperatures.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   },
   {
     "question_id": 634,
     "topic": "troubleshooting",
     "question": "High levels of residual sugars can result from a flocculent or low-attenuating yeast or poor yeast health linked to low FAN levels or low levels of dissolved oxygen prior to pitching.",
     "options": ["true", "false"],
-    "answer": "true"
+    "answer": 0
   },
   {
     "question_id": 635,
     "topic": "troubleshooting",
     "question": "High levels of phenolic aroma can result from a flocculent or low-attenuating yeast or poor yeast health linked to low FAN levels or low levels of dissolved oxygen prior to pitching.",
     "options": ["true", "false"],
-    "answer": "false"
+    "answer": 1
   }
 ]
 

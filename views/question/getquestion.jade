@@ -1,34 +1,17 @@
-extends ../layout
+include ../layouts/mixins
+extends ../layouts/layout
+
 block body
-  mixin og(data, field)
-    .ansPara
-      .row
-        .col-xs-2.col-xs-offset-2  OG:
-        .col-xs-8 #{data.OG.from} - #{data.OG.to}
-      .row
-        .col-xs-2.col-xs-offset-2  FG:
-        .col-xs-8 #{data.FG.from} - #{data.FG.to}
-      .row
-        .col-xs-2.col-xs-offset-2  SRM:
-        .col-xs-8 #{data.SRM.from} - #{data.SRM.to}
-      .row
-        .col-xs-2.col-xs-offset-2  IBU:
-        .col-xs-8 #{data.IBU.from} - #{data.IBU.to}
-      .row
-        .col-xs-2.col-xs-offset-2  ABV%
-        .col-xs-8 #{data.ABV.from} - #{data.ABV.to}
-  mixin attr(data, field)
-    .ansPara
-      ul
-        each line in data[field]
-          li= line
-  .row
-    .col-sm-12
-      h3#question.text-center(data-style="#{question.answer}")= question.question
-  .row
-    each option, index in question.options
-      .col-lg-6.col-sm-6.mcAnswers(data-style="#{option}")
-        .ansPara.trueFalse= {'true': 'True', 'false': 'False'}[option]
+
+
+  if type == "m_choice_normal"
+    +m_choice_normal(question, options, answer)
+  else if type == "m_choice_reverse"
+    +m_choice_reverse(question, options, answer)
+  else if type == "true_false"
+    +true_false(question, options, answer)
+  else if type == "style_stats"
+    +style_stats(question, options, answer)
 
   .row
     .col-sm-12
