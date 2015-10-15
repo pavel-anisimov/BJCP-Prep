@@ -26,15 +26,17 @@ mixin attr(data, field)
 // BASED ON QUESTION DATABASE, MOSTYLY FROM STUDY GUIDE
 mixin true_false(question, options, answer)
   - var attr;
+  - function toTitleCase(str){ return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();}); }
+
   .row
     .col-sm-12
       - attr = { "data-style": question.style_id, "data-answer": answer}
       h3#question.text-center&attributes(attr)= question.body
   .row
     each option, index in options
-      .col-lg-6.col-sm-6.mcAnswers(data-style="#{option}")
+      .col-lg-6.col-sm-6.all-answers(data-style="#{option}")
         - attr = { "data-answer": index }
-        .ansPara.trueFalse&attributes(attr)= option
+        .answer-option.true-false&attributes(attr)= ['true', 'false'].indexOf(option) > -1 ? toTitleCase(option) : option
 
 // MIXIN FOR REVERSE MULTIPLE CHOICE QUESTION
 // QUESTIONS GENERATED RANDOMLY
@@ -44,16 +46,17 @@ mixin m_choice_reverse(question, options, answer)
     .col-sm-12
       - attr = { "data-style": question.style_id, "data-answer": answer}
       h3#question.text-center&attributes(attr)= question.body
-      div
-        if question.characteristics.OG
-          +og(question.characteristics)
-        else
-          +attr(question.characteristics, Object.keys(question.characteristics)[0])
+  .row
+    .col-sm-offset-2.col-sm-8.characteristics
+      if question.characteristics.OG
+        +og(question.characteristics)
+      else
+        +attr(question.characteristics, Object.keys(question.characteristics)[0])
   .row
     each option, index in options
-      .col-lg-6.col-sm-6.mcAnswers(data-style="#{option}")
+      .col-lg-6.col-sm-6.all-answers(data-style="#{option}")
         - attr = { "data-answer": index }
-        .ansPara.trueFalse&attributes(attr)= option
+        .answer-option.true-false&attributes(attr)= option
 
 // MIXIN FOR STANDARD MULTIPLE CHOICE QUESTION
 // QUESTIONS GENERATED RANDOMLY
@@ -63,15 +66,15 @@ mixin m_choice_normal(question, options, answer)
     .col-sm-12
       - attr = { "data-style": question.style_id, "data-answer": answer}
       h3#question.text-center&attributes(attr)= question.body
-    .row
-      each option, index in options
-        - attr = { "data-style": option.style_id, "data-answer": index}
-        .col-lg-6.col-sm-6.mcAnswers&attributes(attr)
-          .ansPara
-            if question.field === "OG"
-              +og(option)
-            else
-              +attr(option, question.field)
+  .row
+    each option, index in options
+      - attr = { "data-style": option.style_id, "data-answer": index}
+      .col-lg-6.col-sm-6.all-answers.m-choice
+        .answer-option&attributes(attr)
+          if question.field === "OG"
+            +og(option)
+          else
+            +attr(option, question.field)
 
 // MIXIN FOR FILING THE STYLE STATS (OG, FG, etc)
 // QUESTIONS GENERATED RANDOMLY

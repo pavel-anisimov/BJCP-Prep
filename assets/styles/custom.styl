@@ -16,7 +16,7 @@
 body
   text-shadow 1px 1px 2px rgba(150, 150, 150, 1)
   margin-top 65px
-  background url("/images/BeerBackground__1444189157_73.202.95.238.jpg") no-repeat center center fixed
+  background url("/images/BeerSamples.jpg") no-repeat center center fixed
   -webkit-background-size cover
   -moz-background-size cover
   -o-background-size cover
@@ -83,25 +83,30 @@ body
   border-color  #800
   background-color rubyRedClr
 
+hr
+  -moz-border-bottom-colors none
+  -moz-border-image none
+  -moz-border-left-colors none
+  -moz-border-right-colors none
+  -moz-border-top-colors none
+  border-color #EEEEEE -moz-use-text-color #FFFFFF
+  border-style solid none
+  border-width 1px 0
+  border-bottom-color darkslategray
+  border-top-color dimgray
+  margin 18px 0
 
-.mcAnswers
+.respond-row
+  h4
+    text-align right
+
+.all-answers
   min-height 40%
 
   cursor pointer
-  &:hover > .ansPara
+  &:hover > .answer-option
     background-color lightgreyClr
-  &.correct > .ansPara
-    background-color darkGreenClr
-    border 1px solid #040
-    text-shadow 1px 1px 2px #040
-    color #ffffff
-  &.wrong > .ansPara
-    background-color rubyRedClr
-    text-shadow 1px 1px 2px #400
-    color #ffffff
-    border 1px solid #400
-
-  > .ansPara
+  > .answer-option
     padding 20px
     line-height 50px
     min-height 50px
@@ -109,27 +114,56 @@ body
     border 1px solid darkgreyClr
     border-radius 10px
     margin 5px 0 5px 0
-    10px 10px 10px 0
+    font-size 15px
+    &.true-false
+      font-size 20px
+  &.m-choice .answer-option
+    line-height inherit !important
+    text-align left !important
+  > .correct-answer
+    border-color darkgreen
+    background-color darkGreenClr
+    border 1px solid #040
+    text-shadow 1px 1px 2px #040
+    color #fff
+  > .wrong-answer
+    border-color maroon
+    background-color rubyRedClr
+    text-shadow 1px 1px 2px #400
+    color #fff
+    border 1px solid #400
+  &:hover > .correct-answer
+    background-color darkgreen
+  &:hover > .wrong-answer
+    background-color maroon
 
-  > .reverseMChoice, >.trueFalse
+  > .reverseMChoice, >.true_false
     text-align center
     font-size 150%
 
-
-.col-sm-6 > .ansPara
+.col-sm-6 > .answer-option
   text-align center
-.col-lg-3 > .ansPara
+.col-lg-3 > .answer-option
   text-align left
   line-height 20px
 
 #question
   margin-bottom 20px
-  .reverseMChoice
+  .all-answers
     text-align left
     font-weight normal
 
+.characteristics
+  font-size 20px
+
+.removed-option
+  cursor default !important
+  pointer-events none
+  background-color rgba(128, 128, 128, 0.40) !important
+  color rgba(0, 0, 0, 0.30)
+
 @media (max-width: 768px)
-  .mcAnswers > .ansPara
+  .all-answers > .answer-option
     height auto !important
   .beerBlock > .beerLabel
     text-align left

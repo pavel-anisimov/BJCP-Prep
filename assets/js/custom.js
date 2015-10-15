@@ -29,6 +29,18 @@ function shuffle(array) {
 }
 
 
+function toTitleCase(str) {
+  return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+
+}
+
+String.prototype.toTitleCase = function() {
+  return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+
+
+
+
 $(function(){
   var $styleAroma = $('#styleAroma')
     , $styleAppearance = $('#styleAppearance')
@@ -46,6 +58,111 @@ $(function(){
     , index, scores, questions, $totalScore, $nextBtn
     , $startBtn = $('#testBtn')
     , $restartBtn = $('#restartBtn');
+
+
+
+
+  /////////////////////// QUESTION LOGIC STARTS ///////////////////////////////////
+
+  var $respondBlock = $('.respond-row')
+    , $reloadBtn = $respondBlock.find('#btn-reload')
+    , $question = $('#question')
+    , $answerOptions = $('.answer-option')
+    , correctAnswer = $question.data('answer')
+    , optionsNumber = $answerOptions.length
+    , $helperBlock = $('.helper-row')
+    , $btnFiftyFifty = $helperBlock.find('#btn-fifty-fifty')
+    , $correctOption = $('.answer-option[data-answer="' + correctAnswer + '"]')
+    , fiftyFiftyFlag = false
+    ;
+
+  var respondsMessages = [
+    "Nice job, you nailed this one right out of the park!",
+    "It's okay, I'll give you a half of the point.",
+    "Awe, don't worry, you'll get the next one."
+  ];
+
+
+  $answerOptions.on('click', function(){
+    var $this = $(this)
+    , thisAnswer = $this.data('answer')
+    , respondMessage = '' ;
+
+    if(thisAnswer === correctAnswer) {
+      $this.addClass('correct-answer');
+      respondMessage = respondsMessages[ fiftyFiftyFlag ? 1 : 0 ];
+    }
+    else {
+      $this.addClass('wrong-answer');
+      $correctOption.addClass('correct-answer');
+      respondMessage = respondsMessages[2];
+    }
+
+    $helperBlock.addClass('hidden');
+    $answerOptions.css({"pointer-events": "none"});
+
+    $respondBlock.removeClass('hidden').find('.respond-message').text(respondMessage);
+
+  });
+
+  function removeFromArray(array, element) {
+    for(var i = array.length - 1; i >= 0; i--) {
+      if(array[i] === element) {
+        array.splice(i, 1);
+      }
+    }
+    return array;
+  }
+
+  function getRandom(arr, n) {
+
+    var result = new Array(n),
+      len = arr.length,
+      taken = new Array(len);
+    if (n > len)
+      throw new RangeError("getRandom: more elements taken than available");
+    while (n--) {
+      var x = Math.floor(Math.random() * len);
+      result[n] = arr[x in taken ? taken[x] : x];
+      taken[x] = --len;
+    }
+    return result;
+  }
+
+  function fiftyFifty(){
+
+    if(optionsNumber > 2) {
+      // Removing at most half of the options.
+      // For 6 options, removing 3; for 5 options removing 2.
+      var removeNumber = Math.ceil(optionsNumber / 2);
+
+      var arr = [];
+      for (var i = 0; i < optionsNumber; i++)
+        arr.push(i);
+
+      arr = removeFromArray(arr, correctAnswer);
+
+      if(removeNumber > 1 ) {
+        arr = getRandom(arr, arr.length + 1 - removeNumber)
+      }
+
+      arr.forEach(function(selector){
+        $('.answer-option[data-answer="' + selector + '"]').addClass('removed-option');
+      });
+
+      $helperBlock.addClass('hidden');
+
+      fiftyFiftyFlag = true;
+
+    }
+
+  }
+
+  $btnFiftyFifty.on('click', fiftyFifty)
+
+
+  /////////////////////// QUESTION LOGIC ENDS ///////////////////////////////////
+
 
 
   if(jStorage.get('testOn')) {
@@ -279,39 +396,7 @@ $(function(){
 
   });
 
-  var $mcAnswers = $('.mcAnswers');
 
-  var highestDiv = 0;
-
-  $mcAnswers.children('.ansPara').each(function(i, elem){
-    $(elem).height() > highestDiv && (highestDiv = $(elem).height());
-  }).height(highestDiv);
-
-  $mcAnswers.on('click', function(){
-    var $this = $(this)
-      , rightAnswer = $('h3#question').data('style')
-      , yourAnswer = $this.data('style');
-
-    var testScore = jStorage.get('testScore')
-      , qList = jStorage.get('questions')
-      , nextQuestion = qList.shift();
-
-    if(rightAnswer == yourAnswer) {
-      $this.addClass('correct');
-      testScore++;
-    }
-    else{
-      $this.addClass('wrong');
-      $this.siblings('[data-style="' + rightAnswer + '"]').addClass('correct');
-    }
-
-    jStorage.set('testScore', testScore );
-    jStorage.set('questions', qList);
-
-    $nextQ.removeClass('hidden').data('href', "/style/" + nextQuestion);
-    $reloadQ.removeClass('hidden');
-
-  });
 
   $nextQ.on('click', function(){
     window.location = $(this).data('href');

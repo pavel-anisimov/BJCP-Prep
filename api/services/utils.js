@@ -25,13 +25,16 @@ module.exports = {
 
   getRandom: (arr, n) => {
 
-    var result = new Array(n),
-      len = arr.length,
-      taken = new Array(len);
+    let result = new Array(n)
+      , len = arr.length
+      , taken = new Array(len)
+      ;
+
     if (n > len)
       throw new RangeError("getRandom: more elements taken than available");
+
     while (n--) {
-      var x = Math.floor(Math.random() * len);
+      let x = Math.floor(Math.random() * len);
       result[n] = arr[x in taken ? taken[x] : x];
       taken[x] = --len;
     }
@@ -39,12 +42,32 @@ module.exports = {
   },
 
   removeFromArray: (array, element) => {
-    for(var i = array.length - 1; i >= 0; i--) {
+    for(let i = array.length - 1; i >= 0; i--) {
       if(array[i] === element) {
         array.splice(i, 1);
       }
     }
     return array;
-  }
+  },
 
+  toTitleCase: str => str.replace(/\w\S*/g, txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase() ),
+
+  shuffle: array => {
+    let currentIndex = array.length, temporaryValue, randomIndex ;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+      // Pick a remaining element...
+      randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      // And swap it with the current element.
+      temporaryValue = array[currentIndex];
+      array[currentIndex] = array[randomIndex];
+      array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+  }
 }
