@@ -1,0 +1,23 @@
+include ../layouts/mixins
+extends ../layouts/layout
+
+block body
+
+  +true_false(question, options, answer)
+
+  .row
+    .col-sm-12.col-md-offset-1.col-md-10
+      hr
+
+  if options.length > 2
+    .row.helper-row
+      .col-sm-offset-1.col-sm-8.col-md-offset-2.col-md-6
+        h4 Little bit hard? Want a little tip? Remove few wrong options.
+      .col-sm-3.col-md-4
+        #btn-fifty-fifty.btn.btn-default.btn-lg.btn-info Remove!
+
+  .row.respond-row.hidden
+    .col-sm-offset-1.col-sm-8.col-md-offset-2.col-md-5
+      h4.respond-message
+    .col-sm-3.col-md-5
+      #btn-reload.btn.btn-default.btn-lg.btn-warning(onclick="location.reload()") Next

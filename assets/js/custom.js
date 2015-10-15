@@ -1,3 +1,25 @@
+(function ($) {
+  $.fn.serializeFormJSON = function () {
+
+    var o = {};
+    var a = this.serializeArray();
+    $.each(a, function () {
+      if (o[this.name]) {
+        if (!o[this.name].push) {
+          o[this.name] = [o[this.name]];
+        }
+        o[this.name].push(this.value || '');
+      } else {
+        o[this.name] = this.value || '';
+      }
+    });
+    return o;
+  };
+})(jQuery);
+
+function between(x, min, max) {
+  return x >= min && x <= max
+}
 
 
 var srmColors = [
@@ -64,7 +86,9 @@ $(function(){
 
   /////////////////////// QUESTION LOGIC STARTS ///////////////////////////////////
 
-  var $respondBlock = $('.respond-row')
+  var $window = $(window)
+    , windowWidth = $window.width()
+    , $respondBlock = $('.respond-row')
     , $reloadBtn = $respondBlock.find('#btn-reload')
     , $question = $('#question')
     , $answerOptions = $('.answer-option')
@@ -74,12 +98,14 @@ $(function(){
     , $btnFiftyFifty = $helperBlock.find('#btn-fifty-fifty')
     , $correctOption = $('.answer-option[data-answer="' + correctAnswer + '"]')
     , fiftyFiftyFlag = false
+    , mobileMode = windowWidth < 768
     ;
 
   var respondsMessages = [
     "Nice job, you nailed this one right out of the park!",
     "It's okay, I'll give you a half of the point.",
-    "Awe, don't worry, you'll get the next one."
+    "Awe... Don't worry, you'll get it right the next time.",
+    "Only 4 out of 5... All right, I'll give you a half of the point.",
   ];
 
 
@@ -158,8 +184,84 @@ $(function(){
 
   }
 
-  $btnFiftyFifty.on('click', fiftyFifty)
+  $btnFiftyFifty.on('click', fiftyFifty);
 
+  function resizeOptions(){
+    var height = 0;
+    $answerOptions.each(function(el, val){
+      ($(val).height() >  height) && (height = $(val).height() );
+    });
+    $answerOptions.height(height);
+  }
+
+  $window.on('resize', resizeOptions);
+
+  if(!mobileMode)
+    resizeOptions();
+
+
+  $('#check-style-form').on('submit', function(e){
+    e.preventDefault();
+
+    var $this = $(this);
+
+    var styleData = $this.find('.style-data');
+
+    styleData.each(function(i, obj){
+      $(obj).val(  $(obj).data('value') );
+    });
+
+    var data = $this.serializeFormJSON();
+    var score = 0, answerClass, respondMessage;
+
+
+    if(between(data.og, data.og_from, data.og_to)){
+      score++;
+      answerClass = 'correct';
+    } else
+      answerClass = 'wrong';
+    $('#style-og').addClass(answerClass);
+
+    if(between(data.fg, data.fg_from, data.fg_to)){
+      score++;
+      answerClass = 'correct';
+    } else
+      answerClass = 'wrong';
+    $('#style-fg').addClass(answerClass);
+
+    if(between(data.ibu, data.ibu_from, data.ibu_to)){
+      score++;
+      answerClass = 'correct';
+    } else
+      answerClass = 'wrong';
+    $('#style-ibu').addClass(answerClass);
+
+    if(between(data.abv, data.abv_from, data.abv_to)){
+      score++;
+      answerClass = 'correct';
+    } else
+      answerClass = 'wrong';
+    $('#style-abv').addClass(answerClass);
+
+    if(between(data.srm, data.srm_from, data.srm_to)){
+      score++;
+      answerClass = 'correct';
+    } else
+      answerClass = 'wrong';
+    $('#style-srm').addClass(answerClass);
+
+
+    if(score === 5)
+      respondMessage = respondsMessages[ 0 ];
+    else if(score === 4)
+      respondMessage = respondsMessages[ 3 ];
+    else
+      respondMessage = respondsMessages[ 2 ];
+
+    $respondBlock.removeClass('hidden').find('.respond-message').text(respondMessage);
+
+
+  });
 
   /////////////////////// QUESTION LOGIC ENDS ///////////////////////////////////
 

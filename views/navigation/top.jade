@@ -1,5 +1,4 @@
 // Navbar starts
-
 nav#nav.navbar.navbar-inverse.navbar-fixed-top
   .container-fluid
     .navbar-header
@@ -14,9 +13,22 @@ nav#nav.navbar.navbar-inverse.navbar-fixed-top
       ul.nav.navbar-nav
         li.active
           a(href='/category/index') Categories
-        li
-          a(href='/question/getquestion') Start Test
-
+        li.dropdown
+          a.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") Tests
+            span.caret
+          ul.dropdown-menu
+            li
+              a(href="/question/guide") Study Guide Questions
+            li
+              a(href="/question/mchoice") Multiple Choice on Style
+            li
+              a(href="/question/checkstyles") Fill in the Style
+            li.divider(role="separator")
+            li
+              a(href="/question/all") All Topics (practice)
+            li.divider(role="separator")
+            li
+              a(href="/question/all") All Topics (graded)
 
       //ul.navbar-form.navbar-right
         .form-group

@@ -17,18 +17,33 @@ const fields = [
 
 module.exports = {
 
-  getquestion: function(req, res, next){
-
-    this.getQuizeQuestions({min: 0, max: 2}, function(err, question){
+  all: function(req, res, next){
+    this.getQuizeQuestions({min: 0, max: 3}, function(err, question){
       if(err) return next(err);
-
       res.view(question);
-
     });
   },
 
+  mchoice: function(req, res, next){
+    this.getQuizeQuestions({min: 0, max: 1}, function(err, question){
+      if(err) return next(err);
+      res.view(question);
+    });
+  },
 
+  guide: function(req, res, next){
+    this.getQuizeQuestions({min: 2, max: 2}, function(err, question){
+      if(err) return next(err);
+      res.view(question);
+    });
+  },
 
+  checkstyles: function(req, res, next){
+    this.getQuizeQuestions({min: 3, max: 3}, function(err, question){
+      if(err) return next(err);
+      res.view(question);
+    });
+  },
 
   getQuizeQuestions: function(opt, cb){
 
@@ -38,43 +53,18 @@ module.exports = {
             break;
       case 1:
         this.getReverseQuestion((err, question) => cb(err, question));
-        break; /*
+        break;
       case 2:
-        this.getStyleStatsQuestion((err, question) => cb(err, question));
-        break; */
-      default:
         this.getTrueFalseQuestion((err, question) => cb(err, question));
+        break;
+      case 3:
+        this.getStyleStatsQuestion((err, question) => cb(err, question));
+        break;
+      default:
+        cb(new Error('Random number outside of the range.'));
 
     }
   },
-
-
-  getStyleStatsQuestion: function(cb){
-    Question.count().exec((err, max) => {
-      if(err) return cb(err);
-
-      let min = 1
-        , random = utils.randomNumber(min, max);
-
-      Question.findOne({question_id: random }).exec(function(err, respond){
-        if(err) return cb(err);
-
-        respond.type = "true_false";
-        respond.question = {
-          body: respond.question,
-          topic: respond.topic
-        }
-
-        delete respond.question_id;
-        delete respond.topic;
-        delete respond.id;
-
-        return cb(null, respond);
-
-      });
-    });
-  },
-
 
 
   getTrueFalseQuestion: function(cb){
@@ -91,7 +81,7 @@ module.exports = {
         respond.question = {
           body: respond.question,
           topic: respond.topic
-        }
+        };
 
         delete respond.question_id;
         delete respond.topic;
@@ -100,6 +90,37 @@ module.exports = {
         return cb(null, respond);
 
       });
+    });
+  },
+
+
+
+  getStyleStatsQuestion: function(cb){
+
+    Style.find( {}, {fields: ["style_id", "name", "OG", "FG", "SRM", "IBU", "ABV"]} ).populate('category', {exam: true}).exec((err, styles) => {
+      if (err) return cb(err);
+
+      var respond, style;
+
+      style = utils.randomFromArray(styles);
+
+      respond = {
+        question: {
+          body: `Fill in the style characteristics for (${style.style_id}) ${style.name}:`
+        },
+        options: {
+          OG: style.OG,
+          FG: style.FG,
+          SRM: style.SRM,
+          IBU: style.IBU,
+          ABV: style.ABV
+        },
+        type: "check_style"
+
+      };
+
+      return cb(null, respond);
+
     });
   },
 

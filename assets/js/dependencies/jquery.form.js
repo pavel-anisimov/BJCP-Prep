@@ -33,29 +33,29 @@
    to bind your own submit handler to the form.  For example,
 
    $(document).ready(function() {
-   $('#myForm').on('submit', function(e) {
-   e.preventDefault(); // <-- important
-   $(this).ajaxSubmit({
-   target: '#output'
-   });
-   });
+     $('#myForm').on('submit', function(e) {
+       e.preventDefault(); // <-- important
+       $(this).ajaxSubmit({
+         target: '#output'
+       });
+     });
    });
 
    Use ajaxForm when you want the plugin to manage all the event binding
    for you.  For example,
 
    $(document).ready(function() {
-   $('#myForm').ajaxForm({
-   target: '#output'
-   });
+     $('#myForm').ajaxForm({
+       target: '#output'
+     });
    });
 
    You can also use ajaxForm with delegation (requires jQuery v1.7+), so the
    form does not have to exist when you invoke ajaxForm:
 
    $('#myForm').ajaxForm({
-   delegation: true,
-   target: '#output'
+     delegation: true,
+     target: '#output'
    });
 
    When using ajaxForm, the ajaxSubmit function will be invoked for you
