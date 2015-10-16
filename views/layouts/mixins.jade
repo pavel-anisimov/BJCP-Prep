@@ -109,7 +109,7 @@ mixin check_style(question, options, answer)
       .col-sm-1.col-xs-3
         input#style-srm.form-control(type="number", name="srm", min="1", max="40")
       .col-sm-1.col-xs-3
-        input#sr-to.style-data.form-control(value='*', disabled)&attributes({"data-value": options.SRM.to, name: 'srm_to'})
+        input#srm-to.style-data.form-control(value='*', disabled)&attributes({"data-value": options.SRM.to, name: 'srm_to'})
     .form-group.row
       label.col-sm-1.col-sm-offset-4.col-xs-offset-0.col-xs-3.control-label(for="styleIBU") IBU
       .col-sm-1.col-xs-3

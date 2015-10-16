@@ -273,8 +273,11 @@ $(function(){
       answerClass = 'correct';
     } else
       answerClass = 'wrong';
-    $('#style-srm').addClass(answerClass);
 
+    console.log({'background-color': srmColors[data.srm], 'color': data.srm < 9 ? '#000' : '#fff'})
+    $('#style-srm').addClass(answerClass).css({'background-color': srmColors[data.srm], 'color': data.srm < 9 ? '#000' : '#fff'});
+    $('#srm-from').css({'background-color': srmColors[data.srm_from], 'color': data.srm_from < 9 ? '#000' : '#fff'});
+    $('#srm-to').css({'background-color': srmColors[data.srm_to], 'color': data.srm_to < 9 ? '#000' : '#fff'});
 
     if(score === 5)
       respondMessage = respondsMessages[ 0 ];
