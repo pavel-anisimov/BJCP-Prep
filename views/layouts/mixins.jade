@@ -2,10 +2,10 @@
 mixin og(data)
   .row
     .col-xs-2.col-xs-offset-2  OG:
-    .col-xs-8 #{data.OG.from.toFixed(2)} - #{data.OG.to.toFixed(3)}
+    .col-xs-8 #{data.OG.from.toFixed(3)} - #{data.OG.to.toFixed(3)}
   .row
     .col-xs-2.col-xs-offset-2  FG:
-    .col-xs-8 #{data.FG.from.toFixed(2)} - #{data.FG.to.toFixed(3)}
+    .col-xs-8 #{data.FG.from.toFixed(3)} - #{data.FG.to.toFixed(3)}
   .row
     .col-xs-2.col-xs-offset-2  SRM:
     .col-xs-8 #{data.SRM.from} - #{data.SRM.to}
@@ -87,44 +87,44 @@ mixin check_style(question, options, answer)
 
   form(enctype="multipart/form-data", method="POST").form-horizontal.ticket-form#check-style-form
     .form-group.row
-      label.col-lg-1.col-lg-offset-4.col-sm-2.col-sm-offset-2.col-xs-offset-0.col-xs-3.control-label(for="styleOG") Original Gravity
-      .col-lg-1.col-sm-2.col-xs-3
+      label.col-xl-1.col-xl-offset-4.col-sm-2.col-sm-offset-2.col-xs-offset-0.col-xs-3.control-label(for="styleOG") Original Gravity
+      .col-xl-1.col-sm-2.col-xs-3
         input#og-from.style-data.form-control(value='*.***', disabled)&attributes({"data-value": options.OG.from.toFixed(3), name: 'og_from'})
-      .col-lg-1.col-sm-2.col-xs-3
+      .col-xl-1.col-sm-2.col-xs-3
         input#style-og.form-control(type="number", min="0.990", max="1.200", step="0.001", name="og")
-      .col-lg-1.col-sm-2.col-xs-3
+      .col-xl-1.col-sm-2.col-xs-3
         input#og-to.style-data.form-control(value='*.***', disabled)&attributes({"data-value": options.OG.to.toFixed(3), name: 'og_to'})
     .form-group.row
-      label.col-lg-1.col-lg-offset-4.col-sm-2.col-sm-offset-2.col-xs-offset-0.col-xs-3.control-label(for="styleFG") Final Gravity
-      .col-lg-1.col-sm-2.col-xs-3
+      label.col-xl-1.col-xl-offset-4.col-sm-2.col-sm-offset-2.col-xs-offset-0.col-xs-3.control-label(for="styleFG") Final Gravity
+      .col-xl-1.col-sm-2.col-xs-3
         input#fg-from.style-data.form-control(value='*.***', disabled)&attributes({"data-value": options.FG.from.toFixed(3), name: 'fg_from'})
-      .col-lg-1.col-sm-2.col-xs-3
+      .col-xl-1.col-sm-2.col-xs-3
         input#style-fg.form-control(type="number", min="0.990", max="1.200", step="0.001",name="fg")
-      .col-lg-1.col-sm-2.col-xs-3
+      .col-xl-1.col-sm-2.col-xs-3
         input#fg-to.style-data.form-control(value='*.***', disabled)&attributes({"data-value": options.FG.to.toFixed(3), name: 'fg_to'})
     .form-group.row
-      label.col-lg-1.col-lg-offset-4.col-sm-2.col-sm-offset-2.col-xs-offset-0.col-xs-3.control-label(for="styleSRM") SRM
-      .col-lg-1.col-sm-2.col-xs-3
+      label.col-xl-1.col-xl-offset-4.col-sm-2.col-sm-offset-2.col-xs-offset-0.col-xs-3.control-label(for="styleSRM") SRM
+      .col-xl-1.col-sm-2.col-xs-3
         input#srm-from.style-data.form-control(value='*', disabled)&attributes({"data-value": options.SRM.from, name: 'srm_from'})
-      .col-lg-1.col-sm-2.col-xs-3
+      .col-xl-1.col-sm-2.col-xs-3
         input#style-srm.form-control(type="number", name="srm", min="1", max="40")
-      .col-lg-1.col-sm-2.col-xs-3
+      .col-xl-1.col-sm-2.col-xs-3
         input#srm-to.style-data.form-control(value='*', disabled)&attributes({"data-value": options.SRM.to, name: 'srm_to'})
     .form-group.row
-      label.col-lg-1.col-lg-offset-4.col-sm-2.col-sm-offset-2.col-xs-offset-0.col-xs-3.control-label(for="styleIBU") IBU
-      .col-lg-1.col-sm-2.col-xs-3
+      label.col-xl-1.col-xl-offset-4.col-sm-2.col-sm-offset-2.col-xs-offset-0.col-xs-3.control-label(for="styleIBU") IBU
+      .col-xl-1.col-sm-2.col-xs-3
         input#ibu-from.style-data.form-control(value='*', disabled)&attributes({"data-value": options.IBU.from, name: 'ibu_from'})
-      .col-lg-1.col-sm-2.col-xs-3
+      .col-xl-1.col-sm-2.col-xs-3
         input#style-ibu.form-control(type="number", min="0", max="120", name="ibu")
-      .col-lg-1.col-sm-2.col-xs-3
+      .col-xl-1.col-sm-2.col-xs-3
         input#ibu-to.style-data.form-control(value='*', disabled)&attributes({"data-value": options.IBU.to, name: 'ibu_to'})
     .form-group.row
-      label.col-lg-1.col-lg-offset-4.col-sm-2.col-sm-offset-2.col-xs-offset-0.col-xs-3.control-label(for="styleABV") ABV%
-      .col-lg-1.col-sm-2.col-xs-3
+      label.col-xl-1.col-xl-offset-4.col-sm-2.col-sm-offset-2.col-xs-offset-0.col-xs-3.control-label(for="styleABV") ABV%
+      .col-xl-1.col-sm-2.col-xs-3
         input#abv-from.style-data.form-control(value='*.*', disabled)&attributes({"data-value": options.ABV.from.toFixed(1), name: 'abv_from'})
-      .col-lg-1.col-sm-2.col-xs-3
+      .col-xl-1.col-sm-2.col-xs-3
         input#style-abv.form-control(type="number", min="0", max="20", step="0.1", name="abv")
-      .col-lg-1.col-sm-2.col-xs-3
+      .col-xl-1.col-sm-2.col-xs-3
         input#abv-to.style-data.form-control(value='*.*', disabled)&attributes({"data-value": options.ABV.to.toFixed(1), name: 'abv_to'})
     .form-group.row
       label.col-sm-3.col-sm-offset-3.col-xs-7.col-xs-offset-0.control-label(for="styleABV") Ready? Check if you're correct.
