@@ -11,23 +11,52 @@ nav#nav.navbar.navbar-inverse.navbar-fixed-top
         |   BJCP Exam Prep
     .navbar-collapse.collapse
       ul.nav.navbar-nav
-        li.active
+        //li.active
           a(href='/category/index') Categories
         li.dropdown
           a.dropdown-toggle(href="#", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") Tests
             span.caret
           ul.dropdown-menu
             li
-              a(href="/question/guide") Study Guide Questions
-            li
               a(href="/question/mchoice") Multiple Choice on Style
             li
               a(href="/question/checkstyles") Fill in the Style
+
+
+            li.dropdown.dropdown-submenu
+              a.dropdown-toggle( href="#", class="", data-toggle="dropdown") Study Guide Questions
+              ul.dropdown-menu
+                li
+                  // ethics and judging
+                  a(href="/question/guide/ethics%20and%20judging") Ethics and Judging Process
+                li
+                  // water
+                  a(href="/question/guide/water") Water
+                li
+                  // malts
+                  a(href="/question/guide/malts") Malts and Adjuncts
+                li
+                  // wort production
+                  a(href="/question/guide/wort%20production") Wort Production
+                li
+                  // hops
+                  a(href="/question/guide/hops") Hops
+                li
+                  // yeast
+                  a(href="/question/guide/yeast") Yeast and Fermentation
+                li
+                  // troubleshooting
+                  a(href="/question/guide/troubleshooting") Troubleshooting
+
+                li.divider(role="separator")
+                li
+                  a(href="/question/guide") All Topics
+
             li.divider(role="separator")
             li
               a(href="/question/all") All Topics (practice)
-            li.divider(role="separator")
-            li
+            //li.divider(role="separator")
+            //li
               a(href="/question/all") All Topics (graded)
 
       //ul.navbar-form.navbar-right

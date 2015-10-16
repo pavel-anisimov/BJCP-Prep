@@ -32,7 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  'GET /': 'QuestionController.all'
+  'GET /': 'QuestionController.all',
+
+  '/question/guide/:type?' : 'QuestionController.guide'
 
   /***************************************************************************
   *                                                                          *

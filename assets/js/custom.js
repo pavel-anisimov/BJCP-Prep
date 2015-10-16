@@ -17,10 +17,33 @@
   };
 })(jQuery);
 
+(function($){
+  $(document).ready(function(){
+    $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      $(this).parent().siblings().removeClass('open');
+      $(this).parent().toggleClass('open');
+    });
+  });
+})(jQuery);
+
+
 function between(x, min, max) {
+  typeof x === 'number' && ( x = parseFloat(x) );
+  typeof min === 'number' && ( min = parseFloat(min) );
+  typeof max === 'number' && ( max = parseFloat(max) );
+
   return x >= min && x <= max
 }
 
+function paddingZero(num, n) {
+  return num
+}
+
+function decimalZero(num, n) {
+  return num
+}
 
 var srmColors = [
   '#FFFFFF', '#FFE699', '#FFD878', '#FFCA5A', '#FFBF42', '#FBB123', '#F8A600',
@@ -203,16 +226,18 @@ $(function(){
   $('#check-style-form').on('submit', function(e){
     e.preventDefault();
 
-    var $this = $(this);
+    var $this = $(this)
+      , styleData = $this.find('.style-data')
+      , score = 0
+      , data, answerClass, respondMessage;
 
-    var styleData = $this.find('.style-data');
+    $('input[disabled="disabled"]').removeAttr('disabled').attr('readonly', 'readonly');
 
     styleData.each(function(i, obj){
       $(obj).val(  $(obj).data('value') );
     });
 
-    var data = $this.serializeFormJSON();
-    var score = 0, answerClass, respondMessage;
+    data = $this.serializeFormJSON();
 
 
     if(between(data.og, data.og_from, data.og_to)){

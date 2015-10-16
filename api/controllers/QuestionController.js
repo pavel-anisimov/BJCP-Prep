@@ -32,7 +32,7 @@ module.exports = {
   },
 
   guide: function(req, res, next){
-    this.getQuizeQuestions({min: 2, max: 2}, function(err, question){
+    this.getQuizeQuestions({min: 2, max: 2, type: req.param('type')}, function(err, question){
       if(err) return next(err);
       res.view(question);
     });
@@ -55,7 +55,7 @@ module.exports = {
         this.getReverseQuestion((err, question) => cb(err, question));
         break;
       case 2:
-        this.getTrueFalseQuestion((err, question) => cb(err, question));
+        this.getTrueFalseQuestion(opt.type, (err, question) => cb(err, question));
         break;
       case 3:
         this.getStyleStatsQuestion((err, question) => cb(err, question));
@@ -67,7 +67,33 @@ module.exports = {
   },
 
 
-  getTrueFalseQuestion: function(cb){
+  getTrueFalseQuestion: function(topic, cb){
+
+    let options = {};
+
+    topic && (options.topic = topic);
+
+    Question.find(options).exec( (err, questions) => {
+      if(err) return cb(err);
+
+      utils.randomFromArrayAsync(questions, respond => {
+        respond.type = "true_false";
+        respond.question = {
+          body: respond.question,
+          topic: respond.topic
+        };
+
+        delete respond.question_id;
+        delete respond.topic;
+        delete respond.id;
+
+        return cb(null, respond);
+      });
+    });
+
+
+
+    /*
     Question.count().exec((err, max) => {
       if(err) return cb(err);
 
@@ -90,7 +116,7 @@ module.exports = {
         return cb(null, respond);
 
       });
-    });
+    }); */
   },
 
 
@@ -106,7 +132,7 @@ module.exports = {
 
       respond = {
         question: {
-          body: `Fill in the style characteristics for (${style.style_id}) ${style.name}:`
+          body: `Define the vital statistics for (${style.style_id}) ${style.name}:`
         },
         options: {
           OG: style.OG,

@@ -64,7 +64,7 @@ module.exports = {
           return res.redirect('/error');
         }
 
-        console.log(categories);
+        //console.log(categories);
         res.view({categories: categories});
       }
     );

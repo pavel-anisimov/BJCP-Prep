@@ -19,7 +19,9 @@ module.exports = {
 
   between: (x, min, max) => x >= min && x <= max,
 
-  randomFromArray: arr => arr[Math.floor(Math.random() * arr.length)],
+  randomFromArray: (arr) => arr[Math.floor(Math.random() * arr.length)],
+
+  randomFromArrayAsync: (arr, cb) => cb(arr[Math.floor(Math.random() * arr.length)]),
 
   randomNumber: (min, max) =>  Math.floor(Math.random()*(max-min+1)+min),
 
