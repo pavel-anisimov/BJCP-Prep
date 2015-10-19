@@ -34,7 +34,9 @@ module.exports.routes = {
 
   'GET /': 'QuestionController.all',
 
-  '/question/guide/:type?' : 'QuestionController.guide'
+  '/question/guide/:type?' : 'QuestionController.guide',
+  '/style/compare/:firstStyle?/:secondStyle?' : 'StyleController.compare'
+
 
   /***************************************************************************
   *                                                                          *

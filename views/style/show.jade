@@ -1,3 +1,4 @@
+include ../layouts/mixins
 extends ../layouts/layout
 block body
 
@@ -7,9 +8,9 @@ block body
   if style.OG && style.FG
     .row.beerBlock
       .col-sm-3.beerLabel Original Gravity
-      .col-sm-3= style.OG.from + ' - ' + style.OG.to
+      .col-sm-3= style.OG.from.toFixed(3) + ' - ' + style.OG.to.toFixed(3)
       .col-sm-3.beerLabel Final Gravity
-      .col-sm-3= style.FG.from + ' - ' + style.FG.to
+      .col-sm-3= style.FG.from.toFixed(3) + ' - ' + style.FG.to.toFixed(3)
   if style.SRM
     .row.beerBlock
       .col-sm-3.beerLabel SRM
@@ -24,7 +25,7 @@ block body
         .col-sm-3= style.IBU.from + ' - ' + style.IBU.to
       if style.ABV
         .col-sm-3.beerLabel ABV%
-        .col-sm-3= style.ABV.from + ' - ' + style.ABV.to
+        .col-sm-3= style.ABV.from.toFixed(1) + ' - ' + style.ABV.to.toFixed(1)
 
   if style.about
     .row.beerBlock

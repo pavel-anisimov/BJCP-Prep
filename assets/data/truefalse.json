@@ -1786,9 +1786,9 @@
   {
     "question_id": 256,
     "topic": "water",
-    "question": "Plzen water profile is reach on minerals and considered to be hard.",
+    "question": "Plzen water profile is rich on minerals and considered to be hard.",
     "options": ["true", "false"],
-    "answer": 0
+    "answer": 1
   },
   {
     "question_id": 257,

@@ -1,4 +1,27 @@
 // MIXIN FOR STATS TYPE VIEW
+mixin statBlock(style)
+  if style.OG && style.FG
+    .row.beerBlock
+      .col-sm-3.beerLabel Original Gravity
+      .col-sm-3= style.OG.from.toFixed(3) + ' - ' + style.OG.to.toFixed(3)
+      .col-sm-3.beerLabel Final Gravity
+      .col-sm-3= style.FG.from.toFixed(3) + ' - ' + style.FG.to.toFixed(3)
+  if style.SRM
+    .row.beerBlock
+      .col-sm-3.beerLabel SRM
+      .col-sm-3= style.SRM.from + ' - ' + style.SRM.to
+      .col-sm-5
+        .colorRange(data-srm="#{JSON.stringify(style.SRM)}" )
+  if style.IBU || style.ABV
+    .row.beerBlock
+      if style.IBU
+        .col-sm-3.beerLabel IBU
+        .col-sm-3= style.IBU.from + ' - ' + style.IBU.to
+      if style.ABV
+        .col-sm-3.beerLabel ABV%
+        .col-sm-3= style.ABV.from.toFixed(1) + ' - ' + style.ABV.to.toFixed(1)
+
+// MIXIN FOR STATS TYPE VIEW
 mixin og(data)
   .row
     .col-xs-2.col-xs-offset-2  OG:

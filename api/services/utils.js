@@ -23,7 +23,7 @@ module.exports = {
 
   randomFromArrayAsync: (arr, cb) => cb(arr[Math.floor(Math.random() * arr.length)]),
 
-  randomNumber: (min, max) =>  Math.floor(Math.random()*(max-min+1)+min),
+  randomNumber: (min, max) =>  (min === max) ? min : ( min > max ? 0 : Math.floor(Math.random()*(max-min+1)+min) ),
 
   getRandom: (arr, n) => {
 

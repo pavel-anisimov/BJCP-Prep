@@ -290,7 +290,40 @@ $(function(){
 
   });
 
+
   /////////////////////// QUESTION LOGIC ENDS ///////////////////////////////////
+
+
+
+
+  /////////////////////// COMPARE STYLES BEGINS ///////////////////////////////////
+
+  var $secondStyleSelect = $('select#secondStyle')
+    , $firstStyleSelect = $('select#firstStyle')
+
+
+  $('select#firstStyle, select#secondStyle').on('change', function(){
+
+    if( $secondStyleSelect.val() !== '- not assigned -'
+      &&  $firstStyleSelect.val() !== '- not assigned -')
+      window.location = [window.location.origin, 'style', 'compare', $firstStyleSelect.val(),  $secondStyleSelect.val()].join('/');
+  })
+
+
+  /////////////////////// COMPARE STYLES  ENDS ///////////////////////////////////
+
+
+
+
+
+  /////////////////////// TEST LOGIC BEGINS ///////////////////////////////////
+
+
+  function Quiz() {
+
+  }
+
+  /////////////////////// TEST LOGIC ENDS ///////////////////////////////////
 
 
 

@@ -14,9 +14,9 @@ block body
           input#styleID.form-control(type="text", placeholder="3C", name="id")
 
       .form-group
-        label.col-sm-3.control-label(for="SignUpEmployer") Category
+        label.col-sm-3.control-label(for="categoryName") Category
         .col-sm-9
-          select.form-control(name='category')
+          select#categoryName.form-control(name='category')
             option - not assigned -
               each category in categories
                 option(value='#{category.category_id}') #{category.category_id}. #{category.name}

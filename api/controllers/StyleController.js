@@ -392,6 +392,25 @@ module.exports = {
         res.view(styles);
 
       });
+  },
+
+  compare: function(req, res, next){
+
+    Style.find({style_id: { '!': null} }, { fields: [ 'style_id', 'name' ] }).exec((err, styles) => {
+      if (err) return res.redirect('/error');
+
+
+      let firstStyle = req.param('firstStyle')
+        , secondStyle = req.param('secondStyle');
+
+      Style.find({ style_id: [firstStyle, secondStyle]}).exec( (err, comparedStyles) => {
+        if (err) return res.redirect('/error');
+
+        res.view({styles: styles, firstStyle: comparedStyles[0], secondStyle: comparedStyles[1]});
+      });
+    });
+
+
   }
 
 
