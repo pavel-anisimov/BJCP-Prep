@@ -399,9 +399,6 @@ module.exports = {
     Style.find({style_id: { '!': null} }, { fields: [ 'style_id', 'name' ] }).sort('createdAt').exec((err, styles) => {
       if (err) return res.redirect('/error');
 
-      console.log(styles)
-
-
 
       let { firstStyle, secondStyle } = req.params.all();
 
