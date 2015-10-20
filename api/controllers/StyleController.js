@@ -214,7 +214,7 @@ module.exports = {
   },
 
   index: function(req, res, next){
-    Style.find().sort('style_id').populate('category').exec(function stylesFound(err, styles){
+    Style.find().sort('createdAt').populate('category').exec(function stylesFound(err, styles){
       if (err) {
         req.flash('error', err.message);
         // If error redirect back to sign-up page
@@ -225,163 +225,12 @@ module.exports = {
     });
   },
 
-  checkstyle: function(req, res, next){
-
-    Style.find( {}, {fields: ["style_id", "name"]} ).populate('category', {exam: true}).exec(function stylesFound(err, styles) {
-      if (err) {
-        req.flash('error', err.message);
-        // If error redirect back to sign-up page
-        return next(err);
-      }
-
-      res.view({style: utils.randomFromArray(styles)});
-
-    });
-  },
-
-  // Questions for checking the style
-  styleanswer: function(req, res, next){
-
-    var ans = 0, q = 0, selectors = {};
-
-    let {style_id, og, fg, srm, abv, ibu} = req.params.all();
-
-    Style.findOne( {style_id: style_id } ).populate('category', {exam: true}).exec(function stylesFound(err, style) {
-      if (err) {
-        req.flash('error', err.message);
-        // If error redirect back to sign-up page
-        return res.json(err);
-      }
-
-      utils.between(+og,  style.OG.from,  style.OG.to  ) && ans++;  q++;
-      selectors.styleOG = utils.between(+og,  style.OG.from,  style.OG.to  );
-
-
-      utils.between(+fg,  style.FG.from,  style.FG.to  ) && ans++;  q++;
-      selectors.styleFG = utils.between(+fg,  style.FG.from,  style.FG.to  );
-
-
-      utils.between(+srm, style.SRM.from, style.SRM.to ) && ans++;  q++;
-      selectors.styleSRM = utils.between(+srm,  style.SRM.from,  style.SRM.to  );
-
-
-      utils.between(+ibu, style.IBU.from, style.IBU.to ) && ans++;  q++;
-      selectors.styleIBU = utils.between(+ibu,  style.IBU.from,  style.IBU.to  );
-
-
-      utils.between(+abv, style.ABV.from, style.ABV.to ) && ans++;  q++;
-      selectors.styleABV = utils.between(+abv,  style.ABV.from,  style.ABV.to  );
-
-
-      res.json({
-        style: {
-          style_id: style.style_id,
-          name: style.name,
-          OG: style.OG,
-          FG: style.FG,
-          SRM: style.SRM,
-          IBU: style.IBU,
-          ABV: style.ABV
-        },
-        ans: ans,
-        score: ans / q *  100,
-        pass:  ans / q >= 0.8,
-        selectors: selectors
-      });
-    });
-  },
-
-  reversemchoice: function(req, res, next){
-    var fields = [
-        ['OG', 'FG', 'SRM', 'IBU', 'ABV'],
-        ['appearance'], ['flavor'], ['aroma'], ['mouthfeel']
-      ]
-      , fieldNumber = Math.floor(Math.random() * fields.length);
-
-
-    var fieldsArray = fields[fieldNumber];
-
-    fieldsArray.push('style_id');
-    fieldsArray.push('similars');
-
-
-    Style.find( {}, {fields: fieldsArray} ).populate('category', {exam: true}).exec(function stylesFound(err, styles) {
-      if (err) {
-        req.flash('error', err.message);
-        // If error redirect back to sign-up page
-        return next(err);
-      }
-
-      var targetStyle = utils.randomFromArray(styles);
-
-      //console.log('Style', targetStyle);
-
-      var randomArray = utils.getRandom(targetStyle.similars, 3);
-      randomArray.push(targetStyle.style_id);
-
-
-      Style.find( {style_id: randomArray }, {fields: ['style_id', 'name']} ).exec(function stylesFound(err, styles){
-        if (err) {
-          req.flash('error', err.message);
-          // If error redirect back to sign-up page
-          return next(err);
-        }
-
-
-        res.view({styles: styles, question: targetStyle, fields: fieldsArray});
-
-
-      });
-    });
-  },
-
-  multiplechoice: function(req, res, next){
-
-    var fields = [
-      ['OG', 'FG', 'SRM', 'IBU', 'ABV'],
-      ['appearance'], ['flavor'], ['aroma'], ['mouthfeel']
-    ]
-      , fieldNumber = Math.floor(Math.random() * fields.length);
-
-
-    Style.find( {}, {fields: ["style_id", "name", "similars"]} ).populate('category', {exam: true}).exec(function stylesFound(err, styles) {
-      if (err) {
-        req.flash('error', err.message);
-        // If error redirect back to sign-up page
-        return next(err);
-      }
-
-      var targetStyle = utils.randomFromArray(styles);
-
-      //console.log('Style', targetStyle);
-
-      var randomArray = utils.getRandom(targetStyle.similars, 3);
-      randomArray.push(targetStyle.style_id);
-      var fieldsArray = fields[fieldNumber];
-
-      fieldsArray.push('style_id');
-
-      //console.log('Similar Styles', randomArray);
-
-
-      Style.find( {style_id: randomArray }, {fields: fieldsArray} ).exec(function stylesFound(err, styles){
-        if (err) {
-          req.flash('error', err.message);
-          // If error redirect back to sign-up page
-          return next(err);
-        }
-        res.view({styles: styles, question: targetStyle, fields: fieldsArray});
-      });
-    });
-  },
-
-
 
   tags: function(req, res, next){
 
     Style
       .find({tags: req.param('id').split(',')})
-      .sort('style_id').populate('category')
+      .sort('createdAt').populate('category')
       .exec(function findByTags(err, styles){
 
         if (err) {
@@ -413,38 +262,6 @@ module.exports = {
   }
 
 
-  /*
 
-  questions: function(req, res, next){
-
-    var type = ['aroma', 'appearance', 'flavor', 'mouthfeel', 'ingredients']
-      , arrSize = 10;
-
-    Style.find( ).populate('category', {exam: true}).exec(function stylesFound(err, styles){
-      if (err) {
-        req.flash('error', err.message);
-        // If error redirect back to sign-up page
-        return res.redirect('/error');
-      }
-
-
-      var randStyleArr = utils.getRandom(styles, arrSize)
-        , questArr = {};
-
-      for(style in randStyleArr) {
-        style.similar.forEach(function(style_id){
-          Style.findOne({style_id: style_id}, { fields: ['aroma']}).exec(function getStyle(err, style) {
-            console.log(style);
-          });
-        })
-      }
-
-      res.json({styles: randArray});
-    });
-
-    //var rand = myArray[Math.floor(Math.random() * myArray.length)];
-
-
-  } */
 
 }

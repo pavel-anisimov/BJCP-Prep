@@ -25,10 +25,22 @@ module.exports = {
   },
 
   mchoice: function(req, res, next){
-    this.getQuizeQuestions({min: 0, max: 1}, function(err, question){
+    let {firstStyle, secondStyle} = req.params.all();
+    firstStyle || (firstStyle = '1A');
+    secondStyle || (secondStyle = '26D');
+
+    Style.find({style_id: [firstStyle, secondStyle]}, {fields: ["style_id", "name", "createdAt"]}).sort('createdAt').exec( (err, styles) => {
       if(err) return next(err);
-      res.view(question);
+
+      let {firstStyle, secondStyle} = utils.inOrder(styles[0].createdAt, styles[1].createdAt);
+
+      this.getQuizeQuestions({min: 0, max: 1, firstStyle: firstStyle, secondStyle: secondStyle}, function(err, question){
+        if(err) return next(err);
+        res.view(question);
+      });
+
     });
+
   },
 
   guide: function(req, res, next){
@@ -39,9 +51,20 @@ module.exports = {
   },
 
   checkstyles: function(req, res, next){
-    this.getQuizeQuestions({min: 3, max: 3}, function(err, question){
+    let {firstStyle, secondStyle} = req.params.all();
+    firstStyle || (firstStyle = '1A');
+    secondStyle || (secondStyle = '26D');
+
+    Style.find({style_id: [firstStyle, secondStyle]}, {fields: ["style_id", "name", "createdAt"]}).sort('createdAt').exec( (err, styles) => {
       if(err) return next(err);
-      res.view(question);
+
+      let {firstStyle, secondStyle} = utils.inOrder(styles[0].createdAt, styles[1].createdAt);
+
+      this.getQuizeQuestions({min: 3, max: 3, firstStyle: firstStyle, secondStyle: secondStyle}, function(err, question){
+        if(err) return next(err);
+        res.view(question);
+      });
+
     });
   },
 
@@ -49,16 +72,16 @@ module.exports = {
 
     switch (utils.randomNumber(opt.min, opt.max)){
       case 0:
-        this.getStraightQuestion((err, question) => cb(err, question));
-            break;
+        this.getStraightQuestion(opt, (err, question) => cb(err, question));
+        break;
       case 1:
-        this.getReverseQuestion((err, question) => cb(err, question));
+        this.getReverseQuestion(opt, (err, question) => cb(err, question));
         break;
       case 2:
         this.getTrueFalseQuestion(opt.type, (err, question) => cb(err, question));
         break;
       case 3:
-        this.getStyleStatsQuestion((err, question) => cb(err, question));
+        this.getStyleStatsQuestion(opt, (err, question) => cb(err, question));
         break;
       default:
         cb(new Error('Random number outside of the range.'));
@@ -90,40 +113,13 @@ module.exports = {
         return cb(null, respond);
       });
     });
-
-
-
-    /*
-    Question.count().exec((err, max) => {
-      if(err) return cb(err);
-
-      let min = 1
-        , random = utils.randomNumber(min, max);
-
-      Question.findOne({question_id: random }).exec(function(err, respond){
-        if(err) return cb(err);
-
-        respond.type = "true_false";
-        respond.question = {
-          body: respond.question,
-          topic: respond.topic
-        };
-
-        delete respond.question_id;
-        delete respond.topic;
-        delete respond.id;
-
-        return cb(null, respond);
-
-      });
-    }); */
   },
 
 
 
-  getStyleStatsQuestion: function(cb){
+  getStyleStatsQuestion: function(opt, cb){
 
-    Style.find( {}, {fields: ["style_id", "name", "OG", "FG", "SRM", "IBU", "ABV"]} ).populate('category', {exam: true}).exec((err, styles) => {
+    Style.find( { test: 'beer', createdAt: {">=": opt.firstStyle, "<=": opt.secondStyle}}, {fields: ["style_id", "name", "OG", "FG", "SRM", "IBU", "ABV"]} ).populate('category', {exam: true}).exec((err, styles) => {
       if (err) return cb(err);
 
       var respond, style;
@@ -150,9 +146,9 @@ module.exports = {
     });
   },
 
-  getStraightQuestion: function(cb){
+  getStraightQuestion: function(opt, cb){
 
-    Style.find( { test: 'beer'}, {fields: ["style_id", "name", "similars"]} ).populate('category', {exam: true}).exec((err, styles) => {
+    Style.find( { test: 'beer', createdAt: {">=": opt.firstStyle, "<=": opt.secondStyle}}, {fields: ["style_id", "name", "similars"]} ).populate('category', {exam: true}).exec((err, styles) => {
       if (err) return cb(err);
 
       let targetStyle, randomArray, fieldsArray, fieldNumber, question;
@@ -194,7 +190,7 @@ module.exports = {
     });
   },
 
-  getReverseQuestion: function(cb){
+  getReverseQuestion: function(opt, cb){
 
     let fieldNumber, fieldsArray, question;
 
@@ -207,7 +203,7 @@ module.exports = {
     fieldsArray.push('similars');
 
 
-    Style.find( { test: "beer"}, {fields: fieldsArray} ).populate('category', {exam: true}).exec((err, styles) => {
+    Style.find( { test: "beer", createdAt: {">=": opt.firstStyle, "<=": opt.secondStyle}}, {fields: fieldsArray} ).populate('category', {exam: true}).exec((err, styles) => {
       if (err)  return cb(err);
 
       let  targetStyle, randomArray;

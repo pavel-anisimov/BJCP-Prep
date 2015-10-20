@@ -17,6 +17,8 @@ module.exports = {
     return result;
   }, */
 
+  inOrder: (x, y) => x>y ? {firstStyle: y, secondStyle: x} : {firstStyle: x, secondStyle:y},
+
   between: (x, min, max) => x >= min && x <= max,
 
   randomFromArray: (arr) => arr[Math.floor(Math.random() * arr.length)],
