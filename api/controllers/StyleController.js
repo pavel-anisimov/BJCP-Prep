@@ -244,31 +244,33 @@ module.exports = {
 
     var ans = 0, q = 0, selectors = {};
 
-    Style.findOne( {style_id: req.param('style_id') } ).populate('category', {exam: true}).exec(function stylesFound(err, style) {
+    let {style_id, og, fg, srm, abv, ibu} = req.params.all();
+
+    Style.findOne( {style_id: style_id } ).populate('category', {exam: true}).exec(function stylesFound(err, style) {
       if (err) {
         req.flash('error', err.message);
         // If error redirect back to sign-up page
         return res.json(err);
       }
 
-      utils.between(+req.param('og'),  style.OG.from,  style.OG.to  ) && ans++;  q++;
-      selectors.styleOG = utils.between(+req.param('og'),  style.OG.from,  style.OG.to  );
+      utils.between(+og,  style.OG.from,  style.OG.to  ) && ans++;  q++;
+      selectors.styleOG = utils.between(+og,  style.OG.from,  style.OG.to  );
 
 
-      utils.between(+req.param('fg'),  style.FG.from,  style.FG.to  ) && ans++;  q++;
-      selectors.styleFG = utils.between(+req.param('fg'),  style.FG.from,  style.FG.to  );
+      utils.between(+fg,  style.FG.from,  style.FG.to  ) && ans++;  q++;
+      selectors.styleFG = utils.between(+fg,  style.FG.from,  style.FG.to  );
 
 
-      utils.between(+req.param('srm'), style.SRM.from, style.SRM.to ) && ans++;  q++;
-      selectors.styleSRM = utils.between(+req.param('srm'),  style.SRM.from,  style.SRM.to  );
+      utils.between(+srm, style.SRM.from, style.SRM.to ) && ans++;  q++;
+      selectors.styleSRM = utils.between(+srm,  style.SRM.from,  style.SRM.to  );
 
 
-      utils.between(+req.param('ibu'), style.IBU.from, style.IBU.to ) && ans++;  q++;
-      selectors.styleIBU = utils.between(+req.param('ibu'),  style.IBU.from,  style.IBU.to  );
+      utils.between(+ibu, style.IBU.from, style.IBU.to ) && ans++;  q++;
+      selectors.styleIBU = utils.between(+ibu,  style.IBU.from,  style.IBU.to  );
 
 
-      utils.between(+req.param('abv'), style.ABV.from, style.ABV.to ) && ans++;  q++;
-      selectors.styleABV = utils.between(+req.param('abv'),  style.ABV.from,  style.ABV.to  );
+      utils.between(+abv, style.ABV.from, style.ABV.to ) && ans++;  q++;
+      selectors.styleABV = utils.between(+abv,  style.ABV.from,  style.ABV.to  );
 
 
       res.json({
@@ -286,7 +288,6 @@ module.exports = {
         pass:  ans / q >= 0.8,
         selectors: selectors
       });
-
     });
   },
 
@@ -376,7 +377,6 @@ module.exports = {
 
 
 
-
   tags: function(req, res, next){
 
     Style
@@ -396,12 +396,14 @@ module.exports = {
 
   compare: function(req, res, next){
 
-    Style.find({style_id: { '!': null} }, { fields: [ 'style_id', 'name' ] }).exec((err, styles) => {
+    Style.find({style_id: { '!': null} }, { fields: [ 'style_id', 'name' ] }).sort('createdAt').exec((err, styles) => {
       if (err) return res.redirect('/error');
 
+      console.log(styles)
 
-      let firstStyle = req.param('firstStyle')
-        , secondStyle = req.param('secondStyle');
+
+
+      let { firstStyle, secondStyle } = req.params.all();
 
       Style.find({ style_id: [firstStyle, secondStyle]}).exec( (err, comparedStyles) => {
         if (err) return res.redirect('/error');

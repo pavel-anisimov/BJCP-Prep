@@ -563,7 +563,7 @@
     "topic": "ethics and judging",
     "question": "The courteous lower limit for scores assigned to “Problematic” beers is 13 points.",
     "options": ["true", "false"],
-    "answer": 1
+    "answer": 0
   },
   {
     "question_id": 82,
@@ -3522,14 +3522,14 @@
   {
     "question_id": 504,
     "topic": "yeast",
-    "question": "Adding this actively-fermenting beer serves two purposes; it carbonates and also helps clean up any off flavors generated from the previous fermentation.",
+    "question": "Adding actively-fermenting beer to fermented to a ready to be bottled beer serves two purposes; it carbonates and also helps clean up any off flavors generated from the previous fermentation.",
     "options": ["true", "false"],
     "answer": 0
   },
   {
     "question_id": 505,
     "topic": "yeast",
-    "question": "Adding this actively-fermenting beer serves two purposes; it makes beer cleaner and lighter.",
+    "question": "Adding actively-fermenting beer to fermented to a ready to be bottled beer serves two purposes; it makes beer cleaner and lighter.",
     "options": ["true", "false"],
     "answer": 1
   },

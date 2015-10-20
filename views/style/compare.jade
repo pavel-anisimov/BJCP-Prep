@@ -28,201 +28,265 @@ block body
     .row.compare
       .col-sm-2.col-sm-offset-1.title OG:
       .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
-      .col-xs-11.col-sm-4.border-bottom= firstStyle.OG.from.toFixed(3) + ' - ' + firstStyle.OG.to.toFixed(3)
+      .col-xs-5.col-sm-4.border-bottom= firstStyle.OG.from.toFixed(3) + ' - ' + firstStyle.OG.to.toFixed(3)
       .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
-      .col-xs-11.col-sm-4= secondStyle.OG.from.toFixed(3) + ' - ' + secondStyle.OG.to.toFixed(3)
-      .col-sm-1
+      .col-xs-5.col-sm-4= secondStyle.OG.from.toFixed(3) + ' - ' + secondStyle.OG.to.toFixed(3)
 
       .col-sm-2.col-sm-offset-1.title FG:
       .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
-      .col-xs-11.col-sm-4.border-bottom= firstStyle.FG.from.toFixed(3) + ' - ' + firstStyle.FG.to.toFixed(3)
+      .col-xs-5.col-sm-4.border-bottom= firstStyle.FG.from.toFixed(3) + ' - ' + firstStyle.FG.to.toFixed(3)
       .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
-      .col-xs-11.col-sm-4= secondStyle.FG.from.toFixed(3) + ' - ' + secondStyle.FG.to.toFixed(3)
-      .col-sm-1
-
+      .col-xs-5.col-sm-4= secondStyle.FG.from.toFixed(3) + ' - ' + secondStyle.FG.to.toFixed(3)
 
       .col-sm-2.col-sm-offset-1.title SRM:
       .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
-      .col-xs-11.col-sm-4.border-bottom= firstStyle.SRM.from + ' - ' + firstStyle.SRM.to
+      .col-xs-5.col-sm-4.border-bottom= firstStyle.SRM.from + ' - ' + firstStyle.SRM.to
       .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
-      .col-xs-11.col-sm-4= secondStyle.SRM.from + ' - ' + secondStyle.SRM.to
-      .col-sm-1
+      .col-xs-5.col-sm-4= secondStyle.SRM.from + ' - ' + secondStyle.SRM.to
 
       .col-sm-2.col-sm-offset-1.title IBU:
       .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
-      .col-xs-11.col-sm-4.border-bottom= firstStyle.IBU.from + ' - ' + firstStyle.IBU.to
+      .col-xs-5.col-sm-4.border-bottom= firstStyle.IBU.from + ' - ' + firstStyle.IBU.to
       .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
-      .col-xs-11.col-sm-4= secondStyle.IBU.from + ' - ' + secondStyle.IBU.to
-      .col-sm-1
+      .col-xs-5.col-sm-4= secondStyle.IBU.from + ' - ' + secondStyle.IBU.to
 
       .col-sm-2.col-sm-offset-1.title ABV%:
       .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
-      .col-xs-11.col-sm-4.border-bottom= firstStyle.ABV.from.toFixed(1) + ' - ' + firstStyle.ABV.to.toFixed(1)
+      .col-xs-5.col-sm-4.border-bottom= firstStyle.ABV.from.toFixed(1) + ' - ' + firstStyle.ABV.to.toFixed(1)
       .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
-      .col-xs-11.col-sm-4= secondStyle.ABV.from.toFixed(1) + ' - ' + secondStyle.ABV.to.toFixed(1)
-      .col-sm-1
+      .col-xs-5.col-sm-4= secondStyle.ABV.from.toFixed(1) + ' - ' + secondStyle.ABV.to.toFixed(1)
 
     if firstStyle.about || secondStyle.about
       .row.compare
         .col-sm-2.col-sm-offset-1.title About:
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         if firstStyle.about
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
           .col-xs-11.col-sm-4.border-bottom= firstStyle.about
+        else
+          .col-xs-11.col-sm-4.border-bottom N/A
+
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         if secondStyle.about
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
           .col-xs-11.col-sm-4= secondStyle.about
+        else
+          .col-xs-11.col-sm-4 N/A
 
     .row.compare
       .col-sm-2.col-sm-offset-1.title Overall Impression:
+      .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
       if firstStyle.overall
-        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         .col-xs-11.col-sm-4.border-bottom= firstStyle.overall
+      else
+        .col-xs-11.col-sm-4.border-bottom N/A
+
+      .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
       if secondStyle.overall
-        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         .col-xs-11.col-sm-4= secondStyle.overall
+      else
+        .col-xs-11.col-sm-4 N/A
 
     .row.compare
       .col-sm-2.col-sm-offset-1.title Aroma:
+      .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
       if firstStyle.aroma
-        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         .col-xs-11.col-sm-4.border-bottom
           ul
             each aroma in firstStyle.aroma
               li= aroma
+      else
+        .col-xs-11.col-sm-4.border-bottom N/A
+
+      .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
       if secondStyle.aroma
-        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         .col-xs-11.col-sm-4
           ul
             each aroma in secondStyle.aroma
               li= aroma
+      else
+        .col-xs-11.col-sm-4 N/A
 
     .row.compare
       .col-sm-2.col-sm-offset-1.title Appearance:
+      .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
       if firstStyle.appearance
-        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         .col-xs-11.col-sm-4.border-bottom
           ul
             each appearance in firstStyle.appearance
               li= appearance
+      else
+        .col-xs-11.col-sm-4.border-bottom N/A
+
+      .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
       if secondStyle.appearance
-        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         .col-xs-11.col-sm-4
           ul
             each appearance in secondStyle.appearance
               li= appearance
+      else
+        .col-xs-11.col-sm-4 N/A
 
     .row.compare
       .col-sm-2.col-sm-offset-1.title Flavor:
+      .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
       if firstStyle.flavor
-        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         .col-xs-11.col-sm-4.border-bottom
           ul
             each flavor in firstStyle.flavor
               li= flavor
+      else
+        .col-xs-11.col-sm-4.border-bottom  N/A
+
+      .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
       if secondStyle.flavor
-        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         .col-xs-11.col-sm-4
           ul
             each flavor in secondStyle.flavor
               li= flavor
+      else
+        .col-xs-11.col-sm-4 N/A
 
     .row.compare
       .col-sm-2.col-sm-offset-1.title Mouthfeel:
+      .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
       if firstStyle.aroma
-        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         .col-xs-11.col-sm-4.border-bottom
           ul
             each mouthfeel in firstStyle.mouthfeel
               li= mouthfeel
+      else
+        .col-xs-11.col-sm-4.border-bottom N/A
+
+      .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
       if secondStyle.mouthfeel
-        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         .col-xs-11.col-sm-4
           ul
             each mouthfeel in secondStyle.mouthfeel
               li= mouthfeel
+      else
+        .col-xs-11.col-sm-4 N/A
 
     if firstStyle.comments || secondStyle.comments
       .row.compare
         .col-sm-2.col-sm-offset-1.title Comments:
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         if firstStyle.comments
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
           .col-xs-11.col-sm-4.border-bottom= firstStyle.comments
+        else
+          .col-xs-11.col-sm-4.border-bottom N/A
+
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         if secondStyle.comments
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
           .col-xs-11.col-sm-4= secondStyle.comments
+        else
+          .col-xs-11.col-sm-4 N/A
 
     if firstStyle.history || secondStyle.history
       .row.compare
         .col-sm-2.col-sm-offset-1.title History:
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         if firstStyle.history
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
           .col-xs-11.col-sm-4.border-bottom= firstStyle.history
+        else
+          .col-xs-11.col-sm-4.border-bottom N/A
+
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         if secondStyle.history
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
           .col-xs-11.col-sm-4= secondStyle.history
+        else
+          .col-xs-11.col-sm-4 N/A
 
     if firstStyle.ingredients || secondStyle.ingredients
       .row.compare
         .col-sm-2.col-sm-offset-1.title Ingredients:
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         if firstStyle.ingredients
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
           .col-xs-11.col-sm-4.border-bottom= firstStyle.ingredients
+        else
+          .col-xs-11.col-sm-4.border-bottom N/A
+
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         if secondStyle.ingredients
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
           .col-xs-11.col-sm-4= secondStyle.ingredients
+        else
+          .col-xs-11.col-sm-4 N/A
 
     if firstStyle.comparison || secondStyle.comparison
       .row.compare
         .col-sm-2.col-sm-offset-1.title Style Comparison:
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         if firstStyle.comparison
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
           .col-xs-11.col-sm-4.border-bottom= firstStyle.comparison
+        else
+          .col-xs-11.col-sm-4.border-bottom N/A
+
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         if secondStyle.comparison
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
           .col-xs-11.col-sm-4= secondStyle.comparison
+        else
+          .col-xs-11.col-sm-4 N/A
 
     if firstStyle.similars || secondStyle.similars
       .row.compare
         .col-sm-2.col-sm-offset-1.title Similar Styles:
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         if firstStyle.similars
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
           .col-xs-11.col-sm-4.border-bottom
             each tag in firstStyle.similars
               a(href='/style/show/' + tag).tagLink
                 span.label.label-info= tag
+        else
+          .col-xs-11.col-sm-4 N/A
+
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         if secondStyle.similars
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
           .col-xs-11.col-sm-4
             each tag in secondStyle.similars
               a(href='/style/show/' + tag).tagLink
                 span.label.label-info= tag
+        else
+          .col-xs-11.col-sm-4 N/A
 
     if firstStyle.instructions || secondStyle.instructions
       .row.compare
         .col-sm-2.col-sm-offset-1.title Entry Instructions:
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         if firstStyle.instructions
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
           .col-xs-11.border-bottom.col-sm-4= firstStyle.instructions
+        else
+          .col-xs-11.col-sm-4.border-bottom N/A
+
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         if secondStyle.instructions
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
           .col-xs-11.col-sm-4= secondStyle.instructions
+        else
+          .col-xs-11.col-sm-4 N/A
 
     if firstStyle.varieties || secondStyle.varieties
       .row.compare
         .col-sm-2.col-sm-offset-1.title Variates:
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         if firstStyle.varieties
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
           .col-xs-11.border-bottom.col-sm-4= firstStyle.varieties.join(', ')
+        else
+          .col-xs-11.col-sm-4.border-bottom N/A
+
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         if secondStyle.varieties
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
           .col-xs-11.col-sm-4= secondStyle.varieties.join(', ')
+        else
+          .col-xs-11.col-sm-4 N/A
 
     if firstStyle.examples || secondStyle.examples
       .row.compare
         .col-sm-2.col-sm-offset-1.title Commercial Examples:
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
         if firstStyle.examples
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= firstStyle.style_id + ': '
           .col-xs-11.border-bottom.col-sm-4= firstStyle.examples.join(', ')
+        else
+          .col-xs-11.col-sm-4.border-bottom N/A
+
+        .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
         if secondStyle.examples
-          .col-xs-1.hidden-sm.hidden-md.hidden-lg= secondStyle.style_id + ': '
           .col-xs-11.col-sm-4= secondStyle.examples.join(', ')
+        else
+          .col-xs-11.col-sm-4 N/A

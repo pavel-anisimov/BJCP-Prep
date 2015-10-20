@@ -152,7 +152,7 @@ module.exports = {
 
   getStraightQuestion: function(cb){
 
-    Style.find( {}, {fields: ["style_id", "name", "similars"]} ).populate('category', {exam: true}).exec((err, styles) => {
+    Style.find( { test: 'beer'}, {fields: ["style_id", "name", "similars"]} ).populate('category', {exam: true}).exec((err, styles) => {
       if (err) return cb(err);
 
       let targetStyle, randomArray, fieldsArray, fieldNumber, question;
@@ -207,7 +207,7 @@ module.exports = {
     fieldsArray.push('similars');
 
 
-    Style.find( {}, {fields: fieldsArray} ).populate('category', {exam: true}).exec((err, styles) => {
+    Style.find( { test: "beer"}, {fields: fieldsArray} ).populate('category', {exam: true}).exec((err, styles) => {
       if (err)  return cb(err);
 
       let  targetStyle, randomArray;
