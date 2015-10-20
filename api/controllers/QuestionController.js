@@ -26,11 +26,16 @@ module.exports = {
 
   mchoice: function(req, res, next){
     let {firstStyle, secondStyle} = req.params.all();
-    firstStyle || (firstStyle = '1A');
-    secondStyle || (secondStyle = '26D');
+
+    firstStyle || (
+      firstStyle = '1A',
+        secondStyle = '26D'
+    );
 
     Style.find({style_id: [firstStyle, secondStyle]}, {fields: ["style_id", "name", "createdAt"]}).sort('createdAt').exec( (err, styles) => {
       if(err) return next(err);
+
+      styles[1] || (styles[1] = styles[0]);
 
       let {firstStyle, secondStyle} = utils.inOrder(styles[0].createdAt, styles[1].createdAt);
 
@@ -52,11 +57,18 @@ module.exports = {
 
   checkstyles: function(req, res, next){
     let {firstStyle, secondStyle} = req.params.all();
-    firstStyle || (firstStyle = '1A');
-    secondStyle || (secondStyle = '26D');
+
+    firstStyle || (
+      firstStyle = '1A',
+      secondStyle = '26D'
+    );
+
+
 
     Style.find({style_id: [firstStyle, secondStyle]}, {fields: ["style_id", "name", "createdAt"]}).sort('createdAt').exec( (err, styles) => {
       if(err) return next(err);
+
+      styles[1] || (styles[1] = styles[0]);
 
       let {firstStyle, secondStyle} = utils.inOrder(styles[0].createdAt, styles[1].createdAt);
 
