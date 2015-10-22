@@ -9,16 +9,18 @@
 var utils = require('../services/utils');
 
 const fields = [
-  ['OG', 'FG', 'SRM', 'IBU', 'ABV'],
-  ['appearance'], ['flavor'], ['aroma'], ['mouthfeel']
-];
+    ['OG', 'FG', 'SRM', 'IBU', 'ABV'],
+    ['appearance'], ['flavor'], ['aroma'], ['mouthfeel']
+  ]
+  , defaultFirstStyle = '1A'
+  , defaultSecondStyle = '26D';
 
 
 
 module.exports = {
 
   all: function(req, res, next){
-    this.getQuizeQuestions({min: 0, max: 3}, function(err, question){
+    this.getQuizeQuestions({min: 0, max: 3, firstStyle: defaultFirstStyle, secondStyle: defaultSecondStyle}, function(err, question){
       if(err) return next(err);
       res.view(question);
     });
@@ -28,8 +30,7 @@ module.exports = {
     let {firstStyle, secondStyle} = req.params.all();
 
     firstStyle || (
-      firstStyle = '1A',
-        secondStyle = '26D'
+      firstStyle = defaultFirstStyle, secondStyle = defaultSecondStyle
     );
 
     Style.find({style_id: [firstStyle, secondStyle]}, {fields: ["style_id", "name", "createdAt"]}).sort('createdAt').exec( (err, styles) => {
@@ -59,8 +60,7 @@ module.exports = {
     let {firstStyle, secondStyle} = req.params.all();
 
     firstStyle || (
-      firstStyle = '1A',
-      secondStyle = '26D'
+      firstStyle = defaultFirstStyle, secondStyle = defaultSecondStyle
     );
 
 
