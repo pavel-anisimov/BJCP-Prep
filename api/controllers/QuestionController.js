@@ -13,14 +13,15 @@ const fields = [
     ['appearance'], ['flavor'], ['aroma'], ['mouthfeel']
   ]
   , defaultFirstStyle = '1A'
-  , defaultSecondStyle = '26D';
-
+  , defaultSecondStyle = '26D'
+  , defFirstDate = new Date("2015-07-03T21:46:42.691Z")
+  , defSecondDate = new Date("2015-09-20T19:09:00.385Z");
 
 
 module.exports = {
 
   all: function(req, res, next){
-    this.getQuizeQuestions({min: 0, max: 3, firstStyle: defaultFirstStyle, secondStyle: defaultSecondStyle}, function(err, question){
+    this.getQuizeQuestions({min: 0, max: 3, firstStyle: defFirstDate, secondStyle: defSecondDate}, function(err, question){
       if(err) return next(err);
       res.view(question);
     });
