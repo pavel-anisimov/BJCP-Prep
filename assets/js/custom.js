@@ -30,9 +30,9 @@
 
 
 function between(x, min, max) {
-  typeof x === 'number' && ( x = parseFloat(x) );
-  typeof min === 'number' && ( min = parseFloat(min) );
-  typeof max === 'number' && ( max = parseFloat(max) );
+  typeof x === 'number' || ( x = parseFloat(x) );
+  typeof min === 'number' || ( min = parseFloat(min) );
+  typeof max === 'number' || ( max = parseFloat(max) );
 
   return x >= min && x <= max
 }
@@ -267,6 +267,7 @@ $(function(){
     } else
       answerClass = 'wrong';
     $('#style-abv').addClass(answerClass);
+
 
     if(between(data.srm, data.srm_from, data.srm_to)){
       score++;
